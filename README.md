@@ -31,11 +31,11 @@ Developers, indie hackers, design engineers, and agencies who build frontends wi
 | Skill | Author | Mechanism | License |
 |---|---|---|---|
 | taste-skill v2, `design-taste-frontend` | Leon Lin | Taste prompting for macro aesthetic direction, three dials at 8/6/4, and Section 14 pre-flight | MIT |
-| make-interfaces-feel-better | Jakub Krehel | Micro-interaction execution for press states, concentric radii, and motion values | MIT |
+| make-interfaces-feel-better | Jakub Krehel | Micro-interaction execution for press states, concentric radii, and motion values | MIT (README-declared) |
 | Impeccable v3.9.1 | Paul Bakaus | Toolchain enforcement through commands, PRODUCT.md and DESIGN.md contracts, a deterministic 45-rule detector, and edit-time hooks | Apache-2.0 |
-| Anthropic frontend-design | Anthropic | Taste prompting baseline with committed aesthetic direction | Upstream terms pending ledger capture |
-| ui-ux-pro-max v2.10.1 | nextlevelbuilder | Retrieval database for styles, palettes, font pairings, and UX rules | MIT |
-| Vercel web-design-guidelines | Vercel Labs | Audit layer with runtime-fetched rules and file:line findings | MIT |
+| Anthropic frontend-design | Anthropic | Taste prompting baseline with committed aesthetic direction | Apache-2.0 (per-skill LICENSE.txt) |
+| ui-ux-pro-max v2.10.2 | nextlevelbuilder | Retrieval database for styles, palettes, font pairings, and UX rules | MIT |
+| Vercel web-design-guidelines | Vercel Labs | Audit layer with runtime-fetched rules and file:line findings | MIT (ruleset repo; skill wrapper README-declared) |
 
 Mechanism map: taste prompting from taste-skill and Anthropic
 frontend-design, micro-interaction execution from make-interfaces-feel-better,

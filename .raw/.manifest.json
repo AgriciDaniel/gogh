@@ -24,6 +24,156 @@
       "sha256": "a1d3f4735cb301f42ecf0763e31f521b87b0b0fcb170ab16084021478038897a",
       "retrieved": "2026-07-06",
       "source_type": "supporting"
+    },
+    {
+      "path": ".raw/skills/anthropic-frontend-design/SKILL.md",
+      "sha256": "cc9210ae9a9ca0b9f946c37a652f32254757fa7c43e6cb3ffc2f310f486a2f0e",
+      "retrieved": "2026-07-07",
+      "source_type": "official"
+    },
+    {
+      "path": ".raw/skills/anthropic-frontend-design/blog-post.md",
+      "sha256": "c5bc9ca878056bf5dd8f3324075d22d987a22a60815a7c9d99235dd29108f39a",
+      "retrieved": "2026-07-07",
+      "source_type": "official"
+    },
+    {
+      "path": ".raw/skills/impeccable/MISSING-CHANGELOG.md",
+      "sha256": "43d96bcde7dd3ff80afa853d1e33d34157a38e137a0357d897e0188c1fa97d48",
+      "retrieved": "2026-07-07",
+      "source_type": "supporting"
+    },
+    {
+      "path": ".raw/skills/impeccable/README.md",
+      "sha256": "2a0dc2fadde463b2ef424d56d392a4d0900d16a2d09452166eea31f2eaf3a412",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/impeccable/SKILL.md",
+      "sha256": "c78ff444c7f78245c968e09ef84fefec4cc8b7bb57f14d6336933c63243ebf65",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/make-interfaces-feel-better/README.md",
+      "sha256": "fac7d78cc5f52e35c794eefc8bb319ff10da7b6ea61489710aafec452e8c767a",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/make-interfaces-feel-better/SKILL.md",
+      "sha256": "3fa75255f5dbfb533e2ff9635f53ac020841248689928e08893c4cdd3f526c88",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/make-interfaces-feel-better/animations.md",
+      "sha256": "65fe647757ae89d44faecf5e6eec7af4fa780ab19069e1124acbd5601436da39",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/make-interfaces-feel-better/performance.md",
+      "sha256": "622b3a026bb5b69a86e2279ccd10885ef036fda5a1731ce4f100fa5a33e2c33e",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/make-interfaces-feel-better/surfaces.md",
+      "sha256": "ee2af1fe115ca991a5f8fbf202d7f19dd50d6757b3f7498c59b893a90a33afb2",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/make-interfaces-feel-better/typography.md",
+      "sha256": "a51d6290b5f643a38c6096be027df7c59889f292a4d5e49f26c949377196aea9",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/taste-skill-v2/CHANGELOG.md",
+      "sha256": "65c0583cb702d2bfdea9d19b36058c64d93b19145ac48211880de27226db245d",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/taste-skill-v2/SKILL.md",
+      "sha256": "5973aab78218c37b690e2a7fed88805382aee7a7226663b8d0375ed999f2a29b",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/ui-ux-pro-max/README.md",
+      "sha256": "5ce84ad06def63790e2bf47a0881aef410d7de67a2737369a86a840c8d1d8b4f",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/ui-ux-pro-max/SKILL.md",
+      "sha256": "18d7e2f4e461b22940c013217a7b2792a35a09b77b2e43c0534b7f747495af33",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/ui-ux-pro-max/tree.txt",
+      "sha256": "6b358ed9377794edc6e2bf26499b5be776e9632813475355bb680d4c25961932",
+      "retrieved": "2026-07-07",
+      "source_type": "supporting"
+    },
+    {
+      "path": ".raw/skills/vercel-web-design-guidelines/SKILL.md",
+      "sha256": "f94f64aab020ce7f7e63bb5dad1bde39137f1602fd90baeb95091e6cec012d92",
+      "retrieved": "2026-07-07",
+      "source_type": "official"
+    },
+    {
+      "path": ".raw/skills/vercel-web-design-guidelines/command.md",
+      "sha256": "3cb877c6624c5c1707019c2a97f032f8ab66f6b89edab5ab879bb86a438fc36f",
+      "retrieved": "2026-07-07",
+      "source_type": "official"
+    },
+    {
+      "path": ".raw/research/anthropic-frontend-design-extract.md",
+      "sha256": "b527cedbe8b0571027a773f6919b965e8d1f6b4a879e6c511ac120dfc7f270ce",
+      "retrieved": "2026-07-07",
+      "source_type": "official"
+    },
+    {
+      "path": ".raw/research/ecosystem-reception-extract.md",
+      "sha256": "a51b99a25467b8e89134eb4ca47db5b0440b341f0ce2be7e6730cc8836270980",
+      "retrieved": "2026-07-07",
+      "source_type": "supporting"
+    },
+    {
+      "path": ".raw/research/impeccable-repo-extract.md",
+      "sha256": "1e9dacacf4760f81e073586e676e23c75d086ec6ba5c9c88f186eb9821213567",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/research/krehel-article-extract.md",
+      "sha256": "761b6059bb4c221abd4204adf0e8d340458bfacb270fc55dbcc584cb247f056d",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/research/mifb-skill-extract.md",
+      "sha256": "3b4bca8adf4e65c07634a9468b82d5a5add43eeb244dc383de76afc417db68cc",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/research/ui-ux-pro-max-extract.md",
+      "sha256": "2ac1ab9f764ae18ba1e05be069110d536aead1b151d7c3f360bc9d8758917759",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/research/vercel-web-design-guidelines-extract.md",
+      "sha256": "bb22f0459b8f2c043ac3f61ba5d2c6aa068152aeee62c9ceee99b43547909ad3",
+      "retrieved": "2026-07-07",
+      "source_type": "official"
     }
   ],
   "scaffold_history": [

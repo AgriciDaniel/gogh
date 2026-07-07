@@ -31,8 +31,8 @@
       "title": "Taste Skill - canonical v2 SKILL.md (design-taste-frontend)",
       "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md",
       "source_type": "primary",
-      "retrieved": "2026-07-06",
-      "refresh_due": "2026-08-06",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
       "confidence": "high",
       "claims": [
         "The three dials DESIGN_VARIANCE / MOTION_INTENSITY / VISUAL_DENSITY use a 1-10 scale with baseline 8 / 6 / 4, set conversationally not by editing the file",
@@ -51,8 +51,8 @@
       "title": "tasteskill.dev - official site (guide, docs, changelog, llms.txt)",
       "url": "https://www.tasteskill.dev/guide?view=full",
       "source_type": "official",
-      "retrieved": "2026-07-06",
-      "refresh_due": "2026-08-06",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
       "confidence": "high",
       "claims": [
         "Positioning: 'The Anti-Slop Frontend Framework for AI Agents'; tagline 'Less slop, designs pop.'",
@@ -67,11 +67,11 @@
       "title": "github.com/Leonxlnx/taste-skill - repo metadata, README, CHANGELOG, 13 skills",
       "url": "https://github.com/Leonxlnx/taste-skill",
       "source_type": "primary",
-      "retrieved": "2026-07-06",
-      "refresh_due": "2026-08-06",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
       "confidence": "high",
       "claims": [
-        "License is MIT; repo created 2026-02-19; ~58,435 stars as of 2026-07-06; no git releases or tags",
+        "License is MIT; repo created 2026-02-19; 59,770 (as of 2026-07-07) stars as of 2026-07-06; no git releases or tags",
         "The repo ships 13 skills; the primary install name is design-taste-frontend",
         "research/laziness/ backs the output-skill anti-laziness rules with a documented study",
         "v2 is experimental, a pre-release iterating toward a v2.0.0 stable that will lock install name and dials"
@@ -187,6 +187,267 @@
         "The default purple traces to Tailwind's demo bg-indigo-500 saturating tutorials and training data",
         "The fix is constraint (forbidden patterns, one direction), not 'make it beautiful' prompts"
       ]
+    },
+    {
+      "id": "impeccable-github-repo",
+      "title": "github.com/pbakaus/impeccable - repo metadata, README, 23 commands, 45 detector rules",
+      "url": "https://github.com/pbakaus/impeccable",
+      "source_type": "primary",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
+      "confidence": "high",
+      "claims": [
+        "License is Apache-2.0; repo created 2025-11-16; ~44,115 stars as of 2026-07-07; homepage impeccable.style",
+        "Tagline: '1 skill, 23 commands, live browser iteration, and 45 deterministic detector rules for AI-generated frontend design'",
+        "Install: npx impeccable install from project root, then /impeccable init inside the AI coding tool",
+        "/impeccable init writes PRODUCT.md and offers DESIGN.md covering audience, brand/product lane, voice, anti-references, colors, type, components",
+        "Ships one compiled skill plus a standalone detect CLI (npx impeccable detect) and provider-native hook manifests for Claude Code, Copilot, Codex, Cursor",
+        "Supported platforms: Cursor, Claude Code, GitHub Copilot, Gemini CLI, Codex CLI, OpenCode, Pi, Kiro, Trae, Rovo Dev, Qoder",
+        "README states 'Anthropic's frontend-design was the first widely-used design skill for Claude. Impeccable started from there.'",
+        "Named anti-slop tells: Inter for everything, purple-to-blue gradients, cards nested in cards"
+      ]
+    },
+    {
+      "id": "impeccable-style-site",
+      "title": "impeccable.style - official site (vocabulary positioning, install paths, live mode)",
+      "url": "https://impeccable.style/",
+      "source_type": "official",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
+      "confidence": "high",
+      "claims": [
+        "Headline positioning: 'The missing design vocabulary for agents'; shared command vocabulary between humans and agents",
+        "Three install paths: /plugin marketplace add pbakaus/impeccable (Claude Code), npx skills add pbakaus/impeccable, npx impeccable install (Node 24+)",
+        "23 commands organized by discipline (typography, color, motion, layout); 45 deterministic anti-pattern rules that run without an LLM",
+        "Live iteration (beta) swaps three production-quality variants in a running dev server via HMR; edits write directly to source files",
+        "Author attribution: Paul Bakaus; a Chrome extension and a CI/CD CLI also exist"
+      ]
+    },
+    {
+      "id": "impeccable-releases",
+      "title": "github.com/pbakaus/impeccable/releases - skill-v/cli-v/ext-v changelog",
+      "url": "https://github.com/pbakaus/impeccable/releases",
+      "source_type": "primary",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
+      "confidence": "high",
+      "claims": [
+        "Latest versions as of 2026-07-07: skill-v3.9.1 and cli-v3.2.0, both published 2026-07-01",
+        "cli-v3.2.0 added detector rule #45 (Codex grid-line backgrounds, the two-axis gradient overlay pattern), confirming the 45-rule count",
+        "skill-v3.9.0 flags decorative grid backgrounds as anti-patterns, makes /impeccable bolder respect existing design systems, and adds an independent critique mode for non-Claude/Codex platforms",
+        "skill-v3.9.1 removed a top-level description field from the plugin hook manifest that Codex's strict hook parser rejected",
+        "The project versions the skill, CLI, and Chrome extension separately (skill-v*, cli-v*, ext-v*)"
+      ]
+    },
+    {
+      "id": "mifb-github-repo",
+      "title": "github.com/jakubkrehel/make-interfaces-feel-better - repo metadata, no license",
+      "url": "https://github.com/jakubkrehel/make-interfaces-feel-better",
+      "source_type": "primary",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "high",
+      "claims": [
+        "Repo created 2026-03-13; ~2,241 stars as of 2026-07-07; last push 2026-04-19; default branch main",
+        "The repo has NO license file (GitHub API license: null), so default all-rights-reserved copyright applies",
+        "Repo homepage points at the source article jakub.kr/writing/details-that-make-interfaces-feel-better",
+        "The skill bundles supporting files typography.md, surfaces.md, animations.md, performance.md alongside SKILL.md"
+      ]
+    },
+    {
+      "id": "mifb-skill-md",
+      "title": "make-interfaces-feel-better - canonical SKILL.md (raw)",
+      "url": "https://raw.githubusercontent.com/jakubkrehel/make-interfaces-feel-better/main/skills/make-interfaces-feel-better/SKILL.md",
+      "source_type": "primary",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "high",
+      "claims": [
+        "16 rule categories including concentric border radius, optical alignment, shadows over borders, interruptible animations, font smoothing, tabular numbers, minimum hit area",
+        "Concentric border radius formula: outer radius = inner radius + padding",
+        "Button press feedback: scale(0.96), never below 0.95",
+        "Interactive elements need a hit area of at least 40x40px, extended with a pseudo-element when the visible element is smaller",
+        "Icon animation values: scale 0.25 to 1, opacity 0 to 1, blur 4px to 0; stagger delay ~100ms; Motion spring settings duration 0.3, bounce 0",
+        "Image outlines: 1px at 10% opacity (black in light mode, white in dark mode)",
+        "Trigger description: use when building UI components, reviewing frontend code, implementing animations, hover states, shadows, borders, typography, micro-interactions, or when interfaces 'feel off'"
+      ]
+    },
+    {
+      "id": "krehel-article",
+      "title": "Jakub Krehel - Details That Make Interfaces Feel Better (source article)",
+      "url": "https://jakub.kr/writing/details-that-make-interfaces-feel-better",
+      "source_type": "practitioner",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2027-07-07",
+      "confidence": "high",
+      "claims": [
+        "The article is the direct source of the skill; Krehel turned the tips into an installable skill after the article's popularity",
+        "Animation timing: ~100ms delays for staggered sections, 80ms for individual text spans, 800ms enter durations; exit animations subtler than enter, with 4px blur",
+        "Box shadows composed of three layers; text-wrap: balance and text-wrap: pretty; -webkit-font-smoothing: antialiased; font-variant-numeric: tabular-nums",
+        "Krehel publishes 'Interfaces', described as a design engineering magazine; no employer affiliation stated on the article",
+        "Krehel shared the article on X on 2026-03-16 (post ID 2033579028288856466 decodes to 2026-03-16T16:19Z); the skill repo was created 2026-03-13"
+      ]
+    },
+    {
+      "id": "anthropic-frontend-design-skill-md",
+      "title": "anthropics/skills - frontend-design SKILL.md (canonical file, raw)",
+      "url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+      "source_type": "official",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "high",
+      "claims": [
+        "Frontmatter: name frontend-design; description covers distinctive, intentional visual design, aesthetic direction, typography; license line 'Complete terms in LICENSE.txt'",
+        "The sibling LICENSE.txt in the skill folder is the Apache License 2.0",
+        "Current file is roughly 1,300-1,400 words across sections: ground it in the subject, design principles, process, restraint and self-critique, writing in design",
+        "Names concrete default palettes to avoid: warm cream #F4F1EA with serif display + terracotta accent; near-black with acid-green or vermilion accents; broadsheet hairline-rule layouts",
+        "Prescribes a hero thesis, a 4-6 value named hex palette, one justified aesthetic risk, and a two-pass build-critique process",
+        "Last commit touching this path: 2235be7c 'Update frontend-design skill (#1293)' on 2026-06-09; prior commits 2025-12-04 and 2025-12-01"
+      ]
+    },
+    {
+      "id": "anthropic-frontend-design-blog",
+      "title": "Anthropic - Improving frontend design through Skills (launch post)",
+      "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+      "source_type": "official",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2027-07-07",
+      "confidence": "high",
+      "claims": [
+        "Published 2025-11-12 by Anthropic's Applied AI team (Prithvi Rajasekaran, Justin Wei, Alexander Bricken)",
+        "Problem framing: distributional convergence; unguided LLM frontends default to Inter fonts, purple gradients on white, minimal animations because safe choices dominate training data",
+        "Four dimensions where targeted prompting works: typography, animations/motion, backgrounds, themes",
+        "The launch-era skill was approximately 400 tokens; improvements shown as before/after comparisons on landing pages, blogs, dashboards, with no formal eval methodology detailed",
+        "Core principle: the more aesthetic improvements map to implementable frontend code, the better Claude executes",
+        "Links the anthropics/skills repo, a Claude Code frontend design plugin, and a frontend aesthetics cookbook"
+      ]
+    },
+    {
+      "id": "ui-ux-pro-max-repo",
+      "title": "github.com/nextlevelbuilder/ui-ux-pro-max-skill - repo, README databases, releases",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "source_type": "primary",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-08-07",
+      "confidence": "high",
+      "claims": [
+        "MIT license; repo created 2025-11-30; ~102,037 stars as of 2026-07-07, the highest-starred of the six covered skills; homepage www.uupm.cc",
+        "README counts as of 2026-07-07: 67 UI styles (49 general, 8 landing, 10 BI/dashboard), 161 color palettes, 57 font pairings, 99 UX guidelines plus 161 reasoning rules, 25 chart types, 22 tech stacks",
+        "Latest release v2.10.2 published 2026-07-06; eight releases between 2026-06-24 and 2026-07-06",
+        "Mechanism: CSV databases searched with a BM25 engine (search.py) across 5 domains in parallel, plus JSON reasoning rules for filtering and ranking",
+        "Install: npm install -g ui-ux-pro-max-cli, then uipro init --ai [platform]; v2 flagship is the Design System Generator",
+        "18 supported platforms including Claude Code, Cursor, Windsurf, Antigravity, Copilot, Codex CLI, Gemini CLI, Warp"
+      ]
+    },
+    {
+      "id": "vercel-web-design-guidelines-skill",
+      "title": "vercel-labs/agent-skills - web-design-guidelines SKILL.md (raw)",
+      "url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
+      "source_type": "official",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "high",
+      "claims": [
+        "Frontmatter metadata: author vercel, version 1.0.0, argument-hint <file-or-pattern>",
+        "Workflow: fetch the latest guidelines from raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md at run time, read target files, check all rules, output terse file:line findings",
+        "The skill file itself is roughly 400 words; all rule substance lives in the fetched guidelines document, so reviews always use the current ruleset",
+        "Parent repo vercel-labs/agent-skills: 'Vercel's official collection of agent skills', created 2025-12-08, ~28,766 stars as of 2026-07-07, no license file detected by GitHub",
+        "Install: npx skills add vercel-labs/agent-skills --skill web-design-guidelines"
+      ]
+    },
+    {
+      "id": "vercel-web-interface-guidelines-doc",
+      "title": "vercel-labs/web-interface-guidelines - command.md ruleset (raw) + vercel.com/design/guidelines",
+      "url": "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md",
+      "source_type": "official",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "high",
+      "claims": [
+        "Roughly 90-110 rules across 16+ categories: accessibility, focus, forms, animation, typography, content, images, performance, navigation/state, touch, safe areas, dark mode, i18n, hydration, hover states, copy, anti-patterns",
+        "Representative rules: icon-only buttons need aria-label; never outline-none without a focus replacement; never block paste; honor prefers-reduced-motion; virtualize lists over 50 items; URL reflects state; explicit image width/height; Intl.DateTimeFormat for dates; destructive actions need confirm or undo",
+        "Prescribes agent output: findings grouped by file in file:line format, terse, pass/fail per file, no preamble",
+        "Repo is MIT licensed, created 2025-09-10, ~697 stars as of 2026-07-07; the live page vercel.com/design/guidelines is the human-readable version",
+        "The live page credits eight people for feedback, recommends AGENTS.md, and lists agent integrations: Antigravity, Claude Code, Cursor, Gemini CLI, OpenCode, Windsurf"
+      ]
+    },
+    {
+      "id": "wilwaldon-frontend-design-toolkit",
+      "title": "wilwaldon/Claude-Code-Frontend-Design-Toolkit - ecosystem curation list",
+      "url": "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+      "source_type": "supporting",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "medium",
+      "claims": [
+        "Curated meta-list: 'Everything I've found that actually makes Claude Code output better-looking frontends. Skills, plugins, MCP servers, CLAUDE.md tricks'",
+        "Created 2026-02-25; ~406 stars as of 2026-07-07; no license file detected",
+        "Positions Anthropic's frontend-design skill as the baseline that picks an aesthetic direction instead of Inter + purple gradient + rounded cards",
+        "Documents the tunable-knob pattern (design variance, motion intensity, visual density) and database-style skills with large style/font/UX-rule counts",
+        "Covers the wider workflow ecosystem including Figma MCP design-to-code and the Code to Canvas reverse direction (launched Feb 2026)"
+      ]
+    },
+    {
+      "id": "snyk-top8-uiux-skills",
+      "title": "Snyk - Top 8 Claude Skills for UI/UX Engineers (market snapshot, early 2026)",
+      "url": "https://snyk.io/articles/top-claude-skills-ui-ux-engineers/",
+      "source_type": "market",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "medium",
+      "claims": [
+        "Lists 8 skills: Anthropic frontend-design, Vercel web design guidelines, Vercel React best practices, Vercel composition patterns, UI/UX Pro Max, Bencium UX designer, AccessLint, Vercel React Native skills; omits taste-skill, Impeccable, and make-interfaces-feel-better",
+        "Snapshot numbers: anthropics/skills at 65,847 stars; ui-ux-pro-max at 29,636 stars with 50 styles, 97 palettes, 57 fonts, 25 chart types; Vercel skills at 19,487 stars with 100+ rules",
+        "Per-skill last-updated stamps: frontend-design and UI/UX Pro Max February 2026, Vercel skills January 2026; the article itself shows no explicit dateline; byline Stephen Thoemmes",
+        "Two direct fetches found NO install counts in this article; the widely circulated ~277k installs figure for frontend-design could not be located here",
+        "Cites Snyk ToxicSkills research: prompt injection in 36% of skills tested and 1,467 malicious payloads across the ecosystem; advises reviewing SKILL.md and bundled scripts before installing"
+      ]
+    },
+    {
+      "id": "impeccable-token-reception",
+      "title": "computertech.co - Impeccable Review 2026 (reception, token overhead anecdote)",
+      "url": "https://computertech.co/impeccable-ai-review/",
+      "source_type": "practitioner",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2026-10-07",
+      "confidence": "medium",
+      "claims": [
+        "Independent review by Sawyer Ruhl, published 2026-03-14; rates Impeccable 8.4/10, 'best-in-class for AI-assisted frontend design', verdict 'get in early'",
+        "Token anecdote: 'Loading 7 reference files per session on a $15/million token model adds up'; quantified at approximately 8,000-15,000 tokens of context per session, roughly 10-15% overhead",
+        "Snapshot at review time: v1.1 era, 17 slash commands, 7 domain reference files, 1,666+ stars growing ~640 stars/day",
+        "Criticisms: opinionated defaults may conflict with existing design systems, early-stage rough edges, variable performance across platforms, not a design-system replacement",
+        "The token-overhead observation describes the March 2026 v1.x architecture, not the current v3.x compiled skill"
+      ]
+    },
+    {
+      "id": "refactoring-ui",
+      "title": "Refactoring UI (Adam Wathan and Steve Schoger)",
+      "url": "https://www.refactoringui.com/",
+      "source_type": "supporting",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2027-07-07",
+      "confidence": "high",
+      "claims": [
+        "Authors are Adam Wathan and Steve Schoger, the creators of Tailwind CSS; pitch: make your ideas look awesome without relying on a designer",
+        "Visual hierarchy via size, color, weight, and placement is the most effective tool for making something feel designed",
+        "Default to more whitespace than feels necessary; add density deliberately",
+        "Use fewer borders: prefer shadows, color contrast, and spacing to separate elements"
+      ]
+    },
+    {
+      "id": "butterick-practical-typography",
+      "title": "Butterick's Practical Typography (2nd edition, web book)",
+      "url": "https://practicaltypography.com/",
+      "source_type": "supporting",
+      "retrieved": "2026-07-07",
+      "refresh_due": "2027-07-07",
+      "confidence": "high",
+      "claims": [
+        "Line length rule: 45-90 characters per line, or 2-3 alphabets; measured in characters, not physical width",
+        "The 45-90 character measure underlies skill rules like max-w-[65ch] body text limits",
+        "Free web-based book by Matthew Butterick, reader-supported and ad-free since 2013, with core chapters on point size, line spacing, and page layout"
+      ]
     }
-  ]
+  ],
+  "generated": "2026-07-07"
 }

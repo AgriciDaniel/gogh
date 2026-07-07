@@ -1,0 +1,593 @@
+<!-- capture: https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/git/trees/main?recursive=1 | retrieved: 2026-07-07 | license: MIT -->
+# Directory listing of nextlevelbuilder/ui-ux-pro-max-skill @ main (path, type, size in bytes)
+# Database CSVs were NOT captured because of size; this listing documents them.
+
+.claude-plugin	tree	
+.claude-plugin/marketplace.json	blob	1068
+.claude-plugin/plugin.json	blob	1091
+.claude	tree	
+.claude/skills	tree	
+.claude/skills/banner-design	tree	
+.claude/skills/banner-design/SKILL.md	blob	8326
+.claude/skills/banner-design/references	tree	
+.claude/skills/banner-design/references/banner-sizes-and-styles.md	blob	4993
+.claude/skills/brand	tree	
+.claude/skills/brand/SKILL.md	blob	2939
+.claude/skills/brand/references	tree	
+.claude/skills/brand/references/approval-checklist.md	blob	4245
+.claude/skills/brand/references/asset-organization.md	blob	5110
+.claude/skills/brand/references/brand-guideline-template.md	blob	3572
+.claude/skills/brand/references/color-palette-management.md	blob	4254
+.claude/skills/brand/references/consistency-checklist.md	blob	1926
+.claude/skills/brand/references/logo-usage-rules.md	blob	5464
+.claude/skills/brand/references/messaging-framework.md	blob	1763
+.claude/skills/brand/references/typography-specifications.md	blob	5042
+.claude/skills/brand/references/update.md	blob	3365
+.claude/skills/brand/references/visual-identity.md	blob	1884
+.claude/skills/brand/references/voice-framework.md	blob	1997
+.claude/skills/brand/scripts	tree	
+.claude/skills/brand/scripts/extract-colors.cjs	blob	9328
+.claude/skills/brand/scripts/inject-brand-context.cjs	blob	9677
+.claude/skills/brand/scripts/sync-brand-to-tokens.cjs	blob	9545
+.claude/skills/brand/scripts/tests	tree	
+.claude/skills/brand/scripts/tests/test_sync_brand_to_tokens.py	blob	1970
+.claude/skills/brand/scripts/validate-asset.cjs	blob	10173
+.claude/skills/brand/templates	tree	
+.claude/skills/brand/templates/brand-guidelines-starter.md	blob	6638
+.claude/skills/design-system	tree	
+.claude/skills/design-system/SKILL.md	blob	6875
+.claude/skills/design-system/data	tree	
+.claude/skills/design-system/data/slide-backgrounds.csv	blob	1038
+.claude/skills/design-system/data/slide-charts.csv	blob	8631
+.claude/skills/design-system/data/slide-color-logic.csv	blob	877
+.claude/skills/design-system/data/slide-copy.csv	blob	6427
+.claude/skills/design-system/data/slide-layout-logic.csv	blob	981
+.claude/skills/design-system/data/slide-layouts.csv	blob	8760
+.claude/skills/design-system/data/slide-strategies.csv	blob	8232
+.claude/skills/design-system/data/slide-typography.csv	blob	735
+.claude/skills/design-system/references	tree	
+.claude/skills/design-system/references/component-specs.md	blob	6914
+.claude/skills/design-system/references/component-tokens.md	blob	4986
+.claude/skills/design-system/references/primitive-tokens.md	blob	4562
+.claude/skills/design-system/references/semantic-tokens.md	blob	4245
+.claude/skills/design-system/references/states-and-variants.md	blob	4771
+.claude/skills/design-system/references/tailwind-integration.md	blob	5633
+.claude/skills/design-system/references/token-architecture.md	blob	5365
+.claude/skills/design-system/scripts	tree	
+.claude/skills/design-system/scripts/embed-tokens.cjs	blob	2558
+.claude/skills/design-system/scripts/fetch-background.py	blob	12287
+.claude/skills/design-system/scripts/generate-slide.py	blob	28595
+.claude/skills/design-system/scripts/generate-tokens.cjs	blob	4968
+.claude/skills/design-system/scripts/html-token-validator.py	blob	11894
+.claude/skills/design-system/scripts/search-slides.py	blob	9210
+.claude/skills/design-system/scripts/slide-token-validator.py	blob	973
+.claude/skills/design-system/scripts/slide_search_core.py	blob	14756
+.claude/skills/design-system/scripts/tests	tree	
+.claude/skills/design-system/scripts/tests/test_validate_tokens.py	blob	1619
+.claude/skills/design-system/scripts/validate-tokens.cjs	blob	5942
+.claude/skills/design-system/templates	tree	
+.claude/skills/design-system/templates/design-tokens-starter.json	blob	7184
+.claude/skills/design	tree	
+.claude/skills/design/SKILL.md	blob	12322
+.claude/skills/design/data	tree	
+.claude/skills/design/data/cip	tree	
+.claude/skills/design/data/cip/deliverables.csv	blob	13385
+.claude/skills/design/data/cip/industries.csv	blob	4935
+.claude/skills/design/data/cip/mockup-contexts.csv	blob	5205
+.claude/skills/design/data/cip/styles.csv	blob	5967
+.claude/skills/design/data/icon	tree	
+.claude/skills/design/data/icon/styles.csv	blob	2250
+.claude/skills/design/data/logo	tree	
+.claude/skills/design/data/logo/colors.csv	blob	10674
+.claude/skills/design/data/logo/industries.csv	blob	13274
+.claude/skills/design/data/logo/styles.csv	blob	13678
+.claude/skills/design/references	tree	
+.claude/skills/design/references/banner-sizes-and-styles.md	blob	4993
+.claude/skills/design/references/cip-deliverable-guide.md	blob	1735
+.claude/skills/design/references/cip-design.md	blob	4589
+.claude/skills/design/references/cip-prompt-engineering.md	blob	2493
+.claude/skills/design/references/cip-style-guide.md	blob	2357
+.claude/skills/design/references/design-routing.md	blob	5826
+.claude/skills/design/references/icon-design.md	blob	4343
+.claude/skills/design/references/logo-color-psychology.md	blob	3341
+.claude/skills/design/references/logo-design.md	blob	3163
+.claude/skills/design/references/logo-prompt-engineering.md	blob	4314
+.claude/skills/design/references/logo-style-guide.md	blob	3435
+.claude/skills/design/references/slides-copywriting-formulas.md	blob	2604
+.claude/skills/design/references/slides-create.md	blob	153
+.claude/skills/design/references/slides-html-template.md	blob	9004
+.claude/skills/design/references/slides-layout-patterns.md	blob	3691
+.claude/skills/design/references/slides-strategies.md	blob	2715
+.claude/skills/design/references/slides.md	blob	1742
+.claude/skills/design/references/social-photos-design.md	blob	11251
+.claude/skills/design/scripts	tree	
+.claude/skills/design/scripts/cip	tree	
+.claude/skills/design/scripts/cip/core.py	blob	8062
+.claude/skills/design/scripts/cip/generate.py	blob	19430
+.claude/skills/design/scripts/cip/render-html.py	blob	13941
+.claude/skills/design/scripts/cip/search.py	blob	4524
+.claude/skills/design/scripts/icon	tree	
+.claude/skills/design/scripts/icon/generate.py	blob	17151
+.claude/skills/design/scripts/logo	tree	
+.claude/skills/design/scripts/logo/core.py	blob	6023
+.claude/skills/design/scripts/logo/generate.py	blob	14630
+.claude/skills/design/scripts/logo/search.py	blob	4745
+.claude/skills/slides	tree	
+.claude/skills/slides/SKILL.md	blob	1137
+.claude/skills/slides/references	tree	
+.claude/skills/slides/references/copywriting-formulas.md	blob	2604
+.claude/skills/slides/references/create.md	blob	153
+.claude/skills/slides/references/html-template.md	blob	9004
+.claude/skills/slides/references/layout-patterns.md	blob	3691
+.claude/skills/slides/references/slide-strategies.md	blob	2715
+.claude/skills/ui-styling	tree	
+.claude/skills/ui-styling/LICENSE.txt	blob	11357
+.claude/skills/ui-styling/SKILL.md	blob	10045
+.claude/skills/ui-styling/canvas-fonts	tree	
+.claude/skills/ui-styling/canvas-fonts/ArsenalSC-OFL.txt	blob	4373
+.claude/skills/ui-styling/canvas-fonts/ArsenalSC-Regular.ttf	blob	165848
+.claude/skills/ui-styling/canvas-fonts/BigShoulders-Bold.ttf	blob	94528
+.claude/skills/ui-styling/canvas-fonts/BigShoulders-OFL.txt	blob	4397
+.claude/skills/ui-styling/canvas-fonts/BigShoulders-Regular.ttf	blob	94396
+.claude/skills/ui-styling/canvas-fonts/Boldonse-OFL.txt	blob	4390
+.claude/skills/ui-styling/canvas-fonts/Boldonse-Regular.ttf	blob	77168
+.claude/skills/ui-styling/canvas-fonts/BricolageGrotesque-Bold.ttf	blob	90952
+.claude/skills/ui-styling/canvas-fonts/BricolageGrotesque-OFL.txt	blob	4403
+.claude/skills/ui-styling/canvas-fonts/BricolageGrotesque-Regular.ttf	blob	90920
+.claude/skills/ui-styling/canvas-fonts/CrimsonPro-Bold.ttf	blob	107352
+.claude/skills/ui-styling/canvas-fonts/CrimsonPro-Italic.ttf	blob	108828
+.claude/skills/ui-styling/canvas-fonts/CrimsonPro-OFL.txt	blob	4394
+.claude/skills/ui-styling/canvas-fonts/CrimsonPro-Regular.ttf	blob	106696
+.claude/skills/ui-styling/canvas-fonts/DMMono-OFL.txt	blob	4392
+.claude/skills/ui-styling/canvas-fonts/DMMono-Regular.ttf	blob	48852
+.claude/skills/ui-styling/canvas-fonts/EricaOne-OFL.txt	blob	4410
+.claude/skills/ui-styling/canvas-fonts/EricaOne-Regular.ttf	blob	24872
+.claude/skills/ui-styling/canvas-fonts/GeistMono-Bold.ttf	blob	78304
+.claude/skills/ui-styling/canvas-fonts/GeistMono-OFL.txt	blob	4388
+.claude/skills/ui-styling/canvas-fonts/GeistMono-Regular.ttf	blob	78232
+.claude/skills/ui-styling/canvas-fonts/Gloock-OFL.txt	blob	4381
+.claude/skills/ui-styling/canvas-fonts/Gloock-Regular.ttf	blob	95156
+.claude/skills/ui-styling/canvas-fonts/IBMPlexMono-Bold.ttf	blob	136008
+.claude/skills/ui-styling/canvas-fonts/IBMPlexMono-OFL.txt	blob	4363
+.claude/skills/ui-styling/canvas-fonts/IBMPlexMono-Regular.ttf	blob	133796
+.claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-Bold.ttf	blob	161000
+.claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-BoldItalic.ttf	blob	169840
+.claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-Italic.ttf	blob	170004
+.claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-Regular.ttf	blob	160380
+.claude/skills/ui-styling/canvas-fonts/InstrumentSans-Bold.ttf	blob	68084
+.claude/skills/ui-styling/canvas-fonts/InstrumentSans-BoldItalic.ttf	blob	70004
+.claude/skills/ui-styling/canvas-fonts/InstrumentSans-Italic.ttf	blob	69900
+.claude/skills/ui-styling/canvas-fonts/InstrumentSans-OFL.txt	blob	4403
+.claude/skills/ui-styling/canvas-fonts/InstrumentSans-Regular.ttf	blob	68028
+.claude/skills/ui-styling/canvas-fonts/InstrumentSerif-Italic.ttf	blob	70868
+.claude/skills/ui-styling/canvas-fonts/InstrumentSerif-Regular.ttf	blob	69312
+.claude/skills/ui-styling/canvas-fonts/Italiana-OFL.txt	blob	4394
+.claude/skills/ui-styling/canvas-fonts/Italiana-Regular.ttf	blob	27184
+.claude/skills/ui-styling/canvas-fonts/JetBrainsMono-Bold.ttf	blob	114828
+.claude/skills/ui-styling/canvas-fonts/JetBrainsMono-OFL.txt	blob	4399
+.claude/skills/ui-styling/canvas-fonts/JetBrainsMono-Regular.ttf	blob	114904
+.claude/skills/ui-styling/canvas-fonts/Jura-Light.ttf	blob	154308
+.claude/skills/ui-styling/canvas-fonts/Jura-Medium.ttf	blob	154488
+.claude/skills/ui-styling/canvas-fonts/Jura-OFL.txt	blob	4380
+.claude/skills/ui-styling/canvas-fonts/LibreBaskerville-OFL.txt	blob	4449
+.claude/skills/ui-styling/canvas-fonts/LibreBaskerville-Regular.ttf	blob	147584
+.claude/skills/ui-styling/canvas-fonts/Lora-Bold.ttf	blob	133828
+.claude/skills/ui-styling/canvas-fonts/Lora-BoldItalic.ttf	blob	140332
+.claude/skills/ui-styling/canvas-fonts/Lora-Italic.ttf	blob	139328
+.claude/skills/ui-styling/canvas-fonts/Lora-OFL.txt	blob	4423
+.claude/skills/ui-styling/canvas-fonts/Lora-Regular.ttf	blob	133888
+.claude/skills/ui-styling/canvas-fonts/NationalPark-Bold.ttf	blob	79208
+.claude/skills/ui-styling/canvas-fonts/NationalPark-OFL.txt	blob	4399
+.claude/skills/ui-styling/canvas-fonts/NationalPark-Regular.ttf	blob	76424
+.claude/skills/ui-styling/canvas-fonts/NothingYouCouldDo-OFL.txt	blob	4363
+.claude/skills/ui-styling/canvas-fonts/NothingYouCouldDo-Regular.ttf	blob	32020
+.claude/skills/ui-styling/canvas-fonts/Outfit-Bold.ttf	blob	55392
+.claude/skills/ui-styling/canvas-fonts/Outfit-OFL.txt	blob	4389
+.claude/skills/ui-styling/canvas-fonts/Outfit-Regular.ttf	blob	54912
+.claude/skills/ui-styling/canvas-fonts/PixelifySans-Medium.ttf	blob	51072
+.claude/skills/ui-styling/canvas-fonts/PixelifySans-OFL.txt	blob	4395
+.claude/skills/ui-styling/canvas-fonts/PoiretOne-OFL.txt	blob	4366
+.claude/skills/ui-styling/canvas-fonts/PoiretOne-Regular.ttf	blob	45244
+.claude/skills/ui-styling/canvas-fonts/RedHatMono-Bold.ttf	blob	34420
+.claude/skills/ui-styling/canvas-fonts/RedHatMono-OFL.txt	blob	4394
+.claude/skills/ui-styling/canvas-fonts/RedHatMono-Regular.ttf	blob	34488
+.claude/skills/ui-styling/canvas-fonts/Silkscreen-OFL.txt	blob	4394
+.claude/skills/ui-styling/canvas-fonts/Silkscreen-Regular.ttf	blob	31960
+.claude/skills/ui-styling/canvas-fonts/SmoochSans-Medium.ttf	blob	59704
+.claude/skills/ui-styling/canvas-fonts/SmoochSans-OFL.txt	blob	4396
+.claude/skills/ui-styling/canvas-fonts/Tektur-Medium.ttf	blob	76248
+.claude/skills/ui-styling/canvas-fonts/Tektur-OFL.txt	blob	4385
+.claude/skills/ui-styling/canvas-fonts/Tektur-Regular.ttf	blob	75604
+.claude/skills/ui-styling/canvas-fonts/WorkSans-Bold.ttf	blob	191304
+.claude/skills/ui-styling/canvas-fonts/WorkSans-BoldItalic.ttf	blob	175772
+.claude/skills/ui-styling/canvas-fonts/WorkSans-Italic.ttf	blob	174280
+.claude/skills/ui-styling/canvas-fonts/WorkSans-OFL.txt	blob	4397
+.claude/skills/ui-styling/canvas-fonts/WorkSans-Regular.ttf	blob	188916
+.claude/skills/ui-styling/canvas-fonts/YoungSerif-OFL.txt	blob	4398
+.claude/skills/ui-styling/canvas-fonts/YoungSerif-Regular.ttf	blob	105136
+.claude/skills/ui-styling/references	tree	
+.claude/skills/ui-styling/references/canvas-design-system.md	blob	7888
+.claude/skills/ui-styling/references/shadcn-accessibility.md	blob	9976
+.claude/skills/ui-styling/references/shadcn-components.md	blob	11155
+.claude/skills/ui-styling/references/shadcn-theming.md	blob	8672
+.claude/skills/ui-styling/references/tailwind-customization.md	blob	10171
+.claude/skills/ui-styling/references/tailwind-responsive.md	blob	8270
+.claude/skills/ui-styling/references/tailwind-utilities.md	blob	9980
+.claude/skills/ui-styling/scripts	tree	
+.claude/skills/ui-styling/scripts/.coverage	blob	53248
+.claude/skills/ui-styling/scripts/requirements.txt	blob	444
+.claude/skills/ui-styling/scripts/shadcn_add.py	blob	8799
+.claude/skills/ui-styling/scripts/tailwind_config_gen.py	blob	14418
+.claude/skills/ui-styling/scripts/tests	tree	
+.claude/skills/ui-styling/scripts/tests/coverage-ui.json	blob	35121
+.claude/skills/ui-styling/scripts/tests/requirements.txt	blob	52
+.claude/skills/ui-styling/scripts/tests/test_shadcn_add.py	blob	9920
+.claude/skills/ui-styling/scripts/tests/test_tailwind_config_gen.py	blob	14658
+.claude/skills/ui-ux-pro-max	tree	
+.claude/skills/ui-ux-pro-max/SKILL.md	blob	47796
+.claude/skills/ui-ux-pro-max/data	tree	
+.claude/skills/ui-ux-pro-max/data/_sync_all.py	blob	21832
+.claude/skills/ui-ux-pro-max/data/app-interface.csv	blob	9743
+.claude/skills/ui-ux-pro-max/data/charts.csv	blob	19365
+.claude/skills/ui-ux-pro-max/data/colors.csv	blob	32271
+.claude/skills/ui-ux-pro-max/data/design.csv	blob	106144
+.claude/skills/ui-ux-pro-max/data/draft.csv	blob	106266
+.claude/skills/ui-ux-pro-max/data/google-fonts.csv	blob	743272
+.claude/skills/ui-ux-pro-max/data/icons.csv	blob	20637
+.claude/skills/ui-ux-pro-max/data/landing.csv	blob	16685
+.claude/skills/ui-ux-pro-max/data/motion.csv	blob	10517
+.claude/skills/ui-ux-pro-max/data/products.csv	blob	58006
+.claude/skills/ui-ux-pro-max/data/react-performance.csv	blob	14822
+.claude/skills/ui-ux-pro-max/data/stacks	tree	
+.claude/skills/ui-ux-pro-max/data/stacks/angular.csv	blob	18269
+.claude/skills/ui-ux-pro-max/data/stacks/astro.csv	blob	11868
+.claude/skills/ui-ux-pro-max/data/stacks/flutter.csv	blob	10416
+.claude/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv	blob	11305
+.claude/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv	blob	8195
+.claude/skills/ui-ux-pro-max/data/stacks/laravel.csv	blob	18378
+.claude/skills/ui-ux-pro-max/data/stacks/nextjs.csv	blob	12493
+.claude/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv	blob	14010
+.claude/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv	blob	16539
+.claude/skills/ui-ux-pro-max/data/stacks/react-native.csv	blob	9983
+.claude/skills/ui-ux-pro-max/data/stacks/react.csv	blob	12962
+.claude/skills/ui-ux-pro-max/data/stacks/shadcn.csv	blob	15921
+.claude/skills/ui-ux-pro-max/data/stacks/svelte.csv	blob	11009
+.claude/skills/ui-ux-pro-max/data/stacks/swiftui.csv	blob	10821
+.claude/skills/ui-ux-pro-max/data/stacks/threejs.csv	blob	44787
+.claude/skills/ui-ux-pro-max/data/stacks/vue.csv	blob	11006
+.claude/skills/ui-ux-pro-max/data/styles.csv	blob	142605
+.claude/skills/ui-ux-pro-max/data/typography.csv	blob	49667
+.claude/skills/ui-ux-pro-max/data/ui-reasoning.csv	blob	52908
+.claude/skills/ui-ux-pro-max/data/ux-guidelines.csv	blob	18667
+.claude/skills/ui-ux-pro-max/scripts	tree	
+.claude/skills/ui-ux-pro-max/scripts/core.py	blob	13231
+.claude/skills/ui-ux-pro-max/scripts/design_system.py	blob	57424
+.claude/skills/ui-ux-pro-max/scripts/search.py	blob	6813
+.github	tree	
+.github/workflows	tree	
+.github/workflows/check-asset-sync.yml	blob	849
+.github/workflows/release.yml	blob	1474
+.github/workflows/smoke-stacks.yml	blob	830
+.gitignore	blob	483
+.releaserc.json	blob	640
+CLAUDE.md	blob	4685
+CONTRIBUTING.md	blob	5498
+LICENSE	blob	1075
+README.md	blob	30710
+README.zh.md	blob	30102
+cli	tree	
+cli/.gitignore	blob	36
+cli/.npmignore	blob	39
+cli/README.md	blob	3192
+cli/assets	tree	
+cli/assets/data	tree	
+cli/assets/data/_sync_all.py	blob	21832
+cli/assets/data/app-interface.csv	blob	9743
+cli/assets/data/charts.csv	blob	19365
+cli/assets/data/colors.csv	blob	38668
+cli/assets/data/design.csv	blob	106144
+cli/assets/data/draft.csv	blob	106266
+cli/assets/data/google-fonts.csv	blob	743272
+cli/assets/data/icons.csv	blob	20637
+cli/assets/data/landing.csv	blob	16685
+cli/assets/data/motion.csv	blob	10500
+cli/assets/data/products.csv	blob	73485
+cli/assets/data/react-performance.csv	blob	14822
+cli/assets/data/stacks	tree	
+cli/assets/data/stacks/angular.csv	blob	18137
+cli/assets/data/stacks/astro.csv	blob	11870
+cli/assets/data/stacks/avalonia.csv	blob	25626
+cli/assets/data/stacks/flutter.csv	blob	10416
+cli/assets/data/stacks/html-tailwind.csv	blob	11305
+cli/assets/data/stacks/javafx.csv	blob	30871
+cli/assets/data/stacks/jetpack-compose.csv	blob	8195
+cli/assets/data/stacks/laravel.csv	blob	18519
+cli/assets/data/stacks/nextjs.csv	blob	12493
+cli/assets/data/stacks/nuxt-ui.csv	blob	21230
+cli/assets/data/stacks/nuxtjs.csv	blob	16539
+cli/assets/data/stacks/react-native.csv	blob	9983
+cli/assets/data/stacks/react.csv	blob	12962
+cli/assets/data/stacks/shadcn.csv	blob	15921
+cli/assets/data/stacks/svelte.csv	blob	11009
+cli/assets/data/stacks/swiftui.csv	blob	10821
+cli/assets/data/stacks/threejs.csv	blob	44787
+cli/assets/data/stacks/uno.csv	blob	27471
+cli/assets/data/stacks/uwp.csv	blob	22867
+cli/assets/data/stacks/vue.csv	blob	11006
+cli/assets/data/stacks/winui.csv	blob	25152
+cli/assets/data/stacks/wpf.csv	blob	22538
+cli/assets/data/styles.csv	blob	142602
+cli/assets/data/typography.csv	blob	49830
+cli/assets/data/ui-reasoning.csv	blob	52908
+cli/assets/data/ux-guidelines.csv	blob	18667
+cli/assets/scripts	tree	
+cli/assets/scripts/core.py	blob	13231
+cli/assets/scripts/design_system.py	blob	57424
+cli/assets/scripts/search.py	blob	6686
+cli/assets/skills	tree	
+cli/assets/skills/banner-design	tree	
+cli/assets/skills/banner-design/SKILL.md	blob	8326
+cli/assets/skills/banner-design/references	tree	
+cli/assets/skills/banner-design/references/banner-sizes-and-styles.md	blob	4993
+cli/assets/skills/brand	tree	
+cli/assets/skills/brand/SKILL.md	blob	2939
+cli/assets/skills/brand/references	tree	
+cli/assets/skills/brand/references/approval-checklist.md	blob	4245
+cli/assets/skills/brand/references/asset-organization.md	blob	5110
+cli/assets/skills/brand/references/brand-guideline-template.md	blob	3572
+cli/assets/skills/brand/references/color-palette-management.md	blob	4254
+cli/assets/skills/brand/references/consistency-checklist.md	blob	1926
+cli/assets/skills/brand/references/logo-usage-rules.md	blob	5464
+cli/assets/skills/brand/references/messaging-framework.md	blob	1763
+cli/assets/skills/brand/references/typography-specifications.md	blob	5042
+cli/assets/skills/brand/references/update.md	blob	3365
+cli/assets/skills/brand/references/visual-identity.md	blob	1884
+cli/assets/skills/brand/references/voice-framework.md	blob	1997
+cli/assets/skills/brand/scripts	tree	
+cli/assets/skills/brand/scripts/extract-colors.cjs	blob	9328
+cli/assets/skills/brand/scripts/inject-brand-context.cjs	blob	9677
+cli/assets/skills/brand/scripts/sync-brand-to-tokens.cjs	blob	9545
+cli/assets/skills/brand/scripts/tests	tree	
+cli/assets/skills/brand/scripts/tests/test_sync_brand_to_tokens.py	blob	1970
+cli/assets/skills/brand/scripts/validate-asset.cjs	blob	10173
+cli/assets/skills/brand/templates	tree	
+cli/assets/skills/brand/templates/brand-guidelines-starter.md	blob	6638
+cli/assets/skills/design-system	tree	
+cli/assets/skills/design-system/SKILL.md	blob	6875
+cli/assets/skills/design-system/data	tree	
+cli/assets/skills/design-system/data/slide-backgrounds.csv	blob	1038
+cli/assets/skills/design-system/data/slide-charts.csv	blob	8631
+cli/assets/skills/design-system/data/slide-color-logic.csv	blob	877
+cli/assets/skills/design-system/data/slide-copy.csv	blob	6427
+cli/assets/skills/design-system/data/slide-layout-logic.csv	blob	981
+cli/assets/skills/design-system/data/slide-layouts.csv	blob	8760
+cli/assets/skills/design-system/data/slide-strategies.csv	blob	8232
+cli/assets/skills/design-system/data/slide-typography.csv	blob	735
+cli/assets/skills/design-system/references	tree	
+cli/assets/skills/design-system/references/component-specs.md	blob	6914
+cli/assets/skills/design-system/references/component-tokens.md	blob	4986
+cli/assets/skills/design-system/references/primitive-tokens.md	blob	4562
+cli/assets/skills/design-system/references/semantic-tokens.md	blob	4245
+cli/assets/skills/design-system/references/states-and-variants.md	blob	4771
+cli/assets/skills/design-system/references/tailwind-integration.md	blob	5633
+cli/assets/skills/design-system/references/token-architecture.md	blob	5365
+cli/assets/skills/design-system/scripts	tree	
+cli/assets/skills/design-system/scripts/embed-tokens.cjs	blob	2558
+cli/assets/skills/design-system/scripts/fetch-background.py	blob	12287
+cli/assets/skills/design-system/scripts/generate-slide.py	blob	28595
+cli/assets/skills/design-system/scripts/generate-tokens.cjs	blob	4968
+cli/assets/skills/design-system/scripts/html-token-validator.py	blob	11894
+cli/assets/skills/design-system/scripts/search-slides.py	blob	9210
+cli/assets/skills/design-system/scripts/slide-token-validator.py	blob	973
+cli/assets/skills/design-system/scripts/slide_search_core.py	blob	14756
+cli/assets/skills/design-system/scripts/tests	tree	
+cli/assets/skills/design-system/scripts/tests/test_validate_tokens.py	blob	1619
+cli/assets/skills/design-system/scripts/validate-tokens.cjs	blob	5942
+cli/assets/skills/design-system/templates	tree	
+cli/assets/skills/design-system/templates/design-tokens-starter.json	blob	7184
+cli/assets/skills/design	tree	
+cli/assets/skills/design/SKILL.md	blob	12322
+cli/assets/skills/design/data	tree	
+cli/assets/skills/design/data/cip	tree	
+cli/assets/skills/design/data/cip/deliverables.csv	blob	13385
+cli/assets/skills/design/data/cip/industries.csv	blob	4935
+cli/assets/skills/design/data/cip/mockup-contexts.csv	blob	5205
+cli/assets/skills/design/data/cip/styles.csv	blob	5967
+cli/assets/skills/design/data/icon	tree	
+cli/assets/skills/design/data/icon/styles.csv	blob	2250
+cli/assets/skills/design/data/logo	tree	
+cli/assets/skills/design/data/logo/colors.csv	blob	10674
+cli/assets/skills/design/data/logo/industries.csv	blob	13274
+cli/assets/skills/design/data/logo/styles.csv	blob	13678
+cli/assets/skills/design/references	tree	
+cli/assets/skills/design/references/banner-sizes-and-styles.md	blob	4993
+cli/assets/skills/design/references/cip-deliverable-guide.md	blob	1735
+cli/assets/skills/design/references/cip-design.md	blob	4589
+cli/assets/skills/design/references/cip-prompt-engineering.md	blob	2493
+cli/assets/skills/design/references/cip-style-guide.md	blob	2357
+cli/assets/skills/design/references/design-routing.md	blob	5826
+cli/assets/skills/design/references/icon-design.md	blob	4343
+cli/assets/skills/design/references/logo-color-psychology.md	blob	3341
+cli/assets/skills/design/references/logo-design.md	blob	3163
+cli/assets/skills/design/references/logo-prompt-engineering.md	blob	4314
+cli/assets/skills/design/references/logo-style-guide.md	blob	3435
+cli/assets/skills/design/references/slides-copywriting-formulas.md	blob	2604
+cli/assets/skills/design/references/slides-create.md	blob	153
+cli/assets/skills/design/references/slides-html-template.md	blob	9004
+cli/assets/skills/design/references/slides-layout-patterns.md	blob	3691
+cli/assets/skills/design/references/slides-strategies.md	blob	2715
+cli/assets/skills/design/references/slides.md	blob	1742
+cli/assets/skills/design/references/social-photos-design.md	blob	11251
+cli/assets/skills/design/scripts	tree	
+cli/assets/skills/design/scripts/cip	tree	
+cli/assets/skills/design/scripts/cip/core.py	blob	8062
+cli/assets/skills/design/scripts/cip/generate.py	blob	19430
+cli/assets/skills/design/scripts/cip/render-html.py	blob	13941
+cli/assets/skills/design/scripts/cip/search.py	blob	4524
+cli/assets/skills/design/scripts/icon	tree	
+cli/assets/skills/design/scripts/icon/generate.py	blob	17151
+cli/assets/skills/design/scripts/logo	tree	
+cli/assets/skills/design/scripts/logo/core.py	blob	6023
+cli/assets/skills/design/scripts/logo/generate.py	blob	14630
+cli/assets/skills/design/scripts/logo/search.py	blob	4745
+cli/assets/skills/slides	tree	
+cli/assets/skills/slides/SKILL.md	blob	1137
+cli/assets/skills/slides/references	tree	
+cli/assets/skills/slides/references/copywriting-formulas.md	blob	2604
+cli/assets/skills/slides/references/create.md	blob	153
+cli/assets/skills/slides/references/html-template.md	blob	9004
+cli/assets/skills/slides/references/layout-patterns.md	blob	3691
+cli/assets/skills/slides/references/slide-strategies.md	blob	2715
+cli/assets/skills/ui-styling	tree	
+cli/assets/skills/ui-styling/LICENSE.txt	blob	11357
+cli/assets/skills/ui-styling/SKILL.md	blob	10045
+cli/assets/skills/ui-styling/references	tree	
+cli/assets/skills/ui-styling/references/canvas-design-system.md	blob	7888
+cli/assets/skills/ui-styling/references/shadcn-accessibility.md	blob	9976
+cli/assets/skills/ui-styling/references/shadcn-components.md	blob	11155
+cli/assets/skills/ui-styling/references/shadcn-theming.md	blob	8672
+cli/assets/skills/ui-styling/references/tailwind-customization.md	blob	10171
+cli/assets/skills/ui-styling/references/tailwind-responsive.md	blob	8270
+cli/assets/skills/ui-styling/references/tailwind-utilities.md	blob	9980
+cli/assets/skills/ui-styling/scripts	tree	
+cli/assets/skills/ui-styling/scripts/requirements.txt	blob	444
+cli/assets/skills/ui-styling/scripts/shadcn_add.py	blob	8799
+cli/assets/skills/ui-styling/scripts/tailwind_config_gen.py	blob	14418
+cli/assets/skills/ui-styling/scripts/tests	tree	
+cli/assets/skills/ui-styling/scripts/tests/coverage-ui.json	blob	35121
+cli/assets/skills/ui-styling/scripts/tests/requirements.txt	blob	52
+cli/assets/skills/ui-styling/scripts/tests/test_shadcn_add.py	blob	9920
+cli/assets/skills/ui-styling/scripts/tests/test_tailwind_config_gen.py	blob	14658
+cli/assets/templates	tree	
+cli/assets/templates/base	tree	
+cli/assets/templates/base/quick-reference.md	blob	24510
+cli/assets/templates/base/skill-content.md	blob	21131
+cli/assets/templates/platforms	tree	
+cli/assets/templates/platforms/agent.json	blob	928
+cli/assets/templates/platforms/augment.json	blob	660
+cli/assets/templates/platforms/claude.json	blob	1673
+cli/assets/templates/platforms/codebuddy.json	blob	768
+cli/assets/templates/platforms/codex.json	blob	755
+cli/assets/templates/platforms/continue.json	blob	765
+cli/assets/templates/platforms/copilot.json	blob	917
+cli/assets/templates/platforms/cursor.json	blob	902
+cli/assets/templates/platforms/droid.json	blob	1475
+cli/assets/templates/platforms/gemini.json	blob	763
+cli/assets/templates/platforms/kilocode.json	blob	908
+cli/assets/templates/platforms/kiro.json	blob	903
+cli/assets/templates/platforms/opencode.json	blob	765
+cli/assets/templates/platforms/qoder.json	blob	756
+cli/assets/templates/platforms/roocode.json	blob	905
+cli/assets/templates/platforms/trae.json	blob	753
+cli/assets/templates/platforms/warp.json	blob	651
+cli/assets/templates/platforms/windsurf.json	blob	908
+cli/bun.lock	blob	5611
+cli/package-lock.json	blob	12819
+cli/package.json	blob	1330
+cli/scripts	tree	
+cli/scripts/build.mjs	blob	1115
+cli/scripts/sync-assets.mjs	blob	7275
+cli/src	tree	
+cli/src/commands	tree	
+cli/src/commands/init.ts	blob	6784
+cli/src/commands/uninstall.ts	blob	4684
+cli/src/commands/update.ts	blob	3379
+cli/src/commands/versions.ts	blob	1322
+cli/src/index.ts	blob	3179
+cli/src/types	tree	
+cli/src/types/index.ts	blob	2155
+cli/src/utils	tree	
+cli/src/utils/detect.ts	blob	3252
+cli/src/utils/extract.ts	blob	4144
+cli/src/utils/github.ts	blob	4000
+cli/src/utils/logger.ts	blob	441
+cli/src/utils/template.ts	blob	9650
+cli/tsconfig.json	blob	396
+docs	tree	
+docs/三个 data-scripts-templates 的区别.md	blob	1654
+preview	tree	
+preview/xiaomaomi-app.html	blob	16945
+projects	tree	
+projects/healthcare-dashboard	tree	
+projects/healthcare-dashboard/index.html	blob	23938
+projects/portfolio-dark	tree	
+projects/portfolio-dark/index.html	blob	27816
+projects/saas-landing	tree	
+projects/saas-landing/index.html	blob	27754
+screenshots	tree	
+screenshots/website.png	blob	1129328
+scripts	tree	
+scripts/smoke-domains.sh	blob	1639
+scripts/smoke-stacks.sh	blob	2200
+scripts/sync-release-version.mjs	blob	2360
+scripts/validate-csv.py	blob	2854
+skill.json	blob	925
+src	tree	
+src/ui-ux-pro-max	tree	
+src/ui-ux-pro-max/data	tree	
+src/ui-ux-pro-max/data/_sync_all.py	blob	21832
+src/ui-ux-pro-max/data/app-interface.csv	blob	9743
+src/ui-ux-pro-max/data/charts.csv	blob	19391
+src/ui-ux-pro-max/data/colors.csv	blob	38830
+src/ui-ux-pro-max/data/design.csv	blob	106144
+src/ui-ux-pro-max/data/draft.csv	blob	106266
+src/ui-ux-pro-max/data/google-fonts.csv	blob	745196
+src/ui-ux-pro-max/data/icons.csv	blob	20637
+src/ui-ux-pro-max/data/landing.csv	blob	16720
+src/ui-ux-pro-max/data/motion.csv	blob	10517
+src/ui-ux-pro-max/data/products.csv	blob	73485
+src/ui-ux-pro-max/data/react-performance.csv	blob	14822
+src/ui-ux-pro-max/data/stacks	tree	
+src/ui-ux-pro-max/data/stacks/angular.csv	blob	18137
+src/ui-ux-pro-max/data/stacks/astro.csv	blob	11870
+src/ui-ux-pro-max/data/stacks/avalonia.csv	blob	25626
+src/ui-ux-pro-max/data/stacks/flutter.csv	blob	10416
+src/ui-ux-pro-max/data/stacks/html-tailwind.csv	blob	11305
+src/ui-ux-pro-max/data/stacks/javafx.csv	blob	30871
+src/ui-ux-pro-max/data/stacks/jetpack-compose.csv	blob	8195
+src/ui-ux-pro-max/data/stacks/laravel.csv	blob	18519
+src/ui-ux-pro-max/data/stacks/nextjs.csv	blob	12493
+src/ui-ux-pro-max/data/stacks/nuxt-ui.csv	blob	21230
+src/ui-ux-pro-max/data/stacks/nuxtjs.csv	blob	16539
+src/ui-ux-pro-max/data/stacks/react-native.csv	blob	10035
+src/ui-ux-pro-max/data/stacks/react.csv	blob	12962
+src/ui-ux-pro-max/data/stacks/shadcn.csv	blob	15921
+src/ui-ux-pro-max/data/stacks/svelte.csv	blob	11009
+src/ui-ux-pro-max/data/stacks/swiftui.csv	blob	10821
+src/ui-ux-pro-max/data/stacks/threejs.csv	blob	44787
+src/ui-ux-pro-max/data/stacks/uno.csv	blob	27471
+src/ui-ux-pro-max/data/stacks/uwp.csv	blob	22867
+src/ui-ux-pro-max/data/stacks/vue.csv	blob	11006
+src/ui-ux-pro-max/data/stacks/winui.csv	blob	25152
+src/ui-ux-pro-max/data/stacks/wpf.csv	blob	22538
+src/ui-ux-pro-max/data/styles.csv	blob	142602
+src/ui-ux-pro-max/data/typography.csv	blob	49830
+src/ui-ux-pro-max/data/ui-reasoning.csv	blob	53070
+src/ui-ux-pro-max/data/ux-guidelines.csv	blob	18766
+src/ui-ux-pro-max/scripts	tree	
+src/ui-ux-pro-max/scripts/core.py	blob	13231
+src/ui-ux-pro-max/scripts/design_system.py	blob	57424
+src/ui-ux-pro-max/scripts/search.py	blob	6813
+src/ui-ux-pro-max/templates	tree	
+src/ui-ux-pro-max/templates/base	tree	
+src/ui-ux-pro-max/templates/base/quick-reference.md	blob	24510
+src/ui-ux-pro-max/templates/base/skill-content.md	blob	21131
+src/ui-ux-pro-max/templates/platforms	tree	
+src/ui-ux-pro-max/templates/platforms/agent.json	blob	928
+src/ui-ux-pro-max/templates/platforms/augment.json	blob	660
+src/ui-ux-pro-max/templates/platforms/claude.json	blob	1673
+src/ui-ux-pro-max/templates/platforms/codebuddy.json	blob	768
+src/ui-ux-pro-max/templates/platforms/codex.json	blob	755
+src/ui-ux-pro-max/templates/platforms/continue.json	blob	765
+src/ui-ux-pro-max/templates/platforms/copilot.json	blob	917
+src/ui-ux-pro-max/templates/platforms/cursor.json	blob	902
+src/ui-ux-pro-max/templates/platforms/droid.json	blob	1475
+src/ui-ux-pro-max/templates/platforms/gemini.json	blob	763
+src/ui-ux-pro-max/templates/platforms/kilocode.json	blob	908
+src/ui-ux-pro-max/templates/platforms/kiro.json	blob	903
+src/ui-ux-pro-max/templates/platforms/opencode.json	blob	765
+src/ui-ux-pro-max/templates/platforms/qoder.json	blob	756
+src/ui-ux-pro-max/templates/platforms/roocode.json	blob	905
+src/ui-ux-pro-max/templates/platforms/trae.json	blob	753
+src/ui-ux-pro-max/templates/platforms/warp.json	blob	651
+src/ui-ux-pro-max/templates/platforms/windsurf.json	blob	908

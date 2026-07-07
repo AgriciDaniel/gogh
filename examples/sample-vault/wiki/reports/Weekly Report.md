@@ -10,8 +10,8 @@ status: "draft"
 
 ## Summary
 
-Gogh is ready for source review. It has 1 raw source(s) in
-the manifest.
+Gogh is ready for source review with 1 raw source(s) in the
+manifest.
 
 ## Evidence
 
