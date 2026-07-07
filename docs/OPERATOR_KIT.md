@@ -1,12 +1,12 @@
-# Taste Skill Brain Operator Kit
+# Gogh Operator Kit
 
 ## Five-Minute Path
 
 ```bash
 python -m pip install -e .
-taste-skill-brain demo
-taste-skill-brain lint --vault examples/sample-vault
-taste-skill-brain report --vault examples/sample-vault --html-only
+gogh-brain demo
+gogh-brain lint --vault examples/sample-vault
+gogh-brain report --vault examples/sample-vault --html-only
 ```
 
 Open `examples/sample-vault/` in Obsidian and read:
@@ -19,10 +19,10 @@ Open `examples/sample-vault/` in Obsidian and read:
 ## Client Vault
 
 ```bash
-taste-skill-brain new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/taste-skill-brain-vaults
-taste-skill-brain ingest --vault ~/taste-skill-brain-vaults/acme --file tests/fixtures/sample-source.md
-taste-skill-brain synthesize --vault ~/taste-skill-brain-vaults/acme
-taste-skill-brain report --vault ~/taste-skill-brain-vaults/acme --html-only
+gogh-brain new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/gogh-vaults
+gogh-brain ingest --vault ~/gogh-vaults/acme --file tests/fixtures/sample-source.md
+gogh-brain synthesize --vault ~/gogh-vaults/acme
+gogh-brain report --vault ~/gogh-vaults/acme --html-only
 ```
 
 ## Research Rule

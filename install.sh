@@ -5,10 +5,10 @@ usage() {
   cat <<'USAGE'
 Usage: ./install.sh [--target codex|claude|agents|gemini|openclaw|portable|custom|all] [--path DIR]
 
-Installs the Taste Skill Brain skill surface.
+Installs the Gogh skill surface.
 Use --target custom --path <agent-skill-root> for Hermes or another runtime
 when its official skill root is known.
-Set TASTE_SKILL_BRAIN_INSTALL_HOME to test against a temporary home directory.
+Set GOGH_BRAIN_INSTALL_HOME to test against a temporary home directory.
 USAGE
 }
 
@@ -30,16 +30,16 @@ if [ "${target}" = "custom" ] && [ -z "${custom_path}" ]; then
 fi
 
 source_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-base_home="${TASTE_SKILL_BRAIN_INSTALL_HOME:-${HOME}}"
+base_home="${GOGH_BRAIN_INSTALL_HOME:-${HOME}}"
 
 target_dir() {
   case "$1" in
-    codex) echo "${base_home}/.codex/skills/taste-skill-brain" ;;
-    claude) echo "${base_home}/.claude/skills/taste-skill-brain" ;;
-    agents) echo "${base_home}/.agents/skills/taste-skill-brain" ;;
-    openclaw) echo "${base_home}/.openclaw/skills/taste-skill-brain" ;;
-    portable) echo "${base_home}/.agent-skills/taste-skill-brain" ;;
-    custom) echo "${custom_path%/}/taste-skill-brain" ;;
+    codex) echo "${base_home}/.codex/skills/gogh-brain" ;;
+    claude) echo "${base_home}/.claude/skills/gogh-brain" ;;
+    agents) echo "${base_home}/.agents/skills/gogh-brain" ;;
+    openclaw) echo "${base_home}/.openclaw/skills/gogh-brain" ;;
+    portable) echo "${base_home}/.agent-skills/gogh-brain" ;;
+    custom) echo "${custom_path%/}/gogh-brain" ;;
   esac
 }
 
@@ -66,15 +66,15 @@ install_one() {
   copy_tree "${source_dir}/references" "${dest}/references"
   copy_tree "${source_dir}/docs" "${dest}/docs"
   chmod -R go-rwx "${dest}"
-  echo "Taste Skill Brain installed to ${dest}"
+  echo "Gogh installed to ${dest}"
 }
 
 install_gemini() {
-  local dest="${base_home}/.gemini/taste-skill-brain"
+  local dest="${base_home}/.gemini/gogh-brain"
   local loader="${base_home}/.gemini/GEMINI.md"
   install_one "${dest}"
   mkdir -p "$(dirname "${loader}")"
-  python - "${loader}" "@./taste-skill-brain/GEMINI.md" <<'PY'
+  python - "${loader}" "@./gogh-brain/GEMINI.md" <<'PY'
 from __future__ import annotations
 
 import re
@@ -83,8 +83,8 @@ from pathlib import Path
 
 path = Path(sys.argv[1])
 import_line = sys.argv[2]
-start = "<!-- taste-skill-brain-install:start -->"
-end = "<!-- taste-skill-brain-install:end -->"
+start = "<!-- gogh-brain-install:start -->"
+end = "<!-- gogh-brain-install:end -->"
 block = f"{start}\n{import_line}\n{end}"
 text = path.read_text(encoding="utf-8") if path.exists() else ""
 pattern = f"{re.escape(start)}.*?{re.escape(end)}"
@@ -94,7 +94,7 @@ else:
     text = (text.rstrip() + "\n\n" + block + "\n").lstrip()
 path.write_text(text, encoding="utf-8")
 PY
-  echo "Taste Skill Brain Gemini loader updated at ${loader}"
+  echo "Gogh Gemini loader updated at ${loader}"
 }
 
 if [ "${target}" = "all" ]; then

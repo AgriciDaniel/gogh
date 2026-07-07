@@ -1,4 +1,4 @@
-# Sample Taste Skill Brain Source
+# Sample Gogh Source
 
 This fixture proves the brain can ingest raw source material, cite it,
 synthesize a starter scorecard, render a report, and preserve graph

@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible Taste Skill Brain issue
+description: Report a reproducible Gogh issue
 title: "bug: "
 labels: ["bug"]
 body:

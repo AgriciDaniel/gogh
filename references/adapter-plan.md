@@ -1,4 +1,4 @@
-# Taste Skill Brain Adapter Plan
+# Gogh Adapter Plan
 
 Status: required before domain-adapted maturity.
 

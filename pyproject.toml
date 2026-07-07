@@ -3,9 +3,9 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "taste-skill-brain"
+name = "gogh-brain"
 version = "0.1.0"
-description = "Taste Skill Brain Obsidian brain template and script layer."
+description = "Gogh Obsidian brain template and script layer."
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "Apache-2.0"}
@@ -13,7 +13,7 @@ authors = [{name = "Daniel Agrici"}]
 dependencies = []
 
 [project.scripts]
-taste-skill-brain = "taste_skill_brain.cli:main"
+gogh-brain = "gogh_brain.cli:main"
 
 [tool.setuptools]
-packages = ["taste_skill_brain"]
+packages = ["gogh_brain"]

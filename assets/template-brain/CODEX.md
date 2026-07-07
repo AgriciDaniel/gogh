@@ -1,4 +1,4 @@
-# Taste Skill Brain Vault Instructions
+# Gogh Vault Instructions
 
 Read order:
 

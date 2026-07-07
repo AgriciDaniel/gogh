@@ -6,7 +6,7 @@ updated: "2026-07-06"
 status: "active"
 ---
 
-# Taste Skill Brain - Index
+# Gogh - Index
 
 A source-cited brain about **[[Taste Skill (Project)|Taste Skill]]**, the open-source anti-slop frontend framework by [[Leon Lin]] that gives AI coding agents good design taste. Everything here is traced to the canonical `SKILL.md`, `tasteskill.dev`, or dated third-party coverage. Rules that come straight from the skill are tagged EVIDENCE-BASED; the premise debates are tagged CONTESTED.
 

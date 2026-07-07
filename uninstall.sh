@@ -17,16 +17,16 @@ if [ "${target}" = "custom" ] && [ -z "${custom_path}" ]; then
   echo "ERROR: --target custom requires --path" >&2
   exit 2
 fi
-base_home="${TASTE_SKILL_BRAIN_INSTALL_HOME:-${HOME}}"
+base_home="${GOGH_BRAIN_INSTALL_HOME:-${HOME}}"
 
 target_dir() {
   case "$1" in
-    codex) echo "${base_home}/.codex/skills/taste-skill-brain" ;;
-    claude) echo "${base_home}/.claude/skills/taste-skill-brain" ;;
-    agents) echo "${base_home}/.agents/skills/taste-skill-brain" ;;
-    openclaw) echo "${base_home}/.openclaw/skills/taste-skill-brain" ;;
-    portable) echo "${base_home}/.agent-skills/taste-skill-brain" ;;
-    custom) echo "${custom_path%/}/taste-skill-brain" ;;
+    codex) echo "${base_home}/.codex/skills/gogh-brain" ;;
+    claude) echo "${base_home}/.claude/skills/gogh-brain" ;;
+    agents) echo "${base_home}/.agents/skills/gogh-brain" ;;
+    openclaw) echo "${base_home}/.openclaw/skills/gogh-brain" ;;
+    portable) echo "${base_home}/.agent-skills/gogh-brain" ;;
+    custom) echo "${custom_path%/}/gogh-brain" ;;
   esac
 }
 
@@ -36,12 +36,12 @@ remove_one() {
     rm -rf "${dir}"
     echo "Removed ${dir}"
   else
-    echo "Taste Skill Brain is not installed at ${dir}"
+    echo "Gogh is not installed at ${dir}"
   fi
 }
 
 remove_gemini() {
-  local dir="${base_home}/.gemini/taste-skill-brain"
+  local dir="${base_home}/.gemini/gogh-brain"
   local loader="${base_home}/.gemini/GEMINI.md"
   remove_one "${dir}"
   if [ -f "${loader}" ]; then
@@ -53,8 +53,8 @@ import sys
 from pathlib import Path
 
 path = Path(sys.argv[1])
-start = "<!-- taste-skill-brain-install:start -->"
-end = "<!-- taste-skill-brain-install:end -->"
+start = "<!-- gogh-brain-install:start -->"
+end = "<!-- gogh-brain-install:end -->"
 text = path.read_text(encoding="utf-8")
 pattern = f"\n*{re.escape(start)}.*?{re.escape(end)}\n*"
 new_text = re.sub(pattern, "\n", text, flags=re.S).strip()
@@ -63,7 +63,7 @@ if new_text:
 else:
     path.unlink()
 PY
-    echo "Taste Skill Brain Gemini loader cleaned at ${loader}"
+    echo "Gogh Gemini loader cleaned at ${loader}"
   fi
 }
 

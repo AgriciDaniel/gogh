@@ -1,20 +1,20 @@
 ---
-name: taste-skill-brain
+name: gogh-brain
 description: >
-  Scaffold and operate Taste Skill Brain, a source-cited Obsidian brain about
+  Scaffold and operate Gogh, a source-cited Obsidian brain about
   the open-source Taste Skill framework by Leon Lin — the anti-slop SKILL.md
   ruleset that gives AI coding agents (Claude Code, Cursor, Codex) good frontend
   taste via three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY),
   audit-first redesigns, an image-first reference pipeline, anti-laziness rules,
-  and a strict pre-flight check. Use when the user says "taste-skill-brain",
-  "Taste Skill Brain", "taste skill", "anti-slop frontend", asks about the three
+  and a strict pre-flight check. Use when the user says "gogh-brain",
+  "Gogh", "taste skill", "anti-slop frontend", asks about the three
   dials, the redesign audit, the pre-flight check, or wants to install, load, and
   operate the Taste Skill in an agent, or maintain this vault-backed brain.
 argument-hint: "new | ingest | synthesize | report | visuals | lint | next"
 license: Apache-2.0
 ---
 
-# Taste Skill Brain
+# Gogh
 
 Operate the vault first. Read `CODEX.md`, `wiki/hot.md`, and `wiki/index.md`
 before changing notes.
@@ -22,22 +22,22 @@ before changing notes.
 ## Commands
 
 ```bash
-/taste-skill-brain new <client-slug> --owner <name>
-/taste-skill-brain ingest --vault <path> --file <source>
-/taste-skill-brain synthesize --vault <path>
-/taste-skill-brain report --vault <path>
-/taste-skill-brain visuals --vault <path>
-/taste-skill-brain lint --vault <path>
-/taste-skill-brain next --vault <path>
+/gogh-brain new <client-slug> --owner <name>
+/gogh-brain ingest --vault <path> --file <source>
+/gogh-brain synthesize --vault <path>
+/gogh-brain report --vault <path>
+/gogh-brain visuals --vault <path>
+/gogh-brain lint --vault <path>
+/gogh-brain next --vault <path>
 ```
 
 Source checkout equivalent:
 
 ```bash
-taste-skill-brain new <client-slug> --owner <name>
-taste-skill-brain ingest --vault <path> --file <source>
-taste-skill-brain synthesize --vault <path>
-taste-skill-brain report --vault <path> --html-only
+gogh-brain new <client-slug> --owner <name>
+gogh-brain ingest --vault <path> --file <source>
+gogh-brain synthesize --vault <path>
+gogh-brain report --vault <path> --html-only
 ```
 
 ## Required Operating Rules

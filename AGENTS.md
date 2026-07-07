@@ -1,4 +1,4 @@
-# Taste Skill Brain Agent Instructions
+# Gogh Agent Instructions
 
 The canonical agent entrypoint is `SKILL.md`; this file exists for agent
 runtimes that load project-level `AGENTS.md` instructions.
@@ -30,7 +30,7 @@ runtimes that load project-level `AGENTS.md` instructions.
 ## Verification
 
 ```bash
-python -m compileall scripts taste_skill_brain tests
+python -m compileall scripts gogh_brain tests
 python tests/test_pipeline.py
 python scripts/audit_brain.py --json
 python scripts/package_release.py --version 0.1.0

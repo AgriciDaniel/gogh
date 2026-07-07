@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 
-BRAIN_TITLE = "Taste Skill Brain"
+BRAIN_TITLE = "Gogh"
 BRAIN_DOMAIN = "Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop."
 BRAIN_TAGLINE = "Source cited Obsidian operating brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop.."
 

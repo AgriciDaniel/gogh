@@ -1,4 +1,4 @@
-# Taste Skill Brain Product Spec
+# Gogh Product Spec
 
 ## Buyer
 

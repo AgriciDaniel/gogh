@@ -12,7 +12,7 @@ sources: [".raw/sources/sample-source.md"]
 ## Source
 
 - Path: `.raw/sources/sample-source.md`
-- Hash: `d4bff985185e06d12759b87246cea9c7d9d9d945fb92d254e902e0588dab7649`
+- Hash: `feb3d1d31ed136b4d08111a788864200f1fa1a2eb9a7456ab6e27c82772de2f7`
 - Retrieved: 2026-07-07
 - Type: fixture
 

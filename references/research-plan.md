@@ -1,4 +1,4 @@
-# Taste Skill Brain Research Plan
+# Gogh Research Plan
 
 Status: required before researched or market-ready maturity.
 

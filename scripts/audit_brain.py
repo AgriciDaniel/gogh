@@ -96,7 +96,7 @@ MATURITY_ORDER = ["scaffolded", "researched", "domain-adapted", "demo-verified",
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Audit Taste Skill Brain maturity gates.")
+    parser = argparse.ArgumentParser(description="Audit Gogh maturity gates.")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--require", choices=MATURITY_ORDER)
     parser.add_argument("--report-only", action="store_true")

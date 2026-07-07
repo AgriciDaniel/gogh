@@ -10,4 +10,4 @@ status: "active"
 
 Related: [[Hot]] | [[Index]] | [[Dashboard]]
 
-- {{date}} - Taste Skill Brain scaffolded.
+- {{date}} - Gogh scaffolded.

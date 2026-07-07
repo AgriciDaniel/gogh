@@ -15,13 +15,13 @@ def run_script(script: str, args: list[str]) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="taste-skill-brain", description="Operate Taste Skill Brain.")
+    parser = argparse.ArgumentParser(prog="gogh-brain", description="Operate Gogh.")
     sub = parser.add_subparsers(dest="command", required=True)
     p_new = sub.add_parser("new")
     p_new.add_argument("client")
     p_new.add_argument("--client-name", default="")
     p_new.add_argument("--owner", default="Daniel Agrici")
-    p_new.add_argument("--out-dir", default="~/taste-skill-brain-vaults")
+    p_new.add_argument("--out-dir", default="~/gogh-vaults")
     p_ingest = sub.add_parser("ingest")
     p_ingest.add_argument("--vault", required=True)
     p_ingest.add_argument("--file", required=True)

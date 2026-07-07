@@ -1,4 +1,4 @@
-# Taste Skill Brain Claude Instructions
+# Gogh Claude Instructions
 
 @AGENTS.md
 

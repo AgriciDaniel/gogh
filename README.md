@@ -1,10 +1,10 @@
-# Taste Skill Brain
+# Gogh
 
 <p align="center">
-  <img src="assets/svg/hero-frontispiece.svg" alt="Taste Skill Brain editorial frontispiece" width="100%"/>
+  <img src="assets/svg/hero-frontispiece.svg" alt="Gogh editorial frontispiece" width="100%"/>
 </p>
 
-Taste Skill Brain is an evidence-gated Obsidian brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin — an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop..
+Gogh is an evidence-gated Obsidian brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin — an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop..
 
 **Current maturity:** scaffolded. This repo is not market-ready until research,
 domain adapters, demo verification, audit, and release gates pass.
@@ -30,20 +30,20 @@ Developers, indie hackers, design engineers, and agencies who build frontends wi
 
 ```bash
 python -m pip install -e .
-taste-skill-brain demo
-taste-skill-brain lint --vault examples/sample-vault
-taste-skill-brain report --vault examples/sample-vault --html-only
+gogh-brain demo
+gogh-brain lint --vault examples/sample-vault
+gogh-brain report --vault examples/sample-vault --html-only
 ```
 
 To create a client vault:
 
 ```bash
-taste-skill-brain new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/taste-skill-brain-vaults
-taste-skill-brain ingest --vault ~/taste-skill-brain-vaults/acme --file tests/fixtures/sample-source.md
-taste-skill-brain synthesize --vault ~/taste-skill-brain-vaults/acme
-taste-skill-brain visuals --vault ~/taste-skill-brain-vaults/acme
-taste-skill-brain report --vault ~/taste-skill-brain-vaults/acme --html-only
-taste-skill-brain next --vault ~/taste-skill-brain-vaults/acme
+gogh-brain new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/gogh-vaults
+gogh-brain ingest --vault ~/gogh-vaults/acme --file tests/fixtures/sample-source.md
+gogh-brain synthesize --vault ~/gogh-vaults/acme
+gogh-brain visuals --vault ~/gogh-vaults/acme
+gogh-brain report --vault ~/gogh-vaults/acme --html-only
+gogh-brain next --vault ~/gogh-vaults/acme
 ```
 
 ## Boundaries

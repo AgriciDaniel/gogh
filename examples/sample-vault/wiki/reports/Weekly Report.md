@@ -10,7 +10,7 @@ status: "draft"
 
 ## Summary
 
-Taste Skill Brain is ready for source review. It has 1 raw source(s) in
+Gogh is ready for source review. It has 1 raw source(s) in
 the manifest.
 
 ## Evidence

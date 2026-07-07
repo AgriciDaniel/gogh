@@ -2,7 +2,7 @@
 
 ## Verification
 
-- [ ] `python -m compileall scripts taste_skill_brain tests`
+- [ ] `python -m compileall scripts gogh_brain tests`
 - [ ] `python tests/test_pipeline.py`
 - [ ] `python scripts/build_demo_vault.py`
 - [ ] `python scripts/package_release.py --version 0.1.0`

@@ -1,4 +1,4 @@
-# Taste Skill Brain Gemini Instructions
+# Gogh Gemini Instructions
 
 @./AGENTS.md
 

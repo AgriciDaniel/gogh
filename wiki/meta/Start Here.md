@@ -8,7 +8,7 @@ status: "active"
 
 # Start Here
 
-Welcome to the **Taste Skill Brain** - a persistent, source-cited knowledge base about [[Taste Skill (Project)|Taste Skill]], the anti-slop frontend framework for AI coding agents.
+Welcome to the **Gogh** - a persistent, source-cited knowledge base about [[Taste Skill (Project)|Taste Skill]], the anti-slop frontend framework for AI coding agents.
 
 ## If you have 2 minutes
 

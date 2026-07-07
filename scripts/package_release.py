@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import stat
 import subprocess
@@ -43,17 +44,20 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit(f"ERROR: --dist-dir must resolve inside the repo: {dist}")
     dist.mkdir(parents=True, exist_ok=True)
     if args.release_type == "market-ready":
+        # A market-ready release always demands a clean tree; the dirty-tree
+        # override is a dev/test convenience only.
+        os.environ.pop("GOGH_BRAIN_ALLOW_DIRTY_RELEASE", None)
         enforce_market_ready_gate()
     scan_source_tree()
     artifacts = [
-        build_zip(dist / f"taste-skill-brain-template-v{version}.zip", REPO / "assets" / "template-brain", "taste-skill-brain-template"),
-        build_zip(dist / f"taste-skill-brain-sample-vault-v{version}.zip", REPO / "examples" / "sample-vault", "taste-skill-brain-sample-vault"),
-        build_source_zip(dist / f"taste-skill-brain-source-v{version}.zip", version),
+        build_zip(dist / f"gogh-brain-template-v{version}.zip", REPO / "assets" / "template-brain", "gogh-brain-template"),
+        build_zip(dist / f"gogh-brain-sample-vault-v{version}.zip", REPO / "examples" / "sample-vault", "gogh-brain-sample-vault"),
+        build_source_zip(dist / f"gogh-brain-source-v{version}.zip", version),
     ]
     for artifact in artifacts:
         validate_zip(artifact["path"])
     manifest = {
-        "product": "taste-skill-brain",
+        "product": "gogh-brain",
         "version": version,
         "release_type": args.release_type,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -124,6 +128,8 @@ def iter_tree(root: Path) -> list[Path]:
 
 def source_files() -> list[Path]:
     if (REPO / ".git").exists():
+        if allow_dirty_release():
+            return git_worktree_files()
         reject_dirty_tracked_files()
         reject_untracked_files()
         proc = subprocess.run(["git", "ls-files", "-z", "--cached"], cwd=REPO, capture_output=True, check=False)
@@ -143,6 +149,35 @@ def source_files() -> list[Path]:
                     files.append(path)
         return sorted(files)
     return iter_tree(REPO)
+
+
+def allow_dirty_release() -> bool:
+    return os.environ.get("GOGH_BRAIN_ALLOW_DIRTY_RELEASE") == "1"
+
+
+def git_worktree_files() -> list[Path]:
+    files: dict[str, Path] = {}
+    commands = (
+        ["git", "ls-files", "-z", "--cached"],
+        ["git", "ls-files", "-z", "--others", "--exclude-standard"],
+    )
+    for args in commands:
+        proc = subprocess.run(args, cwd=REPO, capture_output=True, check=False)
+        if proc.returncode != 0:
+            raise SystemExit(proc.stderr.decode("utf-8", "replace"))
+        for raw in proc.stdout.split(b"\0"):
+            if not raw:
+                continue
+            rel = Path(raw.decode("utf-8", "replace"))
+            if should_skip(rel):
+                continue
+            reject_forbidden_entry(rel)
+            path = REPO / rel
+            if path.is_symlink():
+                raise SystemExit(f"ERROR: symlink not allowed: {rel.as_posix()}")
+            if path.is_file():
+                files[rel.as_posix()] = path
+    return [files[key] for key in sorted(files)]
 
 
 def reject_dirty_tracked_files() -> None:
@@ -189,7 +224,7 @@ def build_source_zip(out: Path, version: str) -> dict[str, object]:
         for path in source_files():
             rel = path.relative_to(REPO)
             if not should_skip(rel):
-                zf.write(path, (Path(f"taste-skill-brain-v{version}") / rel).as_posix())
+                zf.write(path, (Path(f"gogh-brain-v{version}") / rel).as_posix())
                 entries += 1
     return {"path": out, "entries": entries}
 
