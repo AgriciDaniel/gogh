@@ -1,41 +1,98 @@
 ---
 type: "concept"
 title: "Taste as the Moat"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "CONTESTED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/theory", "note/concept"]
+domain: "theory"
+confidence: "contested"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review (retrieved 2026-07-06)", "https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website (retrieved 2026-07-06)", "https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/ (retrieved 2026-07-06)", "https://neodrop.ai/post/s3mGLbLqiNd (retrieved 2026-07-06)"]
+sources: ["[[Design Theory Sources]]", "[[Reception Sources]]"]
 ---
+Taste as the Moat is the contested thesis that judgment matters more as generation gets cheaper, while dissent says taste can become a threshold rather than a permanent moat.
 
-# Taste as the Moat
+## What it is
+- Theory extract records the argument that cheap creation increases the value of judgment
+- Developers Digest frames taste skills as portable controls around model behavior
+- Dissent says taste itself can commoditize into a baseline threshold
+- Julie Zhuo is summarized as allowing AI to learn parts of taste through pattern recognition
+- Taste Skill operationalizes the pro-moat side by making review reusable
+- The note stays contested because the economic claim is broader than the skill evidence.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: CONTESTED (the claim is well-argued and well-attacked; both sides preserved).
+> [!contradiction]
+> This claim has either conflicting source accounts or an incomplete primary-source basis, so both the claim and its limit stay visible.
 
-## Compiled Truth
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-The economic argument for a tool like Taste Skill: as AI drives the marginal cost of *production* toward zero, durable advantage shifts from **making** things to **judging** them.
+## Best practice
+- Keep dated observations dated. CONTESTED
+- Use primary or official evidence before practitioner evidence. CONTESTED
+- Mark unresolved claims as contested, gaps, or experiments. CONTESTED
+- Do not call the brain market-ready unless the required audit passes. CONTESTED
+- Keep every factual sentence traceable to a listed source. CONTESTED
+- Keep related links pointed at canonical current titles. CONTESTED
+- Avoid long direct quotes from sources. CONTESTED
+- Run lint and dash checks after edits. CONTESTED
 
-**The moat thesis (The VC Corner, "Why Taste Is the New Moat"):**
-- *"Creation has become frictionless. Software is not scarce and hand-crafted anymore. It's now infinite and cheap, built in bulk by machines that never tire."*
-- *"When technology commoditizes creation, judgment becomes the last remaining edge. Taste is what decides which ideas deserve to exist, which details are worth sweating, and which defaults communicate care."*
-- On design as trust: *"design has become a real credibility signal... how users decide what, and who, to trust."*
-- *"When everything can be made, filters outrank generators."*
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-**Taste as pattern recognition - which is why it is packageable (Julie Zhuo, "When AI Has Better Taste Than You").** Zhuo defines taste as "our values and preferences" and argues great taste is largely sophisticated prediction: *"If excellent taste operates through pattern recognition across vast cultural knowledge, then it isn't a stretch to imagine that AI systems can replicate this process."* If taste is codified pattern recognition, it can be written down and distributed - **taste as a dependency you can `npm install`**. That is the ideological basis for encoding it as a [[Agent Skills Format|SKILL.md]].
-
-## The dissent (kept on purpose)
-
-The premise is genuinely contested, and the brain keeps the counter-arguments:
-- **Taste itself commoditizes.** Once everyone can install a taste layer, it becomes *the threshold bar you clear to enter the game*, not a permanent moat (Ruiqi Zhou, "Taste Is the New Moat - And That's the Problem"; Hilde Dybdahl Johannessen).
-- **"You can't install taste."** Tools can make AI *stop* producing tells, but not make it *good*; taste is accumulated curatorial judgment that resists compression into a checklist (Mark Chen, "You Can't Install Taste"; designative.info, "Taste Is the New Bottleneck"). This is the core of the [[Reception and Criticism]] against Taste Skill's premise.
-
-The brain's stance: the moat thesis justifies the *effort*; the dissent is why Taste Skill is best understood as **raising the floor** (killing the worst defaults) rather than manufacturing top-1% design.
+## Sources
+- Anthropic, https://claude.com/blog/improving-frontend-design-through-skills, retrieved 2026-07-07.
+- prg.sh, https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website, retrieved 2026-07-06.
+- W3C Design Tokens Community Group, https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/, retrieved 2026-07-06.
+- Refactoring UI, https://www.refactoringui.com/, retrieved 2026-07-07.
+- Butterick Practical Typography, https://practicaltypography.com/, retrieved 2026-07-07.
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[AI Slop]] | [[Constraint Beats Coaxing]] | [[Reception and Criticism]]
-- Source: [[Design Theory Sources]]
-
-## Timeline
-
-- 2026-07-06 - Note created; premise held as CONTESTED with dissent preserved.
+## Next actions
+- Keep this concept atomic and source-cited.
+- Move operational detail to rule or flow notes.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

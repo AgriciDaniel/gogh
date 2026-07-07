@@ -1,43 +1,95 @@
 ---
 type: "concept"
 title: "Design Review as Infrastructure"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "EVIDENCE-BASED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/theory", "note/concept"]
+domain: "theory"
+confidence: "practitioner"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review (retrieved 2026-07-06)", "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md (retrieved 2026-07-07)", "https://github.com/pbakaus/impeccable (retrieved 2026-07-07)", "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md (retrieved 2026-07-07)", "https://github.com/jakubkrehel/make-interfaces-feel-better (retrieved 2026-07-07)"]
+sources: ["[[Design Theory Sources]]", "[[Reception Sources]]"]
 ---
+Design Review as Infrastructure means moving frontend quality checks into reusable agent instructions, audits, and detector layers before the agent claims completion.
 
-# Design Review as Infrastructure
+## What it is
+- Developers Digest frames taste skills as review checklists, style contracts, and calibration artifacts
+- Taste Skill makes review concrete through Section 14 and named written audits
+- Impeccable provides 45 deterministic detector rules as of 2026-07-07
+- Vercel web-design-guidelines fetches current rules and reports file-line findings
+- MIFB provides a micro-polish checklist
+- The concept links design linting, tokens, and agent-as-judge patterns in the theory extract.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: EVIDENCE-BASED.
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-## Compiled Truth
+## Best practice
+- Keep dated observations dated. PRACTITIONER
+- Use primary or official evidence before practitioner evidence. PRACTITIONER
+- Mark unresolved claims as contested, gaps, or experiments. PRACTITIONER
+- Do not call the brain market-ready unless the required audit passes. PRACTITIONER
+- Keep every factual sentence traceable to a listed source. PRACTITIONER
+- Keep related links pointed at canonical current titles. PRACTITIONER
+- Avoid long direct quotes from sources. PRACTITIONER
+- Run lint and dash checks after edits. PRACTITIONER
 
-Instead of relying on a human to catch slop after the fact, encode design judgment as **rules the agent runs on itself** - pre-flight checks, forbidden-pattern audits, and a redesign/audit protocol. This is the thesis Developers Digest named: quality control moves **left**, from post-hoc human review to codified, machine-enforced review that runs *before* the agent declares a task done.
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-- *"A taste skill is a review checklist, a style contract, and a calibration artifact that the agent must route through before it claims the work is done."*
-- *"The future of agent quality is not just better generation. It is better review, moved earlier, written down, and reused."*
-- *"The winning developer agent stack will not be one model plus one chat box. It will be a set of portable controls around model behavior."*
-
-Taste Skill's concrete instances of this are the [[Pre-Flight Check (Section 14)]] and the [[Required Audits]].
-
-## Three converging traditions
-
-1. **Design linting / design-as-code.** Linting is automated rule-checking; design linters (e.g. `@lapidist/design-lint`, Figma's Design System Linter) flag raw values against token constraints. A Taste Skill audit is a lint pass whose rules are *aesthetic* ("no centered hero at high variance," "no `h-screen`," "no emoji bullets") rather than syntactic - inheriting linting's apparatus of rules, violations, and waivers-with-rationale.
-2. **Design systems as code / tokens as single source of truth.** Once decisions are tokens, conformance is checkable. Taste Skill leans on this with [[The Three Locks]] (color, shape, theme) so consistency is *verifiable*, not vibes.
-3. **Eval-driven generation & LLM/Agent-as-Judge.** The research frontier (LLM-as-a-Judge; Agent-as-a-Judge, which "observes intermediate steps... and reasons over the agent's action log"; the WebDevJudge benchmark) treats UI quality as an eval. A pre-flight check is a lightweight, *in-loop* instance: the same model that generated the UI judges it against an explicit rubric before finishing.
-
-## Why it matters
-
-Generation without a check-back reverts to the mean ([[AI Slop]]). Encoding taste as a machine-checkable pass/fail gate turns "good design" from an unverifiable aspiration into a gate the agent enforces on itself, at zero marginal human cost and infinite scale - the same reason CI linting beat manual style review.
-
-**Live critique (kept):** critics note Taste Skill's audits are *self-reported* - there is "no automated tests or visual regression" proving the rules were actually followed ([[Reception and Criticism]]). The gate is only as honest as the agent running it.
+## Sources
+- Anthropic, https://claude.com/blog/improving-frontend-design-through-skills, retrieved 2026-07-07.
+- prg.sh, https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website, retrieved 2026-07-06.
+- W3C Design Tokens Community Group, https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/, retrieved 2026-07-06.
+- Refactoring UI, https://www.refactoringui.com/, retrieved 2026-07-07.
+- Butterick Practical Typography, https://practicaltypography.com/, retrieved 2026-07-07.
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[Pre-Flight Check (Section 14)]] | [[Required Audits]] | [[The Three Locks]] | [[Constraint Beats Coaxing]]
-- Source: [[Developers Digest - Taste Skills as Infrastructure]], [[Design Theory Sources]]
-
-## Timeline
-
-- 2026-07-06 - Note created.
+## Next actions
+- Keep this concept atomic and source-cited.
+- Move operational detail to rule or flow notes.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

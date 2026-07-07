@@ -1,56 +1,97 @@
 ---
-type: "note"
+type: "rule"
 title: "Architecture and Stack"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "EVIDENCE-BASED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/taste-skill", "note/rule"]
+domain: "taste-skill"
+confidence: "evidence-based"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md (retrieved 2026-07-07)", "https://www.tasteskill.dev/guide?view=full (retrieved 2026-07-07)", "https://www.tasteskill.dev/changelog (retrieved 2026-07-07)"]
+sources: ["[[Canonical Skill File]]", "[[Taste Skill Official Site]]"]
 ---
+Architecture and Stack records Taste Skill v2's default implementation choices for React or Next.js, Tailwind v4, Motion, fonts, icons, state, and dependencies.
 
-# Architecture and Stack
+## What it is
+- React or Next.js is the default unless the brief or existing project chooses otherwise
+- Next.js defaults to Server Components with interactivity in client leaves
+- Tailwind v4 is the default styling layer
+- Motion from motion/react is the default animation library
+- Fonts should use next/font or self-hosted font-face
+- Continuous input values should use Motion values rather than React state
+- Icon library priority is Phosphor, HugeIcons, Radix Icons, and Tabler
+- Dependency verification against package.json is mandatory.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: EVIDENCE-BASED (canonical `SKILL.md` §3; §2 design-system map).
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Apply the note only after the brief and scope have been read.
+- Use Section 14 or the named audit to check output before completion.
 
-## Compiled Truth
+## Best practice
+- Keep dated observations dated. EVIDENCE-BASED
+- Use primary or official evidence before practitioner evidence. EVIDENCE-BASED
+- Mark unresolved claims as contested, gaps, or experiments. EVIDENCE-BASED
+- Do not call the brain market-ready unless the required audit passes. EVIDENCE-BASED
+- Keep every factual sentence traceable to a listed source. EVIDENCE-BASED
+- Keep related links pointed at canonical current titles. EVIDENCE-BASED
+- Avoid long direct quotes from sources. EVIDENCE-BASED
+- Run lint and dash checks after edits. EVIDENCE-BASED
 
-**Default architecture (§3):**
-- **Framework:** React / Next.js, React Server Components by default; interactivity isolated in `'use client'` leaves.
-- **Styling:** **Tailwind v4** default (use `@tailwindcss/postcss`, not the `tailwindcss` postcss plugin).
-- **Animation:** **Motion** - `import { motion } from "motion/react"` (`framer-motion` is the legacy alias). See [[Motion and Performance Rules]].
-- **Fonts:** `next/font` or self-host `@font-face` + `font-display: swap`. **Never `<link>` Google Fonts in production.**
-- **State:** never `useState` for continuous input - use `useMotionValue` / `useTransform` / `useScroll`.
-- **Icons:** priority Phosphor (`@phosphor-icons/react`), HugeIcons, Radix, Tabler; `lucide-react` discouraged; **never hand-roll SVG icons**; one family per project; standardize `strokeWidth` globally (1.5 or 2.0). Emoji discouraged.
-- **Sizing:** `min-h-[100dvh]` never `h-screen`; Grid over flex-math; contain to `max-w-[1400px]` / `max-w-7xl`.
-- Verify every dependency against `package.json` before importing.
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-**Design-system map (§2):** when a brand implies an official system, install the real package - don't recreate its CSS or override 90% of its tokens. **One system per project.**
-
-| Brief signal | System / package |
-|---|---|
-| Microsoft / enterprise | `@fluentui/react-components` (or web-components) |
-| Google / Material | `@material/web` + Material 3 |
-| IBM / analytics | `@carbon/react` + `@carbon/styles` |
-| Shopify | Polaris |
-| Atlassian | `@atlaskit/*` |
-| GitHub devtool | `@primer/css` / `@primer/react-brand` |
-| UK public sector | `govuk-frontend` |
-| US public sector | `uswds` |
-| Local-business MVP | Bootstrap 5.3 |
-| Accessible React | `@radix-ui/themes` |
-| Owned components | shadcn/ui |
-| Tailwind SaaS | Tailwind v4 utilities + `dark:` |
-
-Aesthetics with **no** official package (glassmorphism, bento, brutalism, editorial, dark tech, aurora/mesh, kinetic type, Apple Liquid Glass) are built honestly with native CSS + Tailwind and labeled as approximations. The `SKILL.md` appendices give real `npm install` commands and official doc URLs per system, plus an honest Liquid Glass CSS skeleton.
-
-## Framework caveat
-
-Although the project claims to be framework-agnostic (React/Vue/Svelte/Astro), the defaults and examples assume **React/Next.js** - a criticism reviewers raise. The rules "target design intent, not a single framework API," but the code sketches are React. See [[Reception and Criticism]].
+## Sources
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
+- Developers Digest, https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review, retrieved 2026-07-06.
+- andrew.ooo, https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/, retrieved 2026-07-06.
+- neodrop.ai, https://neodrop.ai/post/s3mGLbLqiNd, retrieved 2026-07-06.
+- wilwaldon toolkit, https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit, retrieved 2026-07-07.
+- skills.sh, https://www.skills.sh, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[Motion and Performance Rules]] | [[Scope and Context]] | [[Rules and Audits Reference Card]]
-- Source: [[Canonical Skill File|Canonical SKILL.md]]
-
-## Timeline
-
-- 2026-07-06 - Note created.
+## Next actions
+- Keep thresholds tied to the raw SKILL.md.
+- Run audits after changing rule prose.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

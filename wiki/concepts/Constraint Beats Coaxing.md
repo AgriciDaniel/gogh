@@ -1,39 +1,96 @@
 ---
 type: "concept"
 title: "Constraint Beats Coaxing"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "EVIDENCE-BASED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/theory", "note/concept"]
+domain: "theory"
+confidence: "practitioner"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website (retrieved 2026-07-06)", "https://claude.com/blog/improving-frontend-design-through-skills (retrieved 2026-07-07)", "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md (retrieved 2026-07-07)", "https://github.com/pbakaus/impeccable (retrieved 2026-07-07)", "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md (retrieved 2026-07-07)"]
+sources: ["[[Design Theory Sources]]", "[[Canonical Skill File]]"]
 ---
+Constraint Beats Coaxing is the stack thesis that explicit constraints outperform generic requests to make a frontend beautiful.
 
-# Constraint Beats Coaxing
+## What it is
+- Theory pack states the working fix is constraint, not exhortation
+- Taste Skill implements constraints through dials, bans, locks, and Section 14
+- Anthropic frontend-design implements constraints through committed aesthetic direction
+- Impeccable implements constraints through project contracts and detector rules
+- UI UX Pro Max constrains by retrieval rather than freeform prompting
+- Vercel guidelines constrain through runtime rule fetching and file-line findings
+- The claim is practitioner synthesis across sources rather than a controlled benchmark.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: EVIDENCE-BASED (synthesis of the design-theory sources; the mechanism is directly stated by the skill's own design).
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-## Compiled Truth
+## Best practice
+- Keep dated observations dated. PRACTITIONER
+- Use primary or official evidence before practitioner evidence. PRACTITIONER
+- Mark unresolved claims as contested, gaps, or experiments. PRACTITIONER
+- Do not call the brain market-ready unless the required audit passes. PRACTITIONER
+- Keep every factual sentence traceable to a listed source. PRACTITIONER
+- Keep related links pointed at canonical current titles. PRACTITIONER
+- Avoid long direct quotes from sources. PRACTITIONER
+- Run lint and dash checks after edits. PRACTITIONER
 
-This is the load-bearing idea that ties the whole framework together.
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-> You fix mean-seeking models not by asking for beauty but by **narrowing the space they sample from**, and packaging that narrowing so it travels.
-
-Every other concept is a corollary:
-
-- [[AI Slop]] is convergence to the statistical mean. "Make it beautiful" prompts do not move the model off the median, because the median *is* what "beautiful" averages to in the corpus.
-- So the intervention is **constraint**, not encouragement: forbidden-pattern lists ([[AI Tells (Forbidden Patterns)]]), committing to one direction ([[The Three Dials]], the [[Greenfield Build (Prompt 1)|Design Read]]), and hard thresholds ([[Hero Discipline]], [[The Three Locks]], the [[Em-Dash Ban]]).
-- The constraints are grounded in real craft ([[Encoded Design Principles]]) so they raise quality rather than just adding noise.
-- They are made enforceable by turning judgment into a self-run gate ([[Design Review as Infrastructure]] -> [[Pre-Flight Check (Section 14)]]).
-- The narrowing is made *achievable* by an [[Image-First Pipeline]] that converts open-ended generation into bounded reproduction.
-- And the whole package is made *portable* by the [[Agent Skills Format|Agent Skills and SKILL.md Format]] so it travels to any agent.
-
-[[Leon Lin]] states the mechanism plainly in the skill's origin story: Anthropic's frontend guidance told the AI to "pick an extreme aesthetic" and "be creative," but *"LLMs are just based on probability. Without strict rules, they statistically default to the most likely patterns."* Taste Skill is the strict-rules answer to that observation.
-
-**The honest caveat.** Constraint raises the floor; it does not guarantee the ceiling. Over-tight rules can also cargo-cult (see [[Scope and Context]]) or chase trends (a "frontend taste checklist can become trend-chasing" - Developers Digest). Constraint is a default, not a law - the same caveat that applies to the [[Encoded Design Principles]].
+## Sources
+- Anthropic, https://claude.com/blog/improving-frontend-design-through-skills, retrieved 2026-07-07.
+- prg.sh, https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website, retrieved 2026-07-06.
+- W3C Design Tokens Community Group, https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/, retrieved 2026-07-06.
+- Refactoring UI, https://www.refactoringui.com/, retrieved 2026-07-07.
+- Butterick Practical Typography, https://practicaltypography.com/, retrieved 2026-07-07.
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[AI Slop]] | [[Taste as the Moat]] | [[Design Review as Infrastructure]]
-
-## Timeline
-
-- 2026-07-06 - Note created as the concept spine.
+## Next actions
+- Keep this concept atomic and source-cited.
+- Move operational detail to rule or flow notes.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

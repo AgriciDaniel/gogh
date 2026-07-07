@@ -1,41 +1,95 @@
 ---
 type: "concept"
 title: "Image-First Pipeline"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "EVIDENCE-BASED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/taste-skill", "note/concept"]
+domain: "taste-skill"
+confidence: "evidence-based"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md (retrieved 2026-07-07)", "https://www.tasteskill.dev/guide?view=full (retrieved 2026-07-07)", "https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website (retrieved 2026-07-06)", "https://api.github.com/repos/Leonxlnx/taste-skill (retrieved 2026-07-07)"]
+sources: ["[[Canonical Skill File]]", "[[Design Theory Sources]]"]
 ---
+Image-First Pipeline is Taste Skill's workflow of generating or collecting visual references, analyzing them, and implementing code against a concrete target.
 
-# Image-First Pipeline
+## What it is
+- Theory extract describes three phases: reference frames, analysis, and implementation
+- Taste Skill Section 4.8 prioritizes image generation when available
+- Official greenfield prompt requires real images and names gen-tool first, then Picsum seed
+- image-to-code is part of the 13-skill suite
+- The workflow narrows open-ended generation into bounded reproduction
+- The evidence is workflow-level, not a cross-skill benchmark.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: EVIDENCE-BASED.
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-## Compiled Truth
+## Best practice
+- Keep dated observations dated. EVIDENCE-BASED
+- Use primary or official evidence before practitioner evidence. EVIDENCE-BASED
+- Mark unresolved claims as contested, gaps, or experiments. EVIDENCE-BASED
+- Do not call the brain market-ready unless the required audit passes. EVIDENCE-BASED
+- Keep every factual sentence traceable to a listed source. EVIDENCE-BASED
+- Keep related links pointed at canonical current titles. EVIDENCE-BASED
+- Avoid long direct quotes from sources. EVIDENCE-BASED
+- Run lint and dash checks after edits. EVIDENCE-BASED
 
-An optional but signature workflow: *"generate reference frames, analyze them, then implement the frontend to match."* Three phases the user requests in the prompt:
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-1. **Generate** reference frames with an image model. The suite ships dedicated image skills for this: `imagegen-frontend-web` (one horizontal image *per section*), `imagegen-frontend-mobile`, and `brandkit`; plus `image-to-code-skill` and the `gpt-taste` variant. See [[The 13 Skills]].
-2. **Analyze** the rendered design - extract palette, type, layout, spacing.
-3. **Implement** code faithful to the visual spec.
-
-## Why it beats standard text-to-UI
-
-Plain text->code forces the model to hold the entire aesthetic in latent space and emit it directly, which - underspecified - collapses to the mean ([[AI Slop]]). Inserting an image stage changes the problem in three ways:
-
-1. **A concrete target replaces an abstract instruction.** The mockup "isn't a pixel-perfect spec. It's a visual conversation about intent" and "becomes the shared language between design intent and code." Coding-to-match a fixed reference is a *narrower, more constrained* task than inventing from prose.
-2. **Cheap iteration in the right medium.** Aesthetic disagreement is resolved on images *before* any code is written (typically ~2 mockup rounds) - the design-industry comp->build handoff reconstructed inside one agent session.
-3. **Grounded generation.** Reference-driven UI research (SpecifyUI, Prototype2Code) shows "specification-based generation more faithfully captures reference intent than prompt-based baselines."
-
-The net move: convert an open-ended **generation** problem (mean-seeking) into a bounded **reproduction** problem (match this target), where agents are strongest - and let the human exercise [[Taste as the Moat|taste]] at the cheapest possible stage, an image, rather than debugging aesthetics in code. This is [[Constraint Beats Coaxing]] applied to the pipeline itself.
-
-See the playbook: [[Image-First Reference Pipeline]].
+## Sources
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
+- Developers Digest, https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review, retrieved 2026-07-06.
+- andrew.ooo, https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/, retrieved 2026-07-06.
+- neodrop.ai, https://neodrop.ai/post/s3mGLbLqiNd, retrieved 2026-07-06.
+- wilwaldon toolkit, https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit, retrieved 2026-07-07.
+- skills.sh, https://www.skills.sh, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[The 13 Skills]] | [[Image-First Reference Pipeline]] | [[AI Slop]]
-- Source: [[Design Theory Sources]]
-
-## Timeline
-
-- 2026-07-06 - Note created.
+## Next actions
+- Keep this concept atomic and source-cited.
+- Move operational detail to rule or flow notes.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

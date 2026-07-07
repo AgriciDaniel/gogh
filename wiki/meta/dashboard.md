@@ -1,49 +1,108 @@
 ---
 type: "meta"
 title: "Dashboard"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/taste-skill", "note/meta"]
+domain: "taste-skill"
+confidence: "evidence-based"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://api.github.com/repos/Leonxlnx/taste-skill (retrieved 2026-07-07)", "https://www.skills.sh (retrieved 2026-07-07)", "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit (retrieved 2026-07-07)", "https://www.tasteskill.dev/guide?view=full (retrieved 2026-07-07)", "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills (retrieved 2026-07-06)"]
+sources: ["[[Source Manifest Guide]]", "[[Reception Sources]]", "[[Canonical Skill File]]"]
 ---
+Dashboard summarizes six-skill stack facts as dated observations for operators working in the Gogh vault.
 
-# Dashboard
+## What it is
+- Dashboard is a meta note, not a primary source
+- As of 2026-07-07, anthropics/skills had 159,044 stars
+- As of 2026-07-07, ui-ux-pro-max had 102,037 stars
+- As of 2026-07-07, taste-skill had 59,770 stars
+- As of 2026-07-07, Impeccable had 44,115 stars
+- As of 2026-07-07, Vercel agent-skills had 28,766 stars
+- As of 2026-07-07, MIFB had 2,241 stars
+- Install-channel comparisons remain incomplete.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Snapshot of the brain's coverage and the subject's key facts as of 2026-07-06.
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-## Subject at a glance
+## Best practice
+- Keep dated observations dated. EVIDENCE-BASED
+- Use primary or official evidence before practitioner evidence. EVIDENCE-BASED
+- Mark unresolved claims as contested, gaps, or experiments. EVIDENCE-BASED
+- Do not call the brain market-ready unless the required audit passes. EVIDENCE-BASED
+- Keep every factual sentence traceable to a listed source. EVIDENCE-BASED
+- Keep related links pointed at canonical current titles. EVIDENCE-BASED
+- Avoid long direct quotes from sources. EVIDENCE-BASED
+- Run lint and dash checks after edits. EVIDENCE-BASED
 
-| Fact | Value |
-|---|---|
-| Project | Taste Skill (Anti-Slop Frontend Framework) |
-| Author | Leon Lin (`@LexnLin` / `Leonxlnx`) + `blueemi` |
-| Repo | `github.com/Leonxlnx/taste-skill` |
-| License | MIT (c) 2026 |
-| Version | v2 (experimental), pre-release toward v2.0.0 stable |
-| Install name | `design-taste-frontend` |
-| Dial baseline | DESIGN_VARIANCE 8 / MOTION_INTENSITY 6 / VISUAL_DENSITY 4 |
-| Stars | ~58,400 (2026-07-06) |
-| Skills in suite | 13 |
-| Scope | landing pages, portfolios, redesigns |
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-## Coverage map
+## Sources
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
+- Developers Digest, https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review, retrieved 2026-07-06.
+- andrew.ooo, https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/, retrieved 2026-07-06.
+- neodrop.ai, https://neodrop.ai/post/s3mGLbLqiNd, retrieved 2026-07-06.
+- wilwaldon toolkit, https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit, retrieved 2026-07-07.
+- skills.sh, https://www.skills.sh, retrieved 2026-07-07.
 
-| Hub | Status |
-|---|---|
-| Concepts | Populated - 8 notes |
-| Dials | Populated - 3 dials + tuning guide |
-| Rules | Populated - reference card + 11 rule notes |
-| Playbooks | Populated - install, greenfield, redesign, modes, image-first |
-| Audits | Populated - pre-flight + required audits |
-| Entities | Populated - people, projects, tools |
-| Reception | Populated - adoption, criticism, ecosystem |
-| Sources | Wired to `references/source-ledger.json` (11 sources) |
+## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-Hub links: [[wiki/concepts/_index|Concepts]], [[wiki/dials/_index|Dials]], [[wiki/rules/_index|Rules]], [[wiki/playbooks/_index|Playbooks]], [[wiki/audits/_index|Audits]], [[wiki/entities/_index|Entities]], [[wiki/reception/_index|Reception]], [[wiki/sources/_index|Sources]], [[wiki/gaps/_index|Gaps]].
+- [[Section 14 Item Count]] - tracks the contested checklist count.
+- [[Leon Lin Age Claim]] - keeps the reported age claim contested.
+- [[Taste Skill v2.0.0 Stable Timing]] - watches stable release status.
+- [[Installs Figure Basis]] - tracks incomplete install-count basis.
+- [[Block Library Unpopulated]] - records the Section 12 implementation gap.
+- [[No Cross-Skill Benchmark Data]] - records the missing benchmark gap.
+- [[Local Collection Unindexed]] - records the local collection indexing gap.
+- [[Stack Order Probe]] - designs the stack-order experiment.
+- [[Impeccable Token Cost Measurement]] - designs current token-cost measurement.
+- [[Emil Kowalski]] - records sponsor and practitioner context.
 
-## Health notes
-
-- Two facts held as CONTESTED: [[Leon Lin]]'s age ("16") and the "taste-as-a-file" premise ([[Taste as the Moat]]).
-- One number unverified by the vendor: the "60-item" count for [[Pre-Flight Check (Section 14)]].
-- Full list in [[Open Questions]].
-
-Related: [[Index]] | [[Hot]] | [[Log]]
+## Next actions
+- Keep root and hub repairs for the owning slice.
+- Use meta pages as navigation, not primary evidence.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

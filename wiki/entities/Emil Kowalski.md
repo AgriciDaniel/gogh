@@ -1,32 +1,94 @@
 ---
 type: "entity"
 title: "Emil Kowalski"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "EVIDENCE-BASED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/taste-skill", "note/entity"]
+domain: "taste-skill"
+confidence: "practitioner"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://emilkowal.ski/ui/agents-with-taste (retrieved 2026-07-06)", "https://api.github.com/repos/Leonxlnx/taste-skill (retrieved 2026-07-07)", "https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review (retrieved 2026-07-06)"]
+sources: ["[[Reception Sources]]", "[[Developers Digest - Taste Skills as Infrastructure]]"]
 ---
+Emil Kowalski is relevant to the Taste Skill wiki as a design-engineering practitioner and official sponsor, not as the author of Taste Skill.
 
-# Emil Kowalski
+## What it is
+- Reception extract identifies Emil Kowalski as creator of animations.dev
+- Claim pack records animations.dev and Vercel OSS Program as official sponsors of Taste Skill
+- Emil wrote an Agents with Taste essay arguing taste can be codified into skill files
+- Extract states the essay and skills repo are parallel independent work, not a review of Leon Lin's project
+- Sponsorship is ecosystem backing, not proof of every Taste Skill rule.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: EVIDENCE-BASED (his site, GitHub; the sponsorship link is verified).
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-## Compiled Truth
+## Best practice
+- Keep dated observations dated. PRACTITIONER
+- Use primary or official evidence before practitioner evidence. PRACTITIONER
+- Mark unresolved claims as contested, gaps, or experiments. PRACTITIONER
+- Do not call the brain market-ready unless the required audit passes. PRACTITIONER
+- Keep every factual sentence traceable to a listed source. PRACTITIONER
+- Keep related links pointed at canonical current titles. PRACTITIONER
+- Avoid long direct quotes from sources. PRACTITIONER
+- Run lint and dash checks after edits. PRACTITIONER
 
-A respected design engineer whose work gives the "taste-in-skills" idea design-world legitimacy - and a direct backer of Taste Skill.
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-- **Who:** Web team at **Linear**, previously **Vercel** design team. Creator of **animations.dev** (animation course), **Sonner** (React toast), **Vaul** (React drawer), and **index.how**.
-- **His essay "Agents with Taste":** argues design taste is not magic but articulable logic, so designers should codify it into per-aspect skill files and hand those to agents. Quotes: *"Almost every 'taste' decision has a logical reason if you look close enough."* / *"The more you can package into a skill, the more leverage you can get out of your agents."* He built his own `emil-design-eng` skills via Anthropic's skill-creator. Undated; landed early May 2026 (predates Roger Wong's May 6 response).
-
-## The key nuance (kept to avoid a common misread)
-
-Emil's essay and his `emilkowalski/skills` repo are a **parallel, independent effort**, *not* [[Leon Lin]]'s project - conflating them overstates direct endorsement. **But** they are linked: **animations.dev (Emil) is an official sponsor of Taste Skill**, alongside the Vercel OSS Program. So a senior design engineer both champions the *movement* and financially backs *this project* - a meaningful, if indirect, endorsement. See [[Taste as the Moat]] for the shared thesis and [[Reception and Criticism]] for context.
+## Sources
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
+- Developers Digest, https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review, retrieved 2026-07-06.
+- andrew.ooo, https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/, retrieved 2026-07-06.
+- neodrop.ai, https://neodrop.ai/post/s3mGLbLqiNd, retrieved 2026-07-06.
+- wilwaldon toolkit, https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit, retrieved 2026-07-07.
+- skills.sh, https://www.skills.sh, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[Taste as the Moat]] | [[Reception and Criticism]] | [[Leon Lin]] | [[Ecosystem and Alternatives]]
-- Source: [[Reception Sources]]
-
-## Timeline
-
-- 2026-07-06 - Note created.
+## Next actions
+- Keep people, projects, and metrics dated.
+- Do not infer private details from reception sources.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.

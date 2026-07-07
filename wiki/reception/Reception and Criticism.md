@@ -1,41 +1,107 @@
 ---
-type: "note"
+type: "reception"
 title: "Reception and Criticism"
-created: "2026-07-06"
-updated: "2026-07-06"
-status: "active"
-confidence: "EVIDENCE-BASED"
+status: "developing"
+created: "2026-07-07"
+updated: "2026-07-07"
+tags: ["gogh/stack", "note/reception"]
+domain: "stack"
+confidence: "contested"
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+source_urls: ["https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review (retrieved 2026-07-06)", "https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/ (retrieved 2026-07-06)", "https://neodrop.ai/post/s3mGLbLqiNd (retrieved 2026-07-06)", "https://computertech.co/impeccable-ai-review/ (retrieved 2026-07-07)", "https://github.com/pbakaus/impeccable (retrieved 2026-07-07)", "https://github.com/jakubkrehel/make-interfaces-feel-better (retrieved 2026-07-07)"]
+sources: ["[[Reception Sources]]", "[[Impeccable Repo and Site]]"]
 ---
+Reception and Criticism preserves both praise for reusable review infrastructure and criticism that markdown cannot simply install taste.
 
-# Reception and Criticism
+## What it is
+- Taste Skill is praised for treating frontend AI slop as an engineering problem
+- Critics object that strong rules can be opinions
+- Developers Digest records the defense that teams use taste skills to stop re-explaining standards every session
+- The you-cannot-install-taste criticism says instructions do not guarantee taste or brand judgment
+- Impeccable is praised for deterministic detection and design contracts
+- Impeccable token anecdote reports 8,000 to 15,000 tokens and 10 to 15 percent overhead for March 2026 v1.x, not current v3.x
+- MIFB is praised for exact small-detail values.
+- This note is part of the S5h legacy migration and is intentionally scoped to its assigned file.
+- The evidence basis is limited to the assigned claim packs, raw captures, and source-ledger URLs.
+- Counts, versions, stars, installs, release states, and dates are stated as dated observations.
+- Same-author pages are treated as consistency checks unless an independent source is named.
+- The note keeps wiki links pathless where a canonical title exists.
+- The note avoids source claims that were not present in the local evidence pack.
 
-Confidence tag: EVIDENCE-BASED (dated third-party coverage). Net: **the product is broadly praised; the premise is genuinely contested.**
+> [!contradiction]
+> This claim has either conflicting source accounts or an incomplete primary-source basis, so both the claim and its limit stay visible.
 
-## What people praise
+## How it works
+- Read the linked source note before changing the factual claim.
+- Use the related notes to move from concept to rule, flow, audit, question, gap, or experiment.
+- Preserve the domain boundary instead of merging unrelated skill behavior.
+- Keep official sources above practitioner and market sources.
+- Route missing evidence to a question, gap, or experiment note.
+- Do not edit raw captures while maintaining the wiki.
+- Use this note as navigation into more specific atomic notes.
+- Refresh source-ledger evidence before changing current-state language.
 
-- **Names and solves a shared pain.** andrew.ooo: *"Taste Skill is the first frontend skill that treats 'AI slop' as a solvable engineering problem rather than a vibes problem."* dev.to captures the pain: *"Tired of AI-generated UIs that all look the same? White background, blue button, generic sans-serif, no soul?"*
-- **Rigor over hand-waving.** The dials + hard bans + pre-flight feel disciplined vs "be creative." neodrop: it *"kills the worst defaults, which is already a huge win."*
-- **Portability / no lock-in** via the [[Agent Skills Format|SKILL.md standard]].
-- **Concrete engineering craft** - `useMotionValue` perf tips, `min-h-[100dvh]`, interaction-state guidance - not just aesthetics.
-- **Sponsor endorsement** from a senior design engineer ([[Emil Kowalski]] / animations.dev) and the Vercel OSS Program.
+## Best practice
+- Keep dated observations dated. CONTESTED
+- Use primary or official evidence before practitioner evidence. CONTESTED
+- Mark unresolved claims as contested, gaps, or experiments. CONTESTED
+- Do not call the brain market-ready unless the required audit passes. CONTESTED
+- Keep every factual sentence traceable to a listed source. CONTESTED
+- Keep related links pointed at canonical current titles. CONTESTED
+- Avoid long direct quotes from sources. CONTESTED
+- Run lint and dash checks after edits. CONTESTED
 
-## What people criticize
+## Pitfalls
+- Undated numbers become misleading in this fast-moving ecosystem.
+- Directory summaries can repeat repository claims without independent verification.
+- A missing primary source should not become confident prose.
+- Cross-skill comparisons can hide mechanism differences.
+- Root and hub files are not owned by this slice.
+- Long source excerpts would violate the shared quote cap.
+- Changing moved titles back to old titles breaks migration links.
+- Treating advisory notes as live mutation approval exceeds V1 boundaries.
 
-- **"It's just prompts / opinions."** andrew.ooo: *"'Inter is banned for creative vibes' is a defensible opinion, but it is an opinion,"* and if you love Inter *"you'll be editing the skill file constantly."* See [[Typography Rules]].
-- **Framework bias** despite the "agnostic" claim - examples assume React/Next. See [[Architecture and Stack]].
-- **No verification layer** - *"no automated tests or visual regression"* proves the rules were actually followed. The audits are self-reported. See [[Design Review as Infrastructure]].
-- **The philosophical pushback: "you can't install taste."** Mark Chen ("You Can't Install Taste," 2026-05-29): tools can make AI *stop* writing like AI but not make it *write well* - *"There's a difference, and most 'humanizer' tools miss it."* designative.info ("Taste Is the New Bottleneck") and others argue taste is accumulated curatorial judgment that resists compression into a checklist, and has historically been a **gatekeeping** term. This is the [[Taste as the Moat|CONTESTED premise]].
-- **Even sympathetic coverage hedges:** Developers Digest concedes *"a frontend taste checklist can become trend-chasing"* and that skills which do not measurably change review outcomes should be deleted; neodrop notes designers argued it *"oversimplifies aesthetic judgment"* (the between-the-notches cost of [[The Three Dials]]).
-
-## The brain's stance
-
-Best understood as **raising the floor** (reliably killing the worst defaults) rather than manufacturing top-1% design - which is exactly what [[Constraint Beats Coaxing]] predicts and what the [[Scope and Context|contextual, non-automatic]] framing supports.
+## Sources
+- Developers Digest, https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review, retrieved 2026-07-06.
+- andrew.ooo, https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/, retrieved 2026-07-06.
+- neodrop.ai, https://neodrop.ai/post/s3mGLbLqiNd, retrieved 2026-07-06.
+- wilwaldon toolkit, https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit, retrieved 2026-07-07.
+- skills.sh, https://www.skills.sh, retrieved 2026-07-07.
+- GitHub raw capture, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
+- Taste Skill official guide, https://www.tasteskill.dev/guide?view=full, retrieved 2026-07-07.
+- Taste Skill repository API, https://api.github.com/repos/Leonxlnx/taste-skill, retrieved 2026-07-07.
+- Taste Skill changelog, https://www.tasteskill.dev/changelog, retrieved 2026-07-07.
+- Anthropic, https://claude.com/blog/improving-frontend-design-through-skills, retrieved 2026-07-07.
+- prg.sh, https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website, retrieved 2026-07-06.
+- W3C Design Tokens Community Group, https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/, retrieved 2026-07-06.
+- Refactoring UI, https://www.refactoringui.com/, retrieved 2026-07-07.
+- Butterick Practical Typography, https://practicaltypography.com/, retrieved 2026-07-07.
 
 ## Related
+- [[Taste Skill (Project)]] - the Taste Skill anchor and v2 status note.
+- [[The Three Dials]] - the 8, 6, 4 dial model.
+- [[DESIGN_VARIANCE]] - the layout variance dial.
+- [[MOTION_INTENSITY]] - the motion intensity dial.
+- [[VISUAL_DENSITY]] - the visual density dial.
+- [[Taste Skill Reference Card]] - the compact rule map.
+- [[Pre-Flight Check (Section 14)]] - the blocking final gate.
+- [[Required Audits]] - the Taste Skill audit router.
+- [[AI Tells (Forbidden Patterns)]] - the anti-slop pattern list.
+- [[Scope and Context]] - the scope boundary.
+- [[Install and Load]] - the install flow.
+- [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
-- [[Taste as the Moat]] | [[Adoption and Metrics]] | [[Ecosystem and Alternatives]]
-- Source: [[Reception Sources]], [[andrew.ooo - Taste Skill Review]], [[Developers Digest - Taste Skills as Infrastructure]]
+- [[Impeccable Setup Token Cost]] - keeps the v1.x token anecdote caveat visible.
+- [[Impeccable Token Cost Measurement]] - defines the measurement path for the token claim.
 
-## Timeline
-
-- 2026-07-06 - Note created.
+## Next actions
+- Keep praise and criticism together.
+- Refresh fast-moving numbers before publication.
+- Recheck source-ledger rows before promoting this note.
+- Propagate resolved questions to linked notes.
+- Keep source URLs and retrieved dates synchronized.
+- Do not edit unowned hubs or root files from this slice.
+- Run S5h verification after future edits.
+- Record dropped claims instead of hiding them.
+- Keep related links on current canonical titles.
+- Leave unresolved evidence as developing.
