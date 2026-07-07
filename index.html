@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gogh — design judgment for AI coding agents</title>
+<style>
+  :root {
+    --bg: #F5F4F0; --panel: #FFFFFF; --ink: #17160F; --dim: #6C6858; --line: #DEDACD; --acc: #B3690A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131313; --panel: #1C1C1C; --ink: #EDEBE6; --dim: #9A968E; --line: #2E2C28; --acc: #FFB000; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+    padding: 0 24px 80px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  img.cover { width: 100%; height: auto; border-radius: 8px; margin: 32px 0 28px; display: block; }
+  p.lede { color: var(--dim); font-size: 15px; margin: 0 0 32px; line-height: 1.6; max-width: 64ch; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+  a.card {
+    display: block; border: 1px solid var(--line); border-radius: 6px; padding: 16px 20px;
+    background: var(--panel); text-decoration: none; color: var(--ink); flex: 1 1 220px;
+    transition: transform 0.15s cubic-bezier(0.2,0,0,1), border-color 0.15s;
+  }
+  a.card:hover { border-color: var(--acc); transform: translateY(-1px); }
+  a.card:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
+  .card .n { display: block; font-weight: 700; font-size: 14.5px; margin-bottom: 4px; }
+  .card .t { display: block; font-size: 12.5px; color: var(--dim); line-height: 1.4; }
+  footer { font-size: 12px; color: var(--dim); }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="cover" src="assets/cover.webp" alt="Gogh: design judgment for AI coding agents">
+  <p class="lede">
+    Source-cited Obsidian operating brain that turns six frontend design skills into one
+    advisable stack for AI coding agents. Taste prompting, micro-interaction execution,
+    toolchain enforcement, retrieval, and audit, combined into one anti-slop rulebook.
+  </p>
+  <div class="links">
+    <a class="card" href="https://github.com/AgriciDaniel/gogh">
+      <span class="n">Repository</span>
+      <span class="t">README, six-skill stack, quick start, and source</span>
+    </a>
+    <a class="card" href="examples/aimh-pro-landing-variants/">
+      <span class="n">Showcase</span>
+      <span class="t">Six landing page variants built with Gogh</span>
+    </a>
+  </div>
+  <footer>
+    <a href="https://github.com/AgriciDaniel/gogh">github.com/AgriciDaniel/gogh</a>
+  </footer>
+</div>
+</body>
+</html>
