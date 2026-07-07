@@ -1,7 +1,7 @@
 # Gogh
 
 <p align="center">
-  <img src="assets/svg/hero-frontispiece.svg" alt="Gogh editorial frontispiece" width="100%"/>
+  <img src="assets/cover.webp" alt="Gogh: design judgment for AI coding agents" width="100%"/>
 </p>
 
 Source cited Obsidian operating brain that turns six frontend design skills into one advisable stack.
