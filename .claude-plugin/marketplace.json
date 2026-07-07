@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Gogh source cited design skill stack brain",
-    "version": "0.1.0"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "gogh-brain",
       "source": "./",
       "description": "Gogh is a source cited Obsidian operating brain that turns six frontend design skills into one advisable stack for AI coding agents.",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "author": {
         "name": "Daniel Agrici"
       },

@@ -12,9 +12,9 @@ curated skills into stack advice: which skill to use when, how to combine them,
 how to resolve conflicts, and how to keep a unified anti-slop rulebook tied to
 dated sources.
 
-**Current maturity:** researched. This metamorphosis wave is driving the repo
-toward market-ready, but it is not market-ready until domain adapters, demo
-verification, audit, and release gates pass.
+**Current maturity:** market-ready pending the release gate. The structural
+audit passes at market-ready; the final release is cut by the operator
+procedure.
 
 ## Promise
 
@@ -103,7 +103,6 @@ research notes do not satisfy the gate.
 ## Release
 
 ```bash
-python scripts/package_release.py --version 0.1.0
 python scripts/package_release.py --version 1.0.0 --release-type market-ready
 ```
 

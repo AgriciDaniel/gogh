@@ -2,36 +2,29 @@
 
 ## Product
 
-- [ ] README states buyer, promise, outputs, boundaries, and quick start.
+- [ ] README states buyer, promise, outputs, boundaries, quick start, and honest market-ready pending release status.
 - [ ] `SKILL.md` maps commands accurately.
-- [ ] License and distribution stance is explicit.
-- [ ] Third-party notices are current.
+- [ ] License is finalized as Apache-2.0.
+- [ ] Third-party names and upstream ownership are preserved.
+- [ ] Six skill anchors are present: taste-skill v2, make-interfaces-feel-better, Impeccable, Anthropic frontend-design, ui-ux-pro-max, and Vercel web-design-guidelines.
 
-## Research
+## Gogh Bars
 
-- [ ] Maturity is documented and not overstated.
-- [ ] `references/current-requirements.md` has dated official/primary sources.
-- [ ] `references/source-ledger.json` lists dated official/primary sources,
-      refresh dates, source types, and supported claims.
-- [ ] `references/source-map.md` explains import strategy and source schemas.
-- [ ] `references/safety-gates.md` lists refusal rules and failure paths.
-- [ ] Stale source claims were browsed and refreshed before release.
-
-## Vault
-
-- [ ] Template vault opens in Obsidian.
-- [ ] Hot/Index/Wiki notes and hubs are connected.
-- [ ] Raw sources stay immutable under `.raw/`.
-- [ ] Deliverables cite source notes or raw-file hashes.
+- [ ] Claim-ledger row count reconciles with source packs.
+- [ ] `.raw/.manifest.json` sha256 values verify against raw files.
+- [ ] Zero dead wikilinks across template, sample, and root vaults.
+- [ ] Zero em dashes or en dashes in `wiki/`.
+- [ ] Upstream names are never rebranded. Spot check `tasteskill.dev`, `Leonxlnx`, and `design-taste-frontend`.
+- [ ] Second Brain loop closeout is complete: capture, synthesize, link, review, decide, and update next actions.
 
 ## Verification
 
-- [ ] `python -m compileall scripts gogh_brain tests`
+- [ ] `python -m compileall -q scripts gogh_brain tests`
+- [ ] `python tests/test_adapters.py`
 - [ ] `python tests/test_pipeline.py`
-- [ ] `python scripts/build_demo_vault.py`
-- [ ] `python scripts/package_release.py --version 0.1.0`
-- [ ] No secrets, private client data, or local absolute paths in artifacts.
-- [ ] Market-ready release is blocked unless audit score is at least 90 with no critical failures.
-- [ ] `references/adapter-manifest.json` names real schemas, importer paths,
-      synthesis modules, report renderers, fixtures, and tests before
-      domain-adapted or market-ready release.
+- [ ] `python scripts/lint_vault.py --vault assets/template-brain`
+- [ ] `python scripts/lint_vault.py --vault examples/sample-vault`
+- [ ] `python scripts/lint_vault.py --vault .`
+- [ ] `python scripts/audit_brain.py --require market-ready`
+- [ ] `python scripts/package_release.py --version 1.0.0 --release-type market-ready` on a clean tree.
+- [ ] No secrets, private client data, local absolute paths, or unsafe release artifacts.

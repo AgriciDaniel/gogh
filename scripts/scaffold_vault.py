@@ -7,8 +7,9 @@ import re
 import shutil
 import stat
 import sys
-from datetime import date
 from pathlib import Path
+
+from vault_dates import today
 
 
 REPO = Path(__file__).resolve().parent.parent
@@ -34,8 +35,9 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     if vault.exists():
         shutil.rmtree(vault)
+    vault_date = today()
     copy_template(TEMPLATE, vault, {
-        "{{date}}": date.today().isoformat(),
+        "{{date}}": vault_date,
         "{{client_slug}}": slug,
         "{{client_name}}": args.client_name or slug,
         "{{owner}}": args.owner,
@@ -47,7 +49,7 @@ def main(argv: list[str] | None = None) -> int:
             "client": slug,
             "client_name": args.client_name or slug,
             "owner": args.owner,
-            "created": date.today().isoformat(),
+            "created": vault_date,
         }],
         "sources": [],
     }, indent=2) + "\n", encoding="utf-8")

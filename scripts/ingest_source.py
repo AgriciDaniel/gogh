@@ -7,8 +7,9 @@ import json
 import re
 import shutil
 import sys
-from datetime import date
 from pathlib import Path
+
+from vault_dates import today
 
 
 MAX_BYTES = 10 * 1024 * 1024
@@ -40,11 +41,12 @@ def main(argv: list[str] | None = None) -> int:
     update_manifest(vault, target.relative_to(vault).as_posix(), digest, args.source_type)
     source_note = collision_safe_path(vault / "wiki" / "sources", f"{safe_title(source.stem)}.md", digest)
     source_note.parent.mkdir(parents=True, exist_ok=True)
+    vault_date = today()
     source_note.write_text(f"""---
 type: "source"
 title: "{source.stem}"
-created: "{date.today().isoformat()}"
-updated: "{date.today().isoformat()}"
+created: "{vault_date}"
+updated: "{vault_date}"
 status: "active"
 sources: ["{target.relative_to(vault).as_posix()}"]
 ---
@@ -55,7 +57,7 @@ sources: ["{target.relative_to(vault).as_posix()}"]
 
 - Path: `{target.relative_to(vault).as_posix()}`
 - Hash: `{digest}`
-- Retrieved: {date.today().isoformat()}
+- Retrieved: {vault_date}
 - Type: {args.source_type}
 
 ## Compiled Truth
@@ -114,7 +116,7 @@ def update_manifest(vault: Path, rel: str, digest: str, source_type: str) -> Non
     data.setdefault("sources", []).append({
         "path": rel,
         "sha256": digest,
-        "retrieved": date.today().isoformat(),
+        "retrieved": today(),
         "source_type": source_type,
     })
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
@@ -129,7 +131,7 @@ def safe_title(value: str) -> str:
 def append_log(vault: Path, message: str) -> None:
     log = vault / "wiki" / "log.md"
     if log.exists():
-        text = log.read_text(encoding="utf-8").rstrip() + f"\n- {date.today().isoformat()} - {message}\n"
+        text = log.read_text(encoding="utf-8").rstrip() + f"\n- {today()} - {message}\n"
         log.write_text(text, encoding="utf-8")
 
 

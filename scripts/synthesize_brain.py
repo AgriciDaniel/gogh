@@ -4,8 +4,9 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import date
 from pathlib import Path
+
+from vault_dates import today
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -20,11 +21,12 @@ def main(argv: list[str] | None = None) -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     sources = manifest.get("sources", [])
     source_rows = "\n".join(f"| `{item.get('path', '')}` | `{item.get('sha256', '')[:12]}` | {item.get('retrieved', '')} |" for item in sources) or "| No sources yet |  |  |"
+    vault_date = today()
     write(vault / "wiki" / "deliverables" / "Health Scorecard.md", f"""---
 type: "deliverable"
 title: "Health Scorecard"
-created: "{date.today().isoformat()}"
-updated: "{date.today().isoformat()}"
+created: "{vault_date}"
+updated: "{vault_date}"
 status: "draft"
 ---
 
@@ -46,8 +48,8 @@ Related: [[Action Roadmap]] | [[Weekly Report]] | [[Source Manifest Guide]]
     write(vault / "wiki" / "deliverables" / "Action Roadmap.md", f"""---
 type: "deliverable"
 title: "Action Roadmap"
-created: "{date.today().isoformat()}"
-updated: "{date.today().isoformat()}"
+created: "{vault_date}"
+updated: "{vault_date}"
 status: "draft"
 ---
 
@@ -68,8 +70,8 @@ Related: [[Approval Queue]] | [[Health Scorecard]] | [[Best Practices Kernel]]
     write(vault / "wiki" / "reports" / "Weekly Report.md", f"""---
 type: "report"
 title: "Weekly Report"
-created: "{date.today().isoformat()}"
-updated: "{date.today().isoformat()}"
+created: "{vault_date}"
+updated: "{vault_date}"
 status: "draft"
 ---
 
@@ -101,7 +103,7 @@ def write(path: Path, text: str) -> None:
 def append_log(vault: Path, message: str) -> None:
     log = vault / "wiki" / "log.md"
     if log.exists():
-        log.write_text(log.read_text(encoding="utf-8").rstrip() + f"\n- {date.today().isoformat()} - {message}\n", encoding="utf-8")
+        log.write_text(log.read_text(encoding="utf-8").rstrip() + f"\n- {today()} - {message}\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ status: "draft"
 
 | Source | Hash | Retrieved |
 |---|---|---:|
-| `.raw/sources/sample-source.md` | `feb3d1d31ed1` | 2026-07-07 |
+| `.raw/sources/sample-source.md` | `bf4b4386b252` | 2026-07-07 |
 
 ## Current Read
 
