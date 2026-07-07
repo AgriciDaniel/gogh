@@ -73,9 +73,9 @@ gogh-brain advise --vault <path> --brief <file>
 | `visuals` | `python scripts/generate_vault_visuals.py` |  |
 | `lint` | `python scripts/lint_vault.py` |  |
 | `next` | `python scripts/guide_next_action.py` |  |
-| `registry` | `python scripts/import_skill_capture.py` | (land in the adapter wave) |
-| `diff` | `python scripts/import_skill_capture.py` | (land in the adapter wave) |
-| `advise` | `python scripts/render_stack_advisor.py` | (land in the adapter wave) |
+| `registry` | `python scripts/import_skill_capture.py` |  |
+| `diff` | `python scripts/import_skill_capture.py` |  |
+| `advise` | `python scripts/render_stack_advisor.py` |  |
 
 ## Quality Gates
 

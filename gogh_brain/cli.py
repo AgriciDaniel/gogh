@@ -38,6 +38,17 @@ def main(argv: list[str] | None = None) -> int:
     p_lint.add_argument("--template", action="store_true")
     p_next = sub.add_parser("next")
     p_next.add_argument("--vault", required=True)
+    p_registry = sub.add_parser("registry")
+    p_registry.add_argument("--raw-dir", default=".raw/skills")
+    p_registry.add_argument("--manifest", default=".raw/.manifest.json")
+    p_registry.add_argument("--out", default="references/skill-registry.json")
+    p_diff = sub.add_parser("diff")
+    p_diff.add_argument("--old", required=True)
+    p_diff.add_argument("--new", required=True)
+    p_advise = sub.add_parser("advise")
+    p_advise.add_argument("--brief", required=True)
+    p_advise.add_argument("--registry", default="references/skill-registry.json")
+    p_advise.add_argument("--out", default="")
     sub.add_parser("demo")
     args = parser.parse_args(argv)
     if args.command == "new":
@@ -63,6 +74,15 @@ def main(argv: list[str] | None = None) -> int:
         return run_script("lint_vault.py", call)
     if args.command == "next":
         return run_script("guide_next_action.py", ["--vault", args.vault])
+    if args.command == "registry":
+        return run_script("import_skill_capture.py", ["build-registry", "--raw-dir", args.raw_dir, "--manifest", args.manifest, "--out", args.out])
+    if args.command == "diff":
+        return run_script("import_skill_capture.py", ["diff", "--old", args.old, "--new", args.new])
+    if args.command == "advise":
+        call = ["--brief", args.brief, "--registry", args.registry]
+        if args.out:
+            call += ["--out", args.out]
+        return run_script("render_stack_advisor.py", call)
     if args.command == "demo":
         return run_script("build_demo_vault.py", [])
     return 2

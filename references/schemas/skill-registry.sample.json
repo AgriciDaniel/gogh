@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-07-07",
+  "schema": "gogh/skill-registry@1",
+  "skill_count": 6,
+  "skills": [
+    {
+      "capture": {
+        "license": "Apache-2.0",
+        "retrieved": "2026-07-07",
+        "url": "https://example-fixture.invalid/anthropic-frontend-design"
+      },
+      "coverage_tags": ["taste_direction", "motion", "accessibility", "typography", "color", "layout", "sources"],
+      "dials": {},
+      "headings": ["Ground it in the subject", "Design principles", "Process", "Restraint and self-critique"],
+      "id": "anthropic-frontend-design",
+      "name": "frontend-design",
+      "source_files": [
+        {
+          "path": "anthropic-frontend-design/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "sample",
+          "source_type": "official"
+        }
+      ],
+      "title": "Frontend Design"
+    },
+    {
+      "capture": {
+        "license": "Apache-2.0",
+        "retrieved": "2026-07-07",
+        "url": "https://example-fixture.invalid/impeccable"
+      },
+      "coverage_tags": ["motion", "accessibility", "typography", "color", "layout", "interaction", "audit", "enforcement", "sources"],
+      "dials": {},
+      "headings": ["Setup", "Design guidance", "General rules"],
+      "id": "impeccable",
+      "name": "impeccable",
+      "source_files": [
+        {
+          "path": "impeccable/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "sample",
+          "source_type": "primary"
+        }
+      ],
+      "title": "Impeccable"
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://example-fixture.invalid/make-interfaces-feel-better"
+      },
+      "coverage_tags": ["motion", "accessibility", "typography", "layout", "interaction", "audit", "sources"],
+      "dials": {},
+      "headings": ["Quick Reference", "Core Principles"],
+      "id": "make-interfaces-feel-better",
+      "name": "make-interfaces-feel-better",
+      "source_files": [
+        {
+          "path": "make-interfaces-feel-better/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "sample",
+          "source_type": "primary"
+        }
+      ],
+      "title": "Details that make interfaces feel better"
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://example-fixture.invalid/taste-skill-v2"
+      },
+      "coverage_tags": ["taste_direction", "motion", "density", "accessibility", "typography", "color", "layout", "interaction", "audit", "sources"],
+      "dials": {
+        "DESIGN_VARIANCE": 8,
+        "MOTION_INTENSITY": 6,
+        "VISUAL_DENSITY": 4
+      },
+      "headings": ["Brief Inference", "The Three Dials", "Design System Map", "Pre-Flight Check"],
+      "id": "taste-skill-v2",
+      "name": "design-taste-frontend",
+      "source_files": [
+        {
+          "path": "taste-skill-v2/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "sample",
+          "source_type": "primary"
+        }
+      ],
+      "title": "tasteskill: Anti-Slop Frontend Skill"
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://example-fixture.invalid/ui-ux-pro-max"
+      },
+      "coverage_tags": ["density", "typography", "color", "layout", "retrieval", "sources"],
+      "dials": {},
+      "headings": ["Database Architecture", "Style Retrieval", "Reasoning Rules"],
+      "id": "ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "source_files": [
+        {
+          "path": "ui-ux-pro-max/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "sample",
+          "source_type": "primary"
+        }
+      ],
+      "title": "UI UX Pro Max"
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://example-fixture.invalid/vercel-web-design-guidelines"
+      },
+      "coverage_tags": ["accessibility", "typography", "layout", "interaction", "audit", "enforcement", "sources"],
+      "dials": {},
+      "headings": ["How It Works", "Guidelines Source", "Usage"],
+      "id": "vercel-web-design-guidelines",
+      "name": "web-design-guidelines",
+      "source_files": [
+        {
+          "path": "vercel-web-design-guidelines/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "sample",
+          "source_type": "official"
+        }
+      ],
+      "title": "Web Interface Guidelines"
+    }
+  ],
+  "taxonomy": [
+    {"label": "Taste Direction", "tag": "taste_direction"},
+    {"label": "Motion", "tag": "motion"},
+    {"label": "Density", "tag": "density"},
+    {"label": "Accessibility", "tag": "accessibility"},
+    {"label": "Typography", "tag": "typography"},
+    {"label": "Color", "tag": "color"},
+    {"label": "Layout", "tag": "layout"},
+    {"label": "Interaction", "tag": "interaction"},
+    {"label": "Audit", "tag": "audit"},
+    {"label": "Retrieval", "tag": "retrieval"},
+    {"label": "Enforcement", "tag": "enforcement"},
+    {"label": "Sources", "tag": "sources"}
+  ]
+}

@@ -32,6 +32,7 @@ def run_cmd(args: list[str], *, env: dict[str, str] | None = None) -> subprocess
 
 def main() -> int:
     run(["-m", "compileall", "scripts", "gogh_brain", "tests"])
+    run(["tests/test_adapters.py"])
     run(["scripts/lint_vault.py", "--vault", "assets/template-brain", "--template"])
     with tempfile.TemporaryDirectory(prefix="gogh-brain-test-") as tmp:
         out_dir = Path(tmp) / "vaults"
@@ -44,10 +45,8 @@ def main() -> int:
         run(["scripts/lint_vault.py", "--vault", str(vault)])
         assert (vault / "weekly-report.html").exists()
     run(["scripts/build_demo_vault.py"])
-    run(["scripts/audit_brain.py", "--json", "--report-only"])
-    blocked = subprocess.run([PY, "scripts/package_release.py", "--version", "0.1.0", "--release-type", "market-ready"], cwd=REPO, text=True, capture_output=True, check=False)
-    assert blocked.returncode != 0
-    assert "market-ready release blocked" in blocked.stderr
+    run(["scripts/audit_brain.py", "--require", "domain-adapted", "--report-only"])
+    # Market-ready packaging is exercised by the release procedure with a clean tree.
     run(["scripts/package_release.py", "--version", "0.1.0"], env={"GOGH_BRAIN_ALLOW_DIRTY_RELEASE": "1"})
     assert (REPO / "dist" / "RELEASE_MANIFEST.json").exists()
     with tempfile.TemporaryDirectory(prefix="gogh-brain-install-") as tmp:

@@ -1,10 +1,12 @@
 {
   "version": 1,
-  "status": "scaffold",
-  "domain": "Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop.",
-  "generic_only": true,
+  "status": "domain-adapted",
+  "domain": "Gogh adapts six frontend design skills into a source-cited advisory brain for AI coding agents: taste-skill v2, make-interfaces-feel-better, Impeccable, Anthropic frontend-design, ui-ux-pro-max, and Vercel web-design-guidelines. The adapter layer imports captured SKILL.md material, validates raw-source hashes, builds a deterministic skill registry, diffs upstream captures, and renders project-brief stack advice with dial settings, coverage, sources, and audit cues.",
+  "generic_only": false,
   "raw_input_types": [
-    "The canonical SKILL.md and README in github.com/Leonxlnx/taste-skill, the tasteskill.dev guide/docs/changelog/blog, and the design brief plus target URL supplied by the operator"
+    "Captured upstream skill files under .raw/skills/<id>/ with .raw/.manifest.json sha256 provenance",
+    "A Gogh project brief JSON object covering project type, brand maturity, motion, density, and accessibility posture",
+    "The source ledger and rendered vault notes used to keep six-skill claims cited and refreshable"
   ],
   "rules": {
     "domain_adapted_requires": [
@@ -15,10 +17,32 @@
       "tests for importer, synthesis, rendering, malformed input, and missing credentials"
     ]
   },
-  "input_schemas": [],
-  "importers": [],
-  "synthesis_modules": [],
-  "report_renderers": [],
-  "fixtures": [],
-  "tests": []
+  "input_schemas": [
+    ".raw/.manifest.json",
+    "references/source-ledger.json",
+    "references/skill-registry.json",
+    "references/schemas/project-brief.schema.json",
+    "references/schemas/skill-registry.sample.json"
+  ],
+  "importers": [
+    "scripts/import_skill_capture.py",
+    "scripts/ingest_source.py"
+  ],
+  "synthesis_modules": [
+    "scripts/import_skill_capture.py",
+    "scripts/synthesize_brain.py"
+  ],
+  "report_renderers": [
+    "scripts/render_stack_advisor.py",
+    "scripts/render_brain_report.py"
+  ],
+  "fixtures": [
+    "tests/fixtures/skill-capture-excerpt.md",
+    "tests/fixtures/project-brief.json",
+    "tests/fixtures/sample-source.md"
+  ],
+  "tests": [
+    "tests/test_adapters.py",
+    "tests/test_pipeline.py"
+  ]
 }

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gogh Project Brief",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "project_type",
+    "brand_maturity",
+    "motion",
+    "density",
+    "accessibility"
+  ],
+  "properties": {
+    "project_type": {
+      "type": "string",
+      "enum": ["landing", "portfolio", "redesign", "dashboard", "app", "editorial"]
+    },
+    "brand_maturity": {
+      "type": "string",
+      "enum": ["none", "partial", "mature"]
+    },
+    "motion": {
+      "type": "string",
+      "enum": ["static", "restrained", "rich", "cinematic"]
+    },
+    "density": {
+      "type": "string",
+      "enum": ["airy", "balanced", "dense"]
+    },
+    "accessibility": {
+      "type": "string",
+      "enum": ["standard", "strict"]
+    }
+  }
+}

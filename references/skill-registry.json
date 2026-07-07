@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-07-07",
+  "schema": "gogh/skill-registry@1",
+  "skill_count": 6,
+  "skills": [
+    {
+      "capture": {
+        "license": "Apache-2.0",
+        "retrieved": "2026-07-07",
+        "url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md"
+      },
+      "coverage_tags": [
+        "taste_direction",
+        "motion",
+        "density",
+        "accessibility",
+        "typography",
+        "color",
+        "layout",
+        "interaction",
+        "audit",
+        "retrieval",
+        "enforcement",
+        "sources"
+      ],
+      "dials": {},
+      "headings": [
+        "Ground it in the subject",
+        "Design principles",
+        "Process: brainstorm, explore, plan, critique, build, critique again",
+        "Restraint and self-critique",
+        "More on writing in design"
+      ],
+      "id": "anthropic-frontend-design",
+      "name": "frontend-design",
+      "source_files": [
+        {
+          "path": "anthropic-frontend-design/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "cc9210ae9a9ca0b9f946c37a652f32254757fa7c43e6cb3ffc2f310f486a2f0e",
+          "source_type": "official"
+        },
+        {
+          "path": "anthropic-frontend-design/blog-post.md",
+          "retrieved": "2026-07-07",
+          "sha256": "c5bc9ca878056bf5dd8f3324075d22d987a22a60815a7c9d99235dd29108f39a",
+          "source_type": "official"
+        }
+      ],
+      "title": "Frontend Design"
+    },
+    {
+      "capture": {
+        "license": "Apache-2.0",
+        "retrieved": "2026-07-07",
+        "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/.claude/skills/impeccable/SKILL.md"
+      },
+      "coverage_tags": [
+        "taste_direction",
+        "motion",
+        "density",
+        "accessibility",
+        "typography",
+        "color",
+        "layout",
+        "interaction",
+        "audit",
+        "retrieval",
+        "enforcement",
+        "sources"
+      ],
+      "dials": {},
+      "headings": [
+        "Setup",
+        "Design guidance",
+        "Commands",
+        "Pin / Unpin",
+        "Hooks"
+      ],
+      "id": "impeccable",
+      "name": "impeccable",
+      "source_files": [
+        {
+          "path": "impeccable/MISSING-CHANGELOG.md",
+          "retrieved": "2026-07-07",
+          "sha256": "43d96bcde7dd3ff80afa853d1e33d34157a38e137a0357d897e0188c1fa97d48",
+          "source_type": "supporting"
+        },
+        {
+          "path": "impeccable/README.md",
+          "retrieved": "2026-07-07",
+          "sha256": "2a0dc2fadde463b2ef424d56d392a4d0900d16a2d09452166eea31f2eaf3a412",
+          "source_type": "primary"
+        },
+        {
+          "path": "impeccable/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "c78ff444c7f78245c968e09ef84fefec4cc8b7bb57f14d6336933c63243ebf65",
+          "source_type": "primary"
+        }
+      ],
+      "title": ""
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://raw.githubusercontent.com/jakubkrehel/make-interfaces-feel-better/main/skills/make-interfaces-feel-better/SKILL.md"
+      },
+      "coverage_tags": [
+        "motion",
+        "density",
+        "accessibility",
+        "typography",
+        "color",
+        "layout",
+        "interaction",
+        "audit",
+        "retrieval",
+        "sources"
+      ],
+      "dials": {},
+      "headings": [
+        "Quick Reference",
+        "Core Principles",
+        "Common Mistakes",
+        "Review Output Format",
+        "Review Checklist",
+        "Reference Files"
+      ],
+      "id": "make-interfaces-feel-better",
+      "name": "make-interfaces-feel-better",
+      "source_files": [
+        {
+          "path": "make-interfaces-feel-better/README.md",
+          "retrieved": "2026-07-07",
+          "sha256": "fac7d78cc5f52e35c794eefc8bb319ff10da7b6ea61489710aafec452e8c767a",
+          "source_type": "primary"
+        },
+        {
+          "path": "make-interfaces-feel-better/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "3fa75255f5dbfb533e2ff9635f53ac020841248689928e08893c4cdd3f526c88",
+          "source_type": "primary"
+        },
+        {
+          "path": "make-interfaces-feel-better/animations.md",
+          "retrieved": "2026-07-07",
+          "sha256": "65fe647757ae89d44faecf5e6eec7af4fa780ab19069e1124acbd5601436da39",
+          "source_type": "primary"
+        },
+        {
+          "path": "make-interfaces-feel-better/performance.md",
+          "retrieved": "2026-07-07",
+          "sha256": "622b3a026bb5b69a86e2279ccd10885ef036fda5a1731ce4f100fa5a33e2c33e",
+          "source_type": "primary"
+        },
+        {
+          "path": "make-interfaces-feel-better/surfaces.md",
+          "retrieved": "2026-07-07",
+          "sha256": "ee2af1fe115ca991a5f8fbf202d7f19dd50d6757b3f7498c59b893a90a33afb2",
+          "source_type": "primary"
+        },
+        {
+          "path": "make-interfaces-feel-better/typography.md",
+          "retrieved": "2026-07-07",
+          "sha256": "a51d6290b5f643a38c6096be027df7c59889f292a4d5e49f26c949377196aea9",
+          "source_type": "primary"
+        }
+      ],
+      "title": "Details that make interfaces feel better"
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md"
+      },
+      "coverage_tags": [
+        "taste_direction",
+        "motion",
+        "density",
+        "accessibility",
+        "typography",
+        "color",
+        "layout",
+        "interaction",
+        "audit",
+        "retrieval",
+        "enforcement",
+        "sources"
+      ],
+      "dials": {
+        "DESIGN_VARIANCE": 8,
+        "MOTION_INTENSITY": 6,
+        "VISUAL_DENSITY": 4
+      },
+      "headings": [
+        "0. BRIEF INFERENCE (Read the Room Before Anything Else)",
+        "1. THE THREE DIALS (Core Configuration)",
+        "2. BRIEF \u2192 DESIGN SYSTEM MAP",
+        "3. DEFAULT ARCHITECTURE & CONVENTIONS",
+        "4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)",
+        "5. CONTEXT-AWARE PROACTIVITY",
+        "6. PERFORMANCE & ACCESSIBILITY GUARDRAILS",
+        "7. DIAL DEFINITIONS (Technical Reference)",
+        "8. DARK MODE PROTOCOL",
+        "9. AI TELLS (Forbidden Patterns)",
+        "10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
+        "11. REDESIGN PROTOCOL",
+        "12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)",
+        "13. OUT OF SCOPE",
+        "14. FINAL PRE-FLIGHT CHECK",
+        "Appendix A - Install Commands per Design System",
+        "Appendix B - Canonical Sources (read these before reinventing)",
+        "Appendix C - Apple Liquid Glass: Honest Web Approximation"
+      ],
+      "id": "taste-skill-v2",
+      "name": "design-taste-frontend",
+      "source_files": [
+        {
+          "path": "taste-skill-v2/CHANGELOG.md",
+          "retrieved": "2026-07-07",
+          "sha256": "65c0583cb702d2bfdea9d19b36058c64d93b19145ac48211880de27226db245d",
+          "source_type": "primary"
+        },
+        {
+          "path": "taste-skill-v2/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "5973aab78218c37b690e2a7fed88805382aee7a7226663b8d0375ed999f2a29b",
+          "source_type": "primary"
+        }
+      ],
+      "title": "tasteskill: Anti-Slop Frontend Skill"
+    },
+    {
+      "capture": {
+        "license": "MIT",
+        "retrieved": "2026-07-07",
+        "url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/ui-ux-pro-max/SKILL.md"
+      },
+      "coverage_tags": [
+        "taste_direction",
+        "motion",
+        "density",
+        "accessibility",
+        "typography",
+        "color",
+        "layout",
+        "interaction",
+        "audit",
+        "retrieval",
+        "enforcement",
+        "sources"
+      ],
+      "dials": {},
+      "headings": [
+        "When to Apply",
+        "Rule Categories by Priority",
+        "Quick Reference",
+        "How to Use",
+        "Prerequisites",
+        "How to Use This Skill",
+        "Search Reference",
+        "Example Workflow",
+        "Output Formats",
+        "Tips for Better Results",
+        "Common Rules for Professional UI",
+        "Pre-Delivery Checklist"
+      ],
+      "id": "ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "source_files": [
+        {
+          "path": "ui-ux-pro-max/README.md",
+          "retrieved": "2026-07-07",
+          "sha256": "5ce84ad06def63790e2bf47a0881aef410d7de67a2737369a86a840c8d1d8b4f",
+          "source_type": "primary"
+        },
+        {
+          "path": "ui-ux-pro-max/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "18d7e2f4e461b22940c013217a7b2792a35a09b77b2e43c0534b7f747495af33",
+          "source_type": "primary"
+        },
+        {
+          "path": "ui-ux-pro-max/tree.txt",
+          "retrieved": "2026-07-07",
+          "sha256": "6b358ed9377794edc6e2bf26499b5be776e9632813475355bb680d4c25961932",
+          "source_type": "supporting"
+        }
+      ],
+      "title": "UI/UX Pro Max - Design Intelligence"
+    },
+    {
+      "capture": {
+        "license": "MIT (declared in repo README, no LICENSE file)",
+        "retrieved": "2026-07-07",
+        "url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md"
+      },
+      "coverage_tags": [
+        "accessibility",
+        "audit",
+        "enforcement",
+        "sources"
+      ],
+      "dials": {},
+      "headings": [
+        "How It Works",
+        "Guidelines Source",
+        "Usage"
+      ],
+      "id": "vercel-web-design-guidelines",
+      "name": "web-design-guidelines",
+      "source_files": [
+        {
+          "path": "vercel-web-design-guidelines/SKILL.md",
+          "retrieved": "2026-07-07",
+          "sha256": "f94f64aab020ce7f7e63bb5dad1bde39137f1602fd90baeb95091e6cec012d92",
+          "source_type": "official"
+        },
+        {
+          "path": "vercel-web-design-guidelines/command.md",
+          "retrieved": "2026-07-07",
+          "sha256": "3cb877c6624c5c1707019c2a97f032f8ab66f6b89edab5ab879bb86a438fc36f",
+          "source_type": "official"
+        }
+      ],
+      "title": "Web Interface Guidelines"
+    }
+  ],
+  "taxonomy": [
+    {
+      "label": "Taste Direction",
+      "tag": "taste_direction"
+    },
+    {
+      "label": "Motion",
+      "tag": "motion"
+    },
+    {
+      "label": "Density",
+      "tag": "density"
+    },
+    {
+      "label": "Accessibility",
+      "tag": "accessibility"
+    },
+    {
+      "label": "Typography",
+      "tag": "typography"
+    },
+    {
+      "label": "Color",
+      "tag": "color"
+    },
+    {
+      "label": "Layout",
+      "tag": "layout"
+    },
+    {
+      "label": "Interaction",
+      "tag": "interaction"
+    },
+    {
+      "label": "Audit",
+      "tag": "audit"
+    },
+    {
+      "label": "Retrieval",
+      "tag": "retrieval"
+    },
+    {
+      "label": "Enforcement",
+      "tag": "enforcement"
+    },
+    {
+      "label": "Sources",
+      "tag": "sources"
+    }
+  ]
+}
