@@ -13,23 +13,55 @@
   "properties": {
     "project_type": {
       "type": "string",
-      "enum": ["landing", "portfolio", "redesign", "dashboard", "app", "editorial"]
+      "enum": [
+        "landing",
+        "portfolio",
+        "redesign",
+        "dashboard",
+        "app",
+        "editorial"
+      ]
     },
     "brand_maturity": {
       "type": "string",
-      "enum": ["none", "partial", "mature"]
+      "enum": [
+        "none",
+        "partial",
+        "mature"
+      ]
     },
     "motion": {
       "type": "string",
-      "enum": ["static", "restrained", "rich", "cinematic"]
+      "enum": [
+        "static",
+        "restrained",
+        "rich",
+        "cinematic"
+      ]
     },
     "density": {
       "type": "string",
-      "enum": ["airy", "balanced", "dense"]
+      "enum": [
+        "airy",
+        "balanced",
+        "dense"
+      ]
     },
     "accessibility": {
       "type": "string",
-      "enum": ["standard", "strict"]
+      "enum": [
+        "standard",
+        "strict"
+      ]
+    },
+    "ambition": {
+      "type": "string",
+      "enum": [
+        "refresh",
+        "evolve",
+        "transform"
+      ],
+      "description": "Optional; defaults to evolve. transform requires an Aesthetic Direction Commitment before any code."
     }
   }
 }

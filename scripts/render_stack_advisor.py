@@ -23,6 +23,16 @@ TAXONOMY: tuple[tuple[str, str], ...] = (
     ("enforcement", "Enforcement"),
     ("sources", "Sources"),
 )
+AMBITION_VALUES = {"refresh", "evolve", "transform"}
+STYLE_DB = Path(".raw/skills/ui-ux-pro-max/styles.csv")
+STYLE_KEYWORD_BY_TYPE = {
+    "landing": "landing",
+    "portfolio": "portfolio",
+    "redesign": "landing",
+    "dashboard": "dashboard",
+    "app": "app",
+    "editorial": "magazine",
+}
 ENUMS = {
     "project_type": {"landing", "portfolio", "redesign", "dashboard", "app", "editorial"},
     "brand_maturity": {"none", "partial", "mature"},
@@ -73,6 +83,13 @@ def load_brief(path: Path) -> dict[str, str]:
             allowed_values = ", ".join(sorted(allowed))
             raise AdvisorError(f"brief field {field} must be one of: {allowed_values}")
         brief[field] = value
+    ambition = data.get("ambition", "evolve")
+    if not isinstance(ambition, str) or ambition not in AMBITION_VALUES:
+        raise AdvisorError(f"brief field ambition must be one of: {', '.join(sorted(AMBITION_VALUES))}")
+    brief["ambition"] = ambition
+    unknown = set(data) - set(ENUMS) - {"ambition"}
+    if unknown:
+        raise AdvisorError(f"brief unknown field: {', '.join(sorted(unknown))}")
     return brief
 
 
@@ -103,6 +120,7 @@ def render_report(brief: dict[str, str], registry: dict[str, Any]) -> str:
         f"- Motion: {brief['motion']}",
         f"- Density: {brief['density']}",
         f"- Accessibility: {brief['accessibility']}",
+        f"- Ambition: {brief['ambition']}",
         "",
         "## Recommended Stack",
     ]
@@ -116,6 +134,7 @@ def render_report(brief: dict[str, str], registry: dict[str, Any]) -> str:
             f"- DESIGN_VARIANCE: {dials['DESIGN_VARIANCE']}",
             f"- MOTION_INTENSITY: {dials['MOTION_INTENSITY']}",
             f"- VISUAL_DENSITY: {dials['VISUAL_DENSITY']}",
+            *direction_commitment(brief),
             "",
             "## Coverage Matrix",
             "| Taxonomy | Skills |",
@@ -189,11 +208,77 @@ def dial_settings(brief: dict[str, str]) -> dict[str, int]:
         variance -= 2
     if brief["accessibility"] == "strict":
         variance = min(variance, 6)
+    # Ambition wins last: a transform brief demands a new direction even under
+    # strict accessibility; refresh keeps the incumbent direction.
+    if brief["ambition"] == "transform":
+        variance = max(variance, 8)
+    elif brief["ambition"] == "refresh":
+        variance = min(variance, 4)
     return {
         "DESIGN_VARIANCE": max(1, min(10, variance)),
         "MOTION_INTENSITY": motion_by_brief[brief["motion"]],
         "VISUAL_DENSITY": density_by_brief[brief["density"]],
     }
+
+
+def direction_commitment(brief: dict[str, str]) -> list[str]:
+    if brief["ambition"] != "transform":
+        return []
+    lines = [
+        "",
+        "## Direction Commitment (required before any code)",
+        "Transform brief: the incumbent design is evidence, not the answer.",
+        "Candidate directions from the captured style database:",
+    ]
+    candidates = style_candidates(brief["project_type"])
+    if candidates:
+        lines.extend(candidates)
+    else:
+        lines.append("- style database not captured; name a direction manually")
+    lines.extend(
+        [
+            "Write the commitment before building:",
+            "- Direction (named, three words or fewer):",
+            "- Signature element (the one move this page owns):",
+            "- Five-second memory (what a visitor describes):",
+            "- Nearest banned default being avoided:",
+        ]
+    )
+    return lines
+
+
+def style_candidates(project_type: str) -> list[str]:
+    import csv
+
+    full = resolve_path(STYLE_DB)
+    if not full.exists():
+        return []
+    keyword = STYLE_KEYWORD_BY_TYPE.get(project_type, "landing")
+    matches: list[dict[str, str]] = []
+    seen_categories: set[str] = set()
+    try:
+        with full.open(encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader(handle):
+                best_for = (row.get("Best For") or "").lower()
+                category = (row.get("Style Category") or "").strip()
+                if keyword not in best_for or not category or category in seen_categories:
+                    continue
+                seen_categories.add(category)
+                matches.append(row)
+    except (OSError, ValueError):
+        return []
+    if not matches:
+        return []
+    # Spread picks across the whole match list: the first rows of the database
+    # are the safest styles, and a transform brief needs range, not safety.
+    indexes = sorted({0, len(matches) // 2, len(matches) - 1})
+    picks = []
+    for i in indexes:
+        row = matches[i]
+        palette = (row.get("Primary Colors") or "").strip()[:60]
+        era = (row.get("Era/Origin") or "").strip()
+        picks.append(f"- {row['Style Category'].strip()} ({era}): palette {palette}")
+    return picks
 
 
 def resolve_path(path: Path) -> Path:

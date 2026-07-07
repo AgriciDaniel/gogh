@@ -38,6 +38,7 @@ Flows turns the stack into ordered operator procedures for selection, build, aud
 ### gogh/stack
 
 - [[Audit Pipeline Flow]] - Audit Pipeline Flow orders the stack checks so deterministic gates run before advisory craft review.
+- [[Aesthetic Direction Commitment]] - Aesthetic Direction Commitment is the mandatory step zero: name the direction, the signature element, and the five-second memory before any code, because compliance alone cannot produce memorable work.
 - [[Full Stack Build Flow]] - Full Stack Build Flow is the flagship greenfield ordering: set direction, execute feel, persist contracts, detect slop, and audit the result.
 - [[Skill Stack Selection Flow]] - Skill Stack Selection Flow is the operator decision tree that mirrors the local `scripts/render_stack_advisor.py` rules.
 

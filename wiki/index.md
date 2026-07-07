@@ -8,7 +8,7 @@ status: "active"
 
 # Gogh - Index
 
-Last updated 2026-07-07 | total wiki pages 144 | 27 ledger sources | 129 verified claims
+Last updated 2026-07-07 | total wiki pages 146 | 27 ledger sources | 129 verified claims
 
 Nav: [[Overview]] | [[Hot]] | [[Log]] | [[Start Here]] | [[CONVENTIONS]] | [[dashboard|Dashboard]]
 
@@ -25,6 +25,7 @@ Hubs: [[wiki/skills/_index|Skills Hub]] | [[wiki/concepts/_index|Concepts Hub]] 
 - [[Design Skills Mechanism Map]] - The product anchor: six skills become four mechanisms plus one advisory layer.
 - [[Unified Anti-Slop Rulebook]] - Shared bans and contested constraints stay visible instead of being flattened.
 - [[Skill Stack Selection Flow]] - Brief fields choose skills, order, dials, and audit checkpoints.
+- [[Aesthetic Direction Commitment]] - Step zero of every build: commit to a named direction before code.
 - [[Full Stack Build Flow]] - Greenfield ordering for direction, feel, contracts, detection, and audit.
 - [[Audit Pipeline Flow]] - Release gate ordering for deterministic checks and advisory review.
 - [[Enforcement Layer Overlap]] - Which checks catch which failure classes across the stack.
@@ -57,6 +58,7 @@ Hubs: [[wiki/skills/_index|Skills Hub]] | [[wiki/concepts/_index|Concepts Hub]] 
 - [[Preservation audit]] - Preservation audit verifies that a Taste Skill redesign did not silently change URLs, navigation, forms, anchors, brand, or legal copy.
 - [[Required Audits]] - Required Audits is the taste-skill-scoped list of written audits that run around Section 14 for greenfield and redesign work.
 - [[Section-layout-repetition audit]] - Section-layout-repetition audit is the Taste Skill greenfield check that each section layout family is listed and repetition is blocked.
+- [[Distinctiveness Audit]] - The boring gate: fails compliant but forgettable pages via six written tests.
 - [[Vercel Guidelines Audit]] - Vercel Guidelines Audit is the practical runbook for applying the runtime-fetched Vercel Web Interface Guidelines to specific UI files.
 
 ## Canvases
@@ -133,6 +135,7 @@ Hubs: [[wiki/skills/_index|Skills Hub]] | [[wiki/concepts/_index|Concepts Hub]] 
 - [[Claim Verification Flow]] - Claim Verification Flow is the adversarial second-sourcing procedure that keeps Gogh from turning stale or misattributed claims into facts.
 - [[Design System Generation Flow]] - Design System Generation Flow turns a short product brief into a retrieved UI system with pattern, style, palette, typography, effects, anti-patterns, and checks.
 - [[Dial Tuning Guide]] - Dial Tuning Guide turns brief signals into DESIGN_VARIANCE, MOTION_INTENSITY, and VISUAL_DENSITY values.
+- [[Aesthetic Direction Commitment]] - Aesthetic Direction Commitment forces a named direction, signature element, and five-second memory before any file is edited.
 - [[Full Stack Build Flow]] - Full Stack Build Flow is the flagship greenfield ordering: set direction, execute feel, persist contracts, detect slop, and audit the result.
 - [[Greenfield Build (Prompt 1)]] - Greenfield Build is the official Taste Skill prompt flow for creating a new landing, portfolio, or marketing page from a brief.
 - [[Image-First Reference Pipeline]] - Image-First Reference Pipeline is the Taste Skill workflow for resolving visual direction in images before implementation.

@@ -174,6 +174,18 @@
       "sha256": "bb22f0459b8f2c043ac3f61ba5d2c6aa068152aeee62c9ceee99b43547909ad3",
       "retrieved": "2026-07-07",
       "source_type": "official"
+    },
+    {
+      "path": ".raw/skills/ui-ux-pro-max/styles.csv",
+      "sha256": "f37eb20e7403a715d440efd45ce6952ea6a445d6143fd130c52e219a4bec9911",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/skills/ui-ux-pro-max/styles-PROVENANCE.md",
+      "sha256": "1f2750c8a84e65a36624292e0d980183d82b7b39d046650940060e3d6e4aa743",
+      "retrieved": "2026-07-07",
+      "source_type": "primary"
     }
   ],
   "scaffold_history": [

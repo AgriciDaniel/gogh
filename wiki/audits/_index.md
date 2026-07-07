@@ -38,6 +38,7 @@ Audits holds the checks that decide whether stack output is ready to ship or nee
 
 ### gogh/web-design-guidelines
 
+- [[Distinctiveness Audit]] - Distinctiveness Audit is the boring gate: six written questions (five-second test, screenshot test, incumbent test) that fail pages which pass every ban yet stay forgettable.
 - [[Vercel Guidelines Audit]] - Vercel Guidelines Audit is the practical runbook for applying the runtime-fetched Vercel Web Interface Guidelines to specific UI files.
 
 ## Related

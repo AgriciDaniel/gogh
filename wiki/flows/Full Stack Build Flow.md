@@ -28,6 +28,11 @@ The flow is advisory because Gogh V1 does not mutate production systems.
 The flow does not call the brain market-ready by itself.
 
 ## How it works
+0. Run [[Aesthetic Direction Commitment]]: classify ambition (refresh, evolve,
+   transform), pull candidate directions from the captured style database, and
+   write the four-line commitment before any file is edited. "Impress me" and
+   "redesign" briefs are transform: the incumbent design is evidence, not the
+   default answer.
 1. Read the brief and classify the project with Skill Stack Selection Flow.
 2. Run Taste Skill's design read and set dials.
 3. Use Anthropic frontend-design to sharpen the subject-grounded aesthetic when useful.
@@ -44,6 +49,9 @@ The flow does not call the brain market-ready by itself.
 14. Resolve conflicting findings by source role: contracts and brand first, deterministic gates second, craft advice third.
 15. Re-run gates after changes that affect visual or interaction behavior.
 16. Document any unresolved conflict in the stack report.
+
+9. Gate the result with [[Distinctiveness Audit]] after the mechanical audits;
+   a fail returns to step 0, not to polish.
 
 ## Best practice
 - Set Taste Skill dials before building the first composition EVIDENCE-BASED

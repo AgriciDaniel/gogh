@@ -10,6 +10,11 @@ status: "active"
 
 Newest first.
 
+## [2026-07-07] upgrade | Direction layer after field run 1 (operator score 3/10)
+- Field lesson: the claude-ads landing rerun passed every mechanical gate (Impeccable detector zero findings, dash sweep, craft checks) and the operator scored it 3/10: same style, nothing special. Compliance produced a floor, not a design.
+- New: [[Aesthetic Direction Commitment]] (mandatory step zero), [[Distinctiveness Audit]] (blocking boring gate), distinctiveness section in [[Unified Pre-Flight Mega-Checklist]], ambition classification in [[Skill Stack Selection Flow]] and [[Full Stack Build Flow]].
+- Adapters: project brief gains optional ambition (refresh, evolve, transform); transform forces DESIGN_VARIANCE 8+ and renders a Direction Commitment section with candidates from the newly captured ui-ux-pro-max styles.csv (84 styles, sha256 in raw manifest). Transform regression test added.
+
 ## [2026-07-07] audit | market-ready 100 structural
 
 - Structural gate reached Status: market-ready and Score: 100 after the metamorphosis integration.

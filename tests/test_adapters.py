@@ -185,9 +185,47 @@ def main() -> int:
         test_advisor_render(),
     ]
     test_failure_modes()
+    test_transform_brief_direction_commitment()
     no_output_leaks(*generated)
     print("Adapter tests passed")
     return 0
+
+
+
+
+def test_transform_brief_direction_commitment() -> None:
+    import json, subprocess, sys, tempfile
+    from pathlib import Path
+
+    repo = Path(__file__).resolve().parent.parent
+    brief = {
+        "project_type": "landing",
+        "brand_maturity": "none",
+        "motion": "rich",
+        "density": "airy",
+        "accessibility": "standard",
+        "ambition": "transform",
+    }
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as handle:
+        json.dump(brief, handle)
+        path = handle.name
+    proc = subprocess.run(
+        [sys.executable, "scripts/render_stack_advisor.py", "--brief", path,
+         "--registry", "references/schemas/skill-registry.sample.json"],
+        cwd=repo, text=True, capture_output=True, check=False)
+    assert proc.returncode == 0, proc.stderr
+    assert "## Direction Commitment" in proc.stdout
+    assert "DESIGN_VARIANCE: 8" in proc.stdout
+    assert "- Direction (named, three words or fewer):" in proc.stdout
+    bad = dict(brief, ambition="maximal")
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as handle:
+        json.dump(bad, handle)
+        bad_path = handle.name
+    proc = subprocess.run(
+        [sys.executable, "scripts/render_stack_advisor.py", "--brief", bad_path,
+         "--registry", "references/schemas/skill-registry.sample.json"],
+        cwd=repo, text=True, capture_output=True, check=False)
+    assert proc.returncode == 2
 
 
 if __name__ == "__main__":

@@ -29,6 +29,11 @@ The advisor also calculates DESIGN_VARIANCE, MOTION_INTENSITY, and VISUAL_DENSIT
 The flow ends with running `gogh-brain advise` because the SKILL.md command map names that advisory command.
 
 ## How it works
+0. Classify ambition before anything else: refresh (keep direction, tighten
+   craft), evolve (keep brand, push variance), transform (new direction
+   required; "impress me", "redesign", "make it special"). Ambition maps to
+   DESIGN_VARIANCE: refresh 3 to 4, evolve 5 to 7, transform 8 to 9, and
+   transform makes [[Aesthetic Direction Commitment]] mandatory.
 1. Classify project_type first.
 2. If project_type is landing, portfolio, redesign, or editorial, include Taste Skill and Anthropic frontend-design.
 3. If project_type is dashboard or app, do not auto-include Taste Skill by the current advisor rule.

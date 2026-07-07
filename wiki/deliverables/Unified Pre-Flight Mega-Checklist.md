@@ -94,6 +94,19 @@ Ignoring waivers can make legitimate brand choices fail repeatedly.
 Ignoring source dates can stale detector and database counts.
 Treating this deliverable as a source would invert the evidence chain.
 
+## Distinctiveness gate (runs last, blocks shipping)
+
+The mechanical sections above are the floor. This section is the bar, added
+after the claude-ads run 1 retrospective (operator score 3/10 on a page that
+passed every mechanical check). Full procedure: [[Distinctiveness Audit]].
+
+- [ ] A written [[Aesthetic Direction Commitment]] exists and predates the build (source: Gogh)
+- [ ] Five-second test passes: the page is describable as itself, not as its category (source: Gogh)
+- [ ] One screenshotable signature element is nameable (source: Gogh)
+- [ ] Transform briefs only: side-by-side with the incumbent reads as a new direction, not a tidy-up (source: Gogh)
+- [ ] The layout could not ship for a competitor with only copy and logo swapped (source: Gogh)
+- [ ] DESIGN_VARIANCE receipts: the set variance level is visible in the layout choices (source: taste-skill)
+
 ## Sources
 - Taste Skill SKILL.md, https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md, retrieved 2026-07-07.
 - Impeccable README, https://github.com/pbakaus/impeccable, retrieved 2026-07-07.
