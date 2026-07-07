@@ -1,23 +1,29 @@
 ---
-type: "hub"
+type: "meta"
 title: "Sources Hub"
+status: "seed"
 created: "2026-07-07"
 updated: "2026-07-07"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Sources Hub
 
-## Parent
+Purpose: catalog source notes that point back to immutable raw source material.
 
-- [[Index]]
-- [[Dashboard]]
+## Catalog
 
-## Core Links
+| Note | Domain | Status |
+|---|---|---|
+| <Title Case Source Note> | gogh/<domain> | seed |
 
-- [[Hot]]
-- [[Overview]]
+## Related
 
-## Notes
-
-Add generated notes here and keep this hub linked both ways.
+- [[Source Manifest Guide]]
+- [[Source Intake Workflow]]
+- [[CONVENTIONS]]

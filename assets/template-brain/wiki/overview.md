@@ -1,14 +1,20 @@
 ---
-type: "overview"
+type: "meta"
 title: "Overview"
+status: "seed"
 created: "{{date}}"
 updated: "{{date}}"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Log]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Overview
 
-Gogh is a persistent operating brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin — an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop..
+Gogh is a persistent operating brain for source-cited frontend design stack advice across six AI coding agent design skills.
 
 ![[brain-relationship-map.svg]]
 
@@ -21,3 +27,4 @@ Developers, indie hackers, design engineers, and agencies who build frontends wi
 - [[Index]]
 - [[Dashboard]]
 - [[Best Practices Kernel]]
+- [[CONVENTIONS]]

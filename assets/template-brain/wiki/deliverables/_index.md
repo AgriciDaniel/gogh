@@ -1,23 +1,29 @@
 ---
-type: "hub"
+type: "meta"
 title: "Deliverables Hub"
+status: "seed"
 created: "{{date}}"
 updated: "{{date}}"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Deliverables Hub
 
-## Parent
+Purpose: catalog operator-facing outputs generated from source-cited vault notes.
 
-- [[Index]]
-- [[Dashboard]]
+## Catalog
 
-## Core Links
+| Note | Domain | Status |
+|---|---|---|
+| <Title Case Deliverable Note> | gogh/<domain> | seed |
 
-- [[Hot]]
-- [[Overview]]
+## Related
 
-## Notes
-
-Add generated notes here and keep this hub linked both ways.
+- [[Health Scorecard]]
+- [[Action Roadmap]]
+- [[CONVENTIONS]]

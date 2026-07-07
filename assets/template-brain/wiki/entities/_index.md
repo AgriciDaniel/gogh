@@ -1,23 +1,29 @@
 ---
-type: "hub"
+type: "meta"
 title: "Entities Hub"
+status: "seed"
 created: "{{date}}"
 updated: "{{date}}"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Entities Hub
 
-## Parent
+Purpose: catalog people, projects, tools, and named upstream sources.
+
+## Catalog
+
+| Note | Domain | Status |
+|---|---|---|
+| <Title Case Entity Note> | gogh/<domain> | seed |
+
+## Related
 
 - [[Index]]
 - [[Dashboard]]
-
-## Core Links
-
-- [[Hot]]
-- [[Overview]]
-
-## Notes
-
-Add generated notes here and keep this hub linked both ways.
+- [[CONVENTIONS]]

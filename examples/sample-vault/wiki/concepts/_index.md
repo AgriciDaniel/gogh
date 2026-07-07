@@ -1,23 +1,29 @@
 ---
-type: "hub"
+type: "meta"
 title: "Concepts Hub"
+status: "seed"
 created: "2026-07-07"
 updated: "2026-07-07"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Concepts Hub
 
-## Parent
+Purpose: catalog reusable design concepts and judgment models.
+
+## Catalog
+
+| Note | Domain | Status |
+|---|---|---|
+| <Title Case Concept Note> | gogh/<domain> | seed |
+
+## Related
 
 - [[Index]]
 - [[Dashboard]]
-
-## Core Links
-
-- [[Hot]]
-- [[Overview]]
-
-## Notes
-
-Add generated notes here and keep this hub linked both ways.
+- [[CONVENTIONS]]

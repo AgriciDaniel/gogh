@@ -7,66 +7,66 @@
   "showOrphans": false,
   "colorGroups": [
     {
-      "query": "file:wiki/hot.md OR file:wiki/index.md OR file:wiki/overview.md OR file:wiki/log.md OR path:wiki/meta",
+      "query": "tag:#gogh/taste-skill",
       "color": {
         "a": 1,
-        "rgb": 743376
+        "rgb": 16213767
       }
     },
     {
-      "query": "path:references/canon",
+      "query": "tag:#gogh/mifb",
       "color": {
         "a": 1,
-        "rgb": 13886461
+        "rgb": 1226886
       }
     },
     {
-      "query": "path:wiki/concepts",
+      "query": "tag:#gogh/impeccable",
       "color": {
         "a": 1,
-        "rgb": 1733608
+        "rgb": 7950578
       }
     },
     {
-      "query": "path:wiki/flows",
+      "query": "tag:#gogh/frontend-design",
       "color": {
         "a": 1,
-        "rgb": 14233637
+        "rgb": 15092096
       }
     },
     {
-      "query": "path:wiki/sources",
+      "query": "tag:#gogh/ui-ux-pro-max",
       "color": {
         "a": 1,
-        "rgb": 2002494
+        "rgb": 1867478
       }
     },
     {
-      "query": "path:wiki/decisions",
+      "query": "tag:#gogh/web-design-guidelines",
       "color": {
         "a": 1,
-        "rgb": 16362240
+        "rgb": 7649302
       }
     },
     {
-      "query": "path:wiki/deliverables OR path:wiki/reports",
+      "query": "tag:#gogh/stack",
       "color": {
         "a": 1,
-        "rgb": 16437967
+        "rgb": 16405074
       }
     },
     {
-      "query": "path:wiki/entities OR path:wiki/accounts OR path:wiki/platforms",
+      "query": "tag:#gogh/theory",
       "color": {
         "a": 1,
-        "rgb": 13560534
+        "rgb": 16429061
       }
     },
     {
-      "query": "path:wiki/experiments",
+      "query": "tag:#gogh/ops",
       "color": {
         "a": 1,
-        "rgb": 16707523
+        "rgb": 8818326
       }
     }
   ],

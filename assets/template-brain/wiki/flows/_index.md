@@ -1,23 +1,29 @@
 ---
-type: "hub"
+type: "meta"
 title: "Flows Hub"
+status: "seed"
 created: "{{date}}"
 updated: "{{date}}"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Flows Hub
 
-## Parent
+Purpose: catalog source intake, synthesis, reporting, refresh, and release workflows.
 
-- [[Index]]
-- [[Dashboard]]
+## Catalog
 
-## Core Links
+| Note | Domain | Status |
+|---|---|---|
+| <Title Case Flow Note> | gogh/<domain> | seed |
 
-- [[Hot]]
-- [[Overview]]
+## Related
 
-## Notes
-
-Add generated notes here and keep this hub linked both ways.
+- [[Source Intake Workflow]]
+- [[Synthesis Workflow]]
+- [[CONVENTIONS]]

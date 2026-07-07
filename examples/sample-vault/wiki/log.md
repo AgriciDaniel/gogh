@@ -1,9 +1,15 @@
 ---
-type: "log"
+type: "meta"
 title: "Log"
+status: "seed"
 created: "2026-07-07"
 updated: "2026-07-07"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Hot]]", "[[Index]]", "[[Dashboard]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Log

@@ -8,6 +8,37 @@ import re
 import sys
 from pathlib import Path
 
+TYPE_VALUES = {
+    "skill",
+    "entity",
+    "concept",
+    "rule",
+    "audit",
+    "flow",
+    "comparison",
+    "reception",
+    "source",
+    "decision",
+    "deliverable",
+    "question",
+    "gap",
+    "experiment",
+    "meta",
+}
+DOMAIN_VALUES = {
+    "taste-skill",
+    "mifb",
+    "impeccable",
+    "frontend-design",
+    "ui-ux-pro-max",
+    "web-design-guidelines",
+    "stack",
+    "theory",
+    "ops",
+}
+STATUS_VALUES = {"seed", "developing", "mature", "evergreen"}
+CONFIDENCE_VALUES = {"evidence-based", "practitioner", "contested", "folklore"}
+
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Lint a brain vault.")
@@ -37,6 +68,8 @@ def main(argv: list[str] | None = None) -> int:
         text = path.read_text(encoding="utf-8")
         if not text.startswith("---\n"):
             errors.append(f"missing frontmatter: {path.relative_to(vault)}")
+        check_em_dash(path, vault, text, errors)
+        check_contract(path, vault, text, errors)
         if re.search(r"\{\{(?!date|owner|client_slug|client_name)[^}]+\}\}|__[A-Z0-9_]+__|\bTODO\b", text):
             errors.append(f"unresolved placeholder in {path.relative_to(vault)}")
         if any(part in {"deliverables", "reports"} for part in path.parts) and "[[" not in text and ".raw/" not in text and "sha256" not in text.lower():
@@ -69,6 +102,94 @@ def main(argv: list[str] | None = None) -> int:
         print(f"ERROR: {error}", file=sys.stderr)
     print("Vault lint passed" if not errors else "Vault lint failed")
     return 1 if errors else 0
+
+
+def check_em_dash(path: Path, vault: Path, text: str, errors: list[str]) -> None:
+    in_fence = False
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        stripped = line.lstrip()
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+            in_fence = not in_fence
+            continue
+        if in_fence or "U+2014" in line:
+            continue
+        prose = strip_inline_code(line)
+        if "\u2014" in prose:
+            errors.append(f"em dash in prose: {path.relative_to(vault)}:{line_number}")
+
+
+def strip_inline_code(line: str) -> str:
+    output: list[str] = []
+    in_code = False
+    for char in line:
+        if char == "`":
+            in_code = not in_code
+            continue
+        if not in_code:
+            output.append(char)
+    return "".join(output)
+
+
+def check_contract(path: Path, vault: Path, text: str, errors: list[str]) -> None:
+    frontmatter = parse_frontmatter(text)
+    if not frontmatter or "domain" not in frontmatter:
+        return
+    rel = path.relative_to(vault)
+    note_type = scalar_value(frontmatter.get("type"))
+    domain = scalar_value(frontmatter.get("domain"))
+    status = scalar_value(frontmatter.get("status"))
+    confidence = scalar_value(frontmatter.get("confidence"))
+    tags = list_value(frontmatter.get("tags"))
+
+    if note_type not in TYPE_VALUES:
+        errors.append(f"invalid contract type in {rel}: {note_type or '<missing>'}")
+    if domain not in DOMAIN_VALUES:
+        errors.append(f"invalid contract domain in {rel}: {domain or '<missing>'}")
+    if status not in STATUS_VALUES:
+        errors.append(f"invalid contract status in {rel}: {status or '<missing>'}")
+    if confidence and confidence not in CONFIDENCE_VALUES:
+        errors.append(f"invalid contract confidence in {rel}: {confidence}")
+
+    gogh_tags = [tag for tag in tags if tag.startswith("gogh/")]
+    note_tags = [tag for tag in tags if tag.startswith("note/")]
+    expected_gogh = f"gogh/{domain}" if domain else ""
+    expected_note = f"note/{note_type}" if note_type else ""
+    if len(gogh_tags) != 1 or gogh_tags[0] != expected_gogh:
+        errors.append(f"invalid gogh tag in {rel}: expected {expected_gogh or '<valid domain>'}")
+    if len(note_tags) != 1 or note_tags[0] != expected_note:
+        errors.append(f"invalid note tag in {rel}: expected {expected_note or '<valid type>'}")
+
+
+def parse_frontmatter(text: str) -> dict[str, str]:
+    if not text.startswith("---\n"):
+        return {}
+    end = text.find("\n---", 4)
+    if end == -1:
+        return {}
+    data: dict[str, str] = {}
+    for line in text[4:end].splitlines():
+        if not line.strip() or line.lstrip().startswith("#") or ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        data[key.strip()] = value.strip()
+    return data
+
+
+def scalar_value(value: str | None) -> str:
+    if value is None:
+        return ""
+    return value.strip().strip('"').strip("'")
+
+
+def list_value(value: str | None) -> list[str]:
+    if value is None:
+        return []
+    value = value.strip()
+    if value.startswith("[") and value.endswith("]"):
+        value = value[1:-1]
+    if not value:
+        return []
+    return [scalar_value(item.strip()) for item in value.split(",") if item.strip()]
 
 
 def check_raw_manifest(vault: Path, errors: list[str]) -> None:

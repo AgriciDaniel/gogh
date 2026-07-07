@@ -1,23 +1,29 @@
 ---
-type: "hub"
+type: "meta"
 title: "Questions Hub"
+status: "seed"
 created: "{{date}}"
 updated: "{{date}}"
-status: "active"
+tags: ["gogh/ops", "note/meta"]
+domain: "ops"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[Hot]]", "[[Overview]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Questions Hub
 
-## Parent
+Purpose: catalog unresolved product, research, stack, and operator questions.
+
+## Catalog
+
+| Note | Domain | Status |
+|---|---|---|
+| <Title Case Question Note> | gogh/<domain> | seed |
+
+## Related
 
 - [[Index]]
 - [[Dashboard]]
-
-## Core Links
-
-- [[Hot]]
-- [[Overview]]
-
-## Notes
-
-Add generated notes here and keep this hub linked both ways.
+- [[CONVENTIONS]]

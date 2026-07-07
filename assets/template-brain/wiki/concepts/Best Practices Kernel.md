@@ -1,22 +1,58 @@
 ---
 type: "concept"
 title: "Best Practices Kernel"
+status: "seed"
 created: "{{date}}"
 updated: "{{date}}"
-status: "active"
+tags: ["gogh/theory", "note/concept"]
+domain: "theory"
+confidence: "practitioner"
+related: ["[[Index]]", "[[Dashboard]]", "[[CONVENTIONS]]", "[[Tag Taxonomy]]", "[[Source Intake Workflow]]", "[[Synthesis Workflow]]"]
+source_urls: []
+sources: ["[[Source Manifest Guide]]"]
 ---
 
 # Best Practices Kernel
 
-Read first. Write second. Verify third.
+Read first, write second, and verify third.
 
-## Six Cuts
+## What it is
 
-- Read before write.
-- Name like the next reader is hostile.
-- Ship the smallest unit that works.
-- Delete more than you add.
-- Evidence over intuition.
-- Failure is the spec.
+The kernel is the smallest reusable operating rule set for careful vault work.
 
-Related: [[Index]] | [[Source Intake Workflow]] | [[Synthesis Workflow]]
+## How it works
+
+Use this note before editing source-cited advice, generated outputs, or vault navigation.
+
+## Best practice
+
+- Read before writing. PRACTITIONER
+- Name notes for the next operator. PRACTITIONER
+- Ship the smallest coherent unit. PRACTITIONER
+- Prefer evidence over intuition. EVIDENCE-BASED
+- Treat failures as specifications for the next check. PRACTITIONER
+
+## Pitfalls
+
+- Do not add unsourced domain claims.
+- Do not hide conflicts between upstream skills.
+- Do not treat scaffold text as final research.
+
+## Sources
+
+- [[Source Manifest Guide]]
+
+## Related
+
+- [[Index]] keeps the navigation surface visible.
+- [[Dashboard]] gives operators a shorter working view.
+- [[CONVENTIONS]] defines the note contract.
+- [[Tag Taxonomy]] defines the tag contract.
+- [[Source Intake Workflow]] explains source capture.
+- [[Synthesis Workflow]] explains source-cited synthesis.
+- [[Approval Queue]] records mutation gates.
+- [[Health Scorecard]] shows delivery readiness.
+
+## Next actions
+
+- Apply these rules before adding or changing atomic notes.
