@@ -1,5 +1,8 @@
 # Gogh Vault Instructions
 
+Scope: six frontend design skills stacked into source-cited guidance for AI
+coding agents.
+
 Read order:
 
 1. `wiki/hot.md`

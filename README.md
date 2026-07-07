@@ -4,27 +4,53 @@
   <img src="assets/svg/hero-frontispiece.svg" alt="Gogh editorial frontispiece" width="100%"/>
 </p>
 
-Gogh is an evidence-gated Obsidian brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin — an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop..
+Source cited Obsidian operating brain that turns six frontend design skills into one advisable stack.
 
-**Current maturity:** scaffolded. This repo is not market-ready until research,
-domain adapters, demo verification, audit, and release gates pass.
+Gogh is an evidence-gated Obsidian brain for AI coding agents that need better
+frontend design judgment than a single prompt can provide. It combines six
+curated skills into stack advice: which skill to use when, how to combine them,
+how to resolve conflicts, and how to keep a unified anti-slop rulebook tied to
+dated sources.
 
-It ships two artifacts:
+**Current maturity:** researched. This metamorphosis wave is driving the repo
+toward market-ready, but it is not market-ready until domain adapters, demo
+verification, audit, and release gates pass.
 
-- `assets/template-brain/` - the distributable Obsidian vault.
-- `SKILL.md` plus `scripts/` - the agent-facing operating layer.
+## Promise
+
+Turn six frontend design skills into one source-cited operating brain for
+stacking taste prompting, micro-interaction execution, toolchain enforcement,
+retrieval, and audit work.
 
 ## Buyer
 
 Developers, indie hackers, design engineers, and agencies who build frontends with AI coding agents (Claude Code, Cursor, Codex, Windsurf) and want the output to look intentional and brand-fit rather than templated AI slop.
 
+## Six Skills
+
+| Skill | Author | Mechanism | License |
+|---|---|---|---|
+| taste-skill v2, `design-taste-frontend` | Leon Lin | Taste prompting for macro aesthetic direction, three dials at 8/6/4, and Section 14 pre-flight | MIT |
+| make-interfaces-feel-better | Jakub Krehel | Micro-interaction execution for press states, concentric radii, and motion values | MIT |
+| Impeccable v3.9.1 | Paul Bakaus | Toolchain enforcement through commands, PRODUCT.md and DESIGN.md contracts, a deterministic 45-rule detector, and edit-time hooks | Apache-2.0 |
+| Anthropic frontend-design | Anthropic | Taste prompting baseline with committed aesthetic direction | Upstream terms pending ledger capture |
+| ui-ux-pro-max v2.10.1 | nextlevelbuilder | Retrieval database for styles, palettes, font pairings, and UX rules | MIT |
+| Vercel web-design-guidelines | Vercel Labs | Audit layer with runtime-fetched rules and file:line findings | MIT |
+
+Mechanism map: taste prompting from taste-skill and Anthropic
+frontend-design, micro-interaction execution from make-interfaces-feel-better,
+toolchain enforcement from Impeccable, retrieval from ui-ux-pro-max, and audit
+from Vercel web-design-guidelines.
+
 ## Outputs
 
-- Install-and-load quickstart for Claude Code, Cursor, and Codex
-- Greenfield build playbook (Prompt 1) end to end
-- Audit-first redesign playbook (Prompt 2) with the modernization modes
-- The three-dials tuning guide by industry, audience, and mood
-- The rules-and-audits reference card (thresholds, em-dash rule, pre-flight check) and an anti-slop concept map
+- `assets/template-brain/`, the distributable Obsidian template vault
+- `SKILL.md` plus scripts, the agent-facing operating layer
+- Stack advisor reports that translate a project brief into recommended skills,
+  order of use, dial settings, conflicts, and audit checks
+- Cheat sheet, stack decision one-pager, unified pre-flight mega-checklist, and
+  quickstart
+- Registry diff reports for upstream captures when the adapter wave lands
 
 ## Quick Start
 
@@ -51,10 +77,10 @@ gogh-brain next --vault ~/gogh-vaults/acme
 V1 is advisory and read-only. It does not mutate accounts, systems, books,
 pipelines, publishing tools, customer records, or live production data.
 
-Domain claims are release-blocked until `references/current-requirements.md`,
-`references/market-research.md`, `references/source-map.md`, and
-`references/source-ledger.json` contain dated source material from trustworthy
-sources.
+Gogh records conflicts between skills instead of hiding them. Impeccable
+detector results remain upstream Impeccable results, not Gogh-owned findings.
+License, version, star, and rule claims are treated as current only when backed
+by the source ledger.
 
 ## Maturity Gates
 

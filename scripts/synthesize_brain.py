@@ -77,8 +77,8 @@ status: "draft"
 
 ## Summary
 
-Gogh is ready for source review. It has {len(sources)} raw source(s) in
-the manifest.
+Gogh is ready for source review with {len(sources)} raw source(s) in the
+manifest.
 
 ## Evidence
 

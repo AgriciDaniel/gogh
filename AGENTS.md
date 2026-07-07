@@ -3,6 +3,8 @@
 The canonical agent entrypoint is `SKILL.md`; this file exists for agent
 runtimes that load project-level `AGENTS.md` instructions.
 
+Gogh is a six-skill frontend design stack brain for AI coding agents.
+
 ## Read Order
 
 1. `SKILL.md`

@@ -10,8 +10,8 @@ from typing import Any
 
 
 BRAIN_TITLE = "Gogh"
-BRAIN_DOMAIN = "Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop."
-BRAIN_TAGLINE = "Source cited Obsidian operating brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop.."
+BRAIN_DOMAIN = "Composable frontend design skill stacks for AI coding agents, combining six curated skills (Taste Skill v2 by Leon Lin, make-interfaces-feel-better, Impeccable, Anthropic frontend-design, ui-ux-pro-max, and Vercel web-design-guidelines) into audited stack recommendations, dial settings, and upstream watch."
+BRAIN_TAGLINE = "Source cited Obsidian operating brain that turns six frontend design skills into one advisable stack."
 
 CB = "#1A73E8"
 CR = "#D93025"

@@ -1,19 +1,34 @@
 {
   "name": "gogh-brain",
   "version": "0.1.0",
-  "description": "Gogh Obsidian brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop..",
+  "description": "Gogh is a source cited Obsidian operating brain that turns six frontend design skills into one advisable stack for AI coding agents.",
   "author": {
     "name": "Daniel Agrici",
     "url": "https://github.com/AgriciDaniel"
   },
-  "homepage": "https://github.com/AI-Marketing-Hub/gogh-brain",
-  "repository": "https://github.com/AI-Marketing-Hub/gogh-brain",
+  "homepage": "https://github.com/AgriciDaniel/gogh-brain",
+  "repository": "https://github.com/AgriciDaniel/gogh-brain",
   "license": "Apache-2.0",
+  "category": "design-skills",
   "keywords": [
     "gogh-brain",
+    "gogh",
     "obsidian",
     "brain",
-    "taste-skill"
+    "design-skills",
+    "design skill stack",
+    "stack design skills",
+    "which design skill",
+    "design taste",
+    "anti-slop",
+    "anti-slop frontend",
+    "taste-skill",
+    "design-taste-frontend",
+    "make-interfaces-feel-better",
+    "impeccable",
+    "anthropic frontend-design",
+    "ui-ux-pro-max",
+    "vercel web-design-guidelines"
   ],
   "skills": [
     "./SKILL.md"
