@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIMH Pro landing variants — a Gogh design-skill showcase</title>
+<style>
+  :root {
+    --bg: #F5F4F0; --panel: #FFFFFF; --ink: #17160F; --dim: #6C6858; --line: #DEDACD; --acc: #B3690A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131313; --panel: #1C1C1C; --ink: #EDEBE6; --dim: #9A968E; --line: #2E2C28; --acc: #FFB000; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+    padding: 48px 24px 80px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: 0.01em; }
+  p.lede { color: var(--dim); font-size: 14px; margin: 0 0 36px; line-height: 1.6; max-width: 60ch; }
+  p.lede a { color: var(--acc); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  a.card {
+    display: block; border: 1px solid var(--line); border-radius: 6px; padding: 18px 18px 16px;
+    background: var(--panel); text-decoration: none; color: var(--ink);
+    transition: transform 0.15s cubic-bezier(0.2,0,0,1), border-color 0.15s;
+  }
+  a.card:hover { border-color: var(--acc); transform: translateY(-1px); }
+  a.card:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
+  .card .n { display: block; font-weight: 700; font-size: 14.5px; margin-bottom: 4px; }
+  .card .t { display: block; font-size: 12.5px; color: var(--dim); line-height: 1.4; }
+  footer { margin-top: 48px; font-size: 12px; color: var(--dim); }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AIMH Pro: landing page variants</h1>
+  <p class="lede">
+    Six message-match variants of the same landing page, each built as a distinct editorial format
+    (broadsheet, corporate report, museum catalog, field manual, mail-order catalog, SEO-first).
+    Captured as a reference showcase for the <a href="../..">Gogh design-skill stack</a> — every
+    page here was built with Gogh. Source: a Claude Artifact captured 2026-07-07.
+  </p>
+  <div class="grid" id="grid"></div>
+  <footer>
+    Reference only, not live ad destinations. See <a href="README.md">README</a> for details.
+  </footer>
+</div>
+<script>
+  var MANIFEST_URL = "manifest.json";
+  fetch(MANIFEST_URL).then(function (r) { return r.json(); }).then(function (items) {
+    var grid = document.getElementById("grid");
+    items.forEach(function (item) {
+      var a = document.createElement("a");
+      a.className = "card";
+      a.href = item.file;
+      var n = document.createElement("span");
+      n.className = "n";
+      n.textContent = item.name;
+      var t = document.createElement("span");
+      t.className = "t";
+      t.textContent = item.tag;
+      a.appendChild(n);
+      a.appendChild(t);
+      grid.appendChild(a);
+    });
+  });
+</script>
+</body>
+</html>

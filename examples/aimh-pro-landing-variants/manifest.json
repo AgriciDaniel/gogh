@@ -1,0 +1,38 @@
+[
+  {
+    "name": "A. SERP Brutalism",
+    "tag": "The page ranks you #1",
+    "file": "a-serp-brutalism.html",
+    "bytes": 26067
+  },
+  {
+    "name": "B. The Gazette",
+    "tag": "A broadsheet front page",
+    "file": "b-the-gazette.html",
+    "bytes": 17959
+  },
+  {
+    "name": "D. 2026 Annual Report",
+    "tag": "Swiss corporate report to members",
+    "file": "d-2026-annual-report.html",
+    "bytes": 37631
+  },
+  {
+    "name": "E. The Working Collection",
+    "tag": "A museum exhibition catalog",
+    "file": "e-the-working-collection.html",
+    "bytes": 33365
+  },
+  {
+    "name": "F. Field Manual FM-26",
+    "tag": "Issued equipment and orders",
+    "file": "f-field-manual-fm-26.html",
+    "bytes": 34750
+  },
+  {
+    "name": "G. Operator's Catalog No.30",
+    "tag": "A mail-order catalog, everything included",
+    "file": "g-operator-s-catalog-no-30.html",
+    "bytes": 36022
+  }
+]
