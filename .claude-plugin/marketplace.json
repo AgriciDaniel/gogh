@@ -1,0 +1,34 @@
+{
+  "name": "agricidaniel-taste-skill-brain",
+  "owner": {
+    "name": "Daniel Agrici"
+  },
+  "metadata": {
+    "description": "Taste Skill Brain template and skill layer",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "taste-skill-brain",
+      "source": "./",
+      "description": "Obsidian brain for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop..",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Agrici"
+      },
+      "repository": "https://github.com/AI-Marketing-Hub/taste-skill-brain",
+      "license": "Apache-2.0",
+      "category": "taste-skill",
+      "tags": [
+        "obsidian",
+        "brain",
+        "taste-skill"
+      ],
+      "keywords": [
+        "taste-skill-brain",
+        "taste-skill",
+        "obsidian"
+      ]
+    }
+  ]
+}

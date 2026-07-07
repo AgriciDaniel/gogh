@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "status": "scaffold",
+  "domain": "Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin \u2014 an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop.",
+  "generic_only": true,
+  "raw_input_types": [
+    "The canonical SKILL.md and README in github.com/Leonxlnx/taste-skill, the tasteskill.dev guide/docs/changelog/blog, and the design brief plus target URL supplied by the operator"
+  ],
+  "rules": {
+    "domain_adapted_requires": [
+      "one real domain importer or ingestion path",
+      "one domain-specific synthesis module",
+      "one report renderer",
+      "one fixture per supported input type",
+      "tests for importer, synthesis, rendering, malformed input, and missing credentials"
+    ]
+  },
+  "input_schemas": [],
+  "importers": [],
+  "synthesis_modules": [],
+  "report_renderers": [],
+  "fixtures": [],
+  "tests": []
+}

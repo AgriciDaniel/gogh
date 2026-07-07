@@ -1,0 +1,36 @@
+{
+  "brain_schema": "taste-skill-brain.v1",
+  "sources": [
+    {
+      "path": ".raw/research/design-theory-extract.md",
+      "sha256": "d28f2899c8e4083f1677793ea2e101f5759ce0e41e436975d87afb91b1d86353",
+      "retrieved": "2026-07-06",
+      "source_type": "supporting"
+    },
+    {
+      "path": ".raw/research/github-repo-extract.md",
+      "sha256": "ede8bd6d455150b71deece0753b6e49504806baee95c6d4ffbbd1cae68681582",
+      "retrieved": "2026-07-06",
+      "source_type": "primary"
+    },
+    {
+      "path": ".raw/research/official-site-extract.md",
+      "sha256": "dcef6161e21fa4c460116e33847cb9cb0a10fc6100f57390ea9995107cf4b0fd",
+      "retrieved": "2026-07-06",
+      "source_type": "official"
+    },
+    {
+      "path": ".raw/research/reception-extract.md",
+      "sha256": "a1d3f4735cb301f42ecf0763e31f521b87b0b0fcb170ab16084021478038897a",
+      "retrieved": "2026-07-06",
+      "source_type": "supporting"
+    }
+  ],
+  "scaffold_history": [
+    {
+      "client": "taste-skill",
+      "client_name": "Taste Skill",
+      "owner": "Daniel Agrici"
+    }
+  ]
+}

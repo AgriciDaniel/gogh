@@ -1,0 +1,15 @@
+:root {
+  --brain-accent: #1A73E8;
+  --brain-accent-strong: #0B57D0;
+  --brain-warn: #D93025;
+  --brain-gold: #F9AB00;
+  --brain-tint: #D3E3FD;
+}
+
+.markdown-preview-view h1 {
+  color: var(--brain-accent-strong);
+}
+
+.markdown-preview-view a {
+  color: var(--brain-accent);
+}

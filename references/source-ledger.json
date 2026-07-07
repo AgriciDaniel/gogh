@@ -1,0 +1,192 @@
+{
+  "schema": "brainstein/source-ledger@2",
+  "version": 1,
+  "generated_at": "2026-07-06",
+  "status": "researched",
+  "domain": "Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin (anti-slop SKILL.md ruleset: three dials, audit-first redesigns, image-first pipeline, anti-laziness rules, strict pre-flight check).",
+  "refresh_cadence": "on-changelog for github.com/Leonxlnx/taste-skill and tasteskill.dev/changelog; monthly for the SKILL.md rules and the three dials; quarterly for ecosystem coverage (Emil Kowalski, Developers Digest, skill directories) and the Anthropic Agent Skills / SKILL.md format",
+  "rules": {
+    "researched_requires": [
+      "at least two captured sources for fast-moving or high-stakes domains",
+      "at least one official/primary source for lower-risk domains",
+      "retrieved dates, refresh_due dates, source_type, confidence, and claim coverage",
+      "no placeholder/example URLs"
+    ],
+    "accepted_primary_types": [
+      "official",
+      "primary",
+      "vendor",
+      "regulator",
+      "government",
+      "standards",
+      "standards-body",
+      "authority",
+      "api-docs",
+      "repo-snapshot"
+    ]
+  },
+  "sources": [
+    {
+      "id": "taste-skill-canonical-skill-md",
+      "title": "Taste Skill - canonical v2 SKILL.md (design-taste-frontend)",
+      "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md",
+      "source_type": "primary",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-08-06",
+      "confidence": "high",
+      "claims": [
+        "The three dials DESIGN_VARIANCE / MOTION_INTENSITY / VISUAL_DENSITY use a 1-10 scale with baseline 8 / 6 / 4, set conversationally not by editing the file",
+        "Em-dash (U+2014) and en-dash (U+2013) are banned anywhere visible; only the hyphen and math minus are allowed",
+        "Hero: headline max 2 lines, subtext max 20 words, CTA visible without scroll, pt-24 top-padding cap, max 4 text elements",
+        "Navigation renders on a single line at desktop with an 80px height cap (default 64-72px)",
+        "An 8-section page must use at least 4 different layout families; bento grids use exactly N cells for N items",
+        "Color/Shape/Page-Theme locks: one accent, one radius scale, one theme per page; premium-consumer beige+brass palette is banned by explicit hex",
+        "Section 14 is a mandatory pre-flight check; any failed box blocks completion",
+        "Section 11 redesign protocol defines Greenfield / Preserve / Overhaul modes and never-change-silently preservation rules",
+        "Scope is landing pages, portfolios, and redesigns; dashboards, data tables, and multi-step product UI are out of scope"
+      ]
+    },
+    {
+      "id": "tasteskill-dev-official-site",
+      "title": "tasteskill.dev - official site (guide, docs, changelog, llms.txt)",
+      "url": "https://www.tasteskill.dev/guide?view=full",
+      "source_type": "official",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-08-06",
+      "confidence": "high",
+      "claims": [
+        "Positioning: 'The Anti-Slop Frontend Framework for AI Agents'; tagline 'Less slop, designs pop.'",
+        "Greenfield (Prompt 1) and Redesign (Prompt 2) workflows are published verbatim on the guide",
+        "Install: npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"",
+        "llms.txt states the dial scales as 1-10 with endpoints; the guide names the dials without scales",
+        "Works with Claude Code, Cursor, Codex, Gemini CLI, v0, Lovable, OpenCode via the SKILL.md standard"
+      ]
+    },
+    {
+      "id": "taste-skill-github-repo",
+      "title": "github.com/Leonxlnx/taste-skill - repo metadata, README, CHANGELOG, 13 skills",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "source_type": "primary",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-08-06",
+      "confidence": "high",
+      "claims": [
+        "License is MIT; repo created 2026-02-19; ~58,435 stars as of 2026-07-06; no git releases or tags",
+        "The repo ships 13 skills; the primary install name is design-taste-frontend",
+        "research/laziness/ backs the output-skill anti-laziness rules with a documented study",
+        "v2 is experimental, a pre-release iterating toward a v2.0.0 stable that will lock install name and dials"
+      ]
+    },
+    {
+      "id": "anthropic-agent-skills",
+      "title": "Anthropic - Equipping agents for the real world with Agent Skills (SKILL.md format, progressive disclosure)",
+      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "source_type": "official",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-10-06",
+      "confidence": "high",
+      "claims": [
+        "Agent Skills are folders of instructions/scripts/resources agents discover and load dynamically",
+        "SKILL.md frontmatter requires at minimum name and description",
+        "Progressive disclosure loads name+description at discovery, the full SKILL.md at activation, and bundled files on demand",
+        "The format is published as an open standard for cross-platform portability"
+      ]
+    },
+    {
+      "id": "w3c-design-tokens",
+      "title": "W3C Design Tokens Community Group - first stable specification",
+      "url": "https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/",
+      "source_type": "standards-body",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-10-06",
+      "confidence": "high",
+      "claims": [
+        "A design token expresses design decisions in a platform-agnostic way as a named single source of truth",
+        "The specification reached its first stable version in October 2025; token systems cover motion and density, not just color"
+      ]
+    },
+    {
+      "id": "developers-digest-infrastructure",
+      "title": "Developers Digest - Taste Skills Are Turning Agent Review Into Infrastructure",
+      "url": "https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review",
+      "source_type": "supporting",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-10-06",
+      "confidence": "medium",
+      "claims": [
+        "A taste skill is a review checklist, style contract, and calibration artifact the agent routes through before claiming work is done",
+        "The frontier is better review moved earlier, written down, and reused - not just better generation",
+        "Taste Skill sits in a skills-as-infrastructure family with Stop Slop and the Compound Engineering Plugin"
+      ]
+    },
+    {
+      "id": "andrew-ooo-review",
+      "title": "andrew.ooo - Taste Skill Review (independent)",
+      "url": "https://andrew.ooo/posts/taste-skill-anti-slop-ai-frontend-review/",
+      "source_type": "supporting",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-10-06",
+      "confidence": "medium",
+      "claims": [
+        "Taste Skill is the first frontend skill that treats AI slop as a solvable engineering problem rather than a vibes problem",
+        "Criticism: the rules are strong opinions (e.g. the Inter ban), examples assume React/Next, and there is no automated test or visual-regression verification"
+      ]
+    },
+    {
+      "id": "neodrop-v2-deep-dive",
+      "title": "neodrop.ai - taste-skill v2: 3 dials and a 60-item preflight check",
+      "url": "https://neodrop.ai/post/s3mGLbLqiNd",
+      "source_type": "supporting",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-10-06",
+      "confidence": "medium",
+      "claims": [
+        "The v2 rewrite grew from ~500 lines to ~25,000 words across 14 sections",
+        "Section 0 Brief Inference forces the agent to commit to a direction before touching layout",
+        "The '60-item' pre-flight figure is neodrop's characterization, not stated by the vendor"
+      ]
+    },
+    {
+      "id": "emil-kowalski-agents-with-taste",
+      "title": "Emil Kowalski - Agents with Taste (and Taste Skill sponsor)",
+      "url": "https://emilkowal.ski/ui/agents-with-taste",
+      "source_type": "practitioner",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2026-10-06",
+      "confidence": "medium",
+      "claims": [
+        "Design taste is articulable logic and can be codified into per-aspect skill files for agents",
+        "animations.dev (Emil Kowalski) is an official sponsor of Taste Skill alongside the Vercel OSS Program",
+        "His 'Agents with Taste' is a parallel, independent effort, not a review of Leon Lin's project"
+      ]
+    },
+    {
+      "id": "refactoring-ui-practical-typography",
+      "title": "Refactoring UI (Wathan & Schoger) + Butterick's Practical Typography",
+      "url": "https://www.refactoringui.com/",
+      "source_type": "supporting",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2027-01-06",
+      "confidence": "high",
+      "claims": [
+        "Visual hierarchy via size/color/weight/placement is the most effective tool for making something feel designed",
+        "Default to more whitespace than feels necessary; add density deliberately",
+        "Body line length of 45-90 characters underlies the skill's max-w-[65ch] measure rule"
+      ]
+    },
+    {
+      "id": "ai-slop-purple-gradient",
+      "title": "Why Your AI Keeps Building the Same Purple Gradient Website (AI slop = distributional convergence)",
+      "url": "https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website",
+      "source_type": "supporting",
+      "retrieved": "2026-07-06",
+      "refresh_due": "2027-01-06",
+      "confidence": "medium",
+      "claims": [
+        "LLMs are statistical pattern matchers that reach for the median of their training corpus, producing AI slop",
+        "The default purple traces to Tailwind's demo bg-indigo-500 saturating tutorials and training data",
+        "The fix is constraint (forbidden patterns, one direction), not 'make it beautiful' prompts"
+      ]
+    }
+  ]
+}
