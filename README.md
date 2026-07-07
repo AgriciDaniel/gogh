@@ -42,6 +42,27 @@ frontend-design, micro-interaction execution from make-interfaces-feel-better,
 toolchain enforcement from Impeccable, retrieval from ui-ux-pro-max, and audit
 from Vercel web-design-guidelines.
 
+## Showcase
+
+Six message-match variants of one landing page, each a distinct editorial
+format instead of a generic template. Full source in
+[`examples/aimh-pro-landing-variants/`](examples/aimh-pro-landing-variants/),
+live at [agricidaniel.github.io/gogh-brain](https://agricidaniel.github.io/gogh-brain/examples/aimh-pro-landing-variants/).
+
+<p align="center">
+  <img src="assets/screenshots/aimh-serp-brutalism.webp" alt="SERP Brutalism variant: a search-results-page landing format" width="49%"/>
+  <img src="assets/screenshots/aimh-the-gazette.webp" alt="The Gazette variant: a broadsheet newspaper front page" width="49%"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/aimh-2026-annual-report.webp" alt="2026 Annual Report variant: a Swiss corporate report to members" width="49%"/>
+  <img src="assets/screenshots/aimh-working-collection.webp" alt="The Working Collection variant: a museum exhibition catalog" width="49%"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/aimh-operators-catalog.webp" alt="Operator's Catalog No.30 variant: a mail-order catalog format" width="60%"/>
+</p>
+
 ## Outputs
 
 - `assets/template-brain/`, the distributable Obsidian template vault

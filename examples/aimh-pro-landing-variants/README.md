@@ -15,6 +15,22 @@ for what the Gogh design-skill stack produces.
 
 Open [index.html](index.html) for a linked gallery view.
 
+### Previews
+
+<p align="center">
+  <img src="../../assets/screenshots/aimh-serp-brutalism.webp" alt="A. SERP Brutalism preview" width="49%"/>
+  <img src="../../assets/screenshots/aimh-the-gazette.webp" alt="B. The Gazette preview" width="49%"/>
+</p>
+<p align="center">
+  <img src="../../assets/screenshots/aimh-2026-annual-report.webp" alt="D. 2026 Annual Report preview" width="49%"/>
+  <img src="../../assets/screenshots/aimh-working-collection.webp" alt="E. The Working Collection preview" width="49%"/>
+</p>
+<p align="center">
+  <img src="../../assets/screenshots/aimh-operators-catalog.webp" alt="G. Operator's Catalog No.30 preview" width="60%"/>
+</p>
+
+No preview recording exists yet for F. Field Manual FM-26.
+
 ## Provenance
 
 Built with Gogh in a separate Claude session, captured from a Claude Artifact
