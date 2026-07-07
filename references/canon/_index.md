@@ -1,25 +1,16 @@
 # Canon Reference Layer
 
-Purpose: hold authoritative works for Giving AI coding agents good taste in frontend design using the open-source Taste Skill framework by Leon Lin — an anti-slop SKILL.md ruleset with three design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY), audit-first redesigns, an image-first reference pipeline, anti-laziness rules, and a strict pre-flight check that make Claude Code, Cursor, and Codex produce distinctive, non-templated interfaces instead of generic AI slop. as distilled evidence files. These are evidence files, not vault graph nodes.
+Canon policy: this layer is distilled, never reproduced. It records what Gogh can safely learn from canonical works without copying book sections, paid content, or long passages. Secondary-coverage distillations are marked when the local evidence comes from extracts, ledgers, or claim packs rather than a full primary capture. Durable principles fold into wiki concepts, rules, flows, audits, and source notes rather than living here as an isolated library.
 
-Confidence tags follow `references/CONFIDENCE_TAGS.md`: EVIDENCE-BASED, PRACTITIONER, CONTESTED, and FOLKLORE. A bestseller or popularity is not evidence.
-
-## Method
-
-Create exactly one file per real canon work under `references/canon/NNN-short-title.md`. Do not create stub files for works not yet researched. Each work file should capture the title line, core thesis, how the method works, key principles, best practices, verified quotes or labeled paraphrases, evidence caveats, and brain hooks.
-
-Fold the durable gold into `wiki/concepts/` notes and link concept notes back to the canon file when the work supports or challenges a concept. Never leave canon as an isolated library.
-
-Quotes must be copied verbatim and attributed, or rewritten as clearly labeled paraphrase. If the exact wording cannot be verified, do not present it as a quote.
-
-## Cluster A: Foundational Works
-
-- Template placeholder: [NNN](NNN-work-title.md) Title, Author, Year, TAG. Takeaway: Replace with a sourced one sentence takeaway during research.
-
-## Cluster B: Methods and Practice
-
-Add researched entries here.
-
-## Cluster C: Evidence, Standards, and Critiques
-
-Add researched entries here.
+| # | Work | Author | Why canonical | Distillation marker |
+|---|---|---|---|---|
+| 001 | Taste Skill canonical SKILL.md | Leon Lin | Gogh's primary anti-slop ruleset: dials, locks, bans, redesign modes, and blocking final pre-flight. | primary capture |
+| 002 | Details That Make Interfaces Feel Better | Jakub Krehel | Defines the micro-feel doctrine: small surface, type, motion, and hit-area details compound into perceived quality. | primary extract and captures |
+| 003 | Refactoring UI | Adam Wathan and Steve Schoger | Supplies the hierarchy, whitespace, and fewer-borders doctrine that the stack encodes into rules. | secondary coverage |
+| 004 | Butterick's Practical Typography | Matthew Butterick | Supplies typography law for measure, line spacing, readable body size, and tabular-number context. | secondary coverage |
+| 005 | AI Slop as Distributional Convergence | Author not recorded in local evidence | Names the statistical root of AI frontend sameness and the constraint-first remedy. | secondary coverage |
+| 006 | Improving Frontend Design Through Skills | Anthropic Applied AI team | Establishes the baseline Skill method for steering frontend aesthetics without permanent context overhead. | primary capture |
+| 007 | Vercel Web Interface Guidelines | Vercel | Provides the runtime-fetched audit ruleset for accessibility, forms, focus, motion, i18n, performance, and output format. | primary capture |
+| 008 | Impeccable Contracts and Vocabulary | Paul Bakaus | Turns design guidance into project contracts, slash-command vocabulary, hooks, and deterministic detector rules. | primary captures |
+| 009 | Agents with Taste | Emil Kowalski | Articulates taste as explainable design logic that can be packaged into agent skill files. | secondary coverage |
+| 010 | UI UX Pro Max database method | NextLevelBuilder | Represents retrieval-based design intelligence through searchable styles, palettes, fonts, UX rules, and stack guidance. | primary captures |
