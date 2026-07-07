@@ -14,6 +14,8 @@ Gogh is a six-skill frontend design stack brain for AI coding agents.
 5. `references/product-spec.md`
 6. `references/source-ledger.json`
 7. `references/adapter-manifest.json`
+8. `references/claim-ledger.md`
+9. `references/skill-registry.json`
 
 ## Operating Rules
 
@@ -31,9 +33,13 @@ Gogh is a six-skill frontend design stack brain for AI coding agents.
 
 ## Verification
 
+Run the package command only from a clean tree.
+
 ```bash
 python -m compileall scripts gogh_brain tests
+python tests/test_adapters.py
 python tests/test_pipeline.py
+python scripts/lint_vault.py --vault .
 python scripts/audit_brain.py --json
-python scripts/package_release.py --version 0.1.0
+python scripts/package_release.py --version 1.0.0 --release-type market-ready
 ```

@@ -2,6 +2,5 @@
 
 @AGENTS.md
 
-Claude-specific note: this file is persistent project context, not an
-enforcement layer. Gogh's six-skill design stack readiness is enforced by
-`scripts/audit_brain.py` and `scripts/package_release.py`.
+Claude-specific note: this file is a thin loader. The dedicated secretary agent
+lives at `agents/gogh-secretary.md`.

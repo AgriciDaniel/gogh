@@ -1,7 +1,6 @@
 # Gogh Gemini Instructions
 
-@./AGENTS.md
+@AGENTS.md
 
-Gemini-specific note: this file can be imported from a global
-`~/.gemini/GEMINI.md` loader. The canonical operating rules remain in
-`SKILL.md` and `AGENTS.md` for the six-skill Gogh brain.
+Gemini-specific note: this file is a thin loader. The dedicated secretary agent
+lives at `agents/gogh-secretary.md`.
