@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 - 2026-07-20
+
+- Fixed the Claude Code plugin manifest so the skill loads again: `skills`
+  entries must be directories containing `SKILL.md`, not the `SKILL.md` file
+  path itself. `"./SKILL.md"` became `"./"` (the plugin root). Current Claude
+  Code rejected the file-path form with `skills load failed from ./SKILL.md:
+  path is a file`, leaving the plugin installed but its skill unavailable.
+
 ## 1.0.0 - 2026-07-07
 
 ### The Gogh metamorphosis
