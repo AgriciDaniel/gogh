@@ -3,11 +3,11 @@ type: "gap"
 title: "No Cross-Skill Benchmark Data"
 status: "developing"
 created: "2026-07-07"
-updated: "2026-07-07"
+updated: "2026-07-22"
 tags: ["gogh/stack", "note/gap"]
 domain: "stack"
 confidence: "evidence-based"
-related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]"]
+related: ["[[Taste Skill (Project)]]", "[[The Three Dials]]", "[[DESIGN_VARIANCE]]", "[[MOTION_INTENSITY]]", "[[VISUAL_DENSITY]]", "[[Taste Skill Reference Card]]", "[[Pre-Flight Check (Section 14)]]", "[[Required Audits]]", "[[UIZZE Finish Gate Interoperability Probe]]"]
 source_urls: ["https://claude.com/blog/improving-frontend-design-through-skills (retrieved 2026-07-07)", "https://www.developersdigest.tech/blog/taste-skills-ai-agents-design-review (retrieved 2026-07-06)", "https://github.com/pbakaus/impeccable (retrieved 2026-07-07)", "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (retrieved 2026-07-07)", "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md (retrieved 2026-07-07)"]
 sources: ["[[Reception Sources]]", "[[Design Theory Sources]]"]
 ---
@@ -87,7 +87,7 @@ No Cross-Skill Benchmark Data records that Gogh has mechanism and reception evid
 - [[Greenfield Build (Prompt 1)]] - the greenfield flow.
 
 ## Next actions
-- Define what source would close the gap.
+- Run [[UIZZE Finish Gate Interoperability Probe]] on a fixed public fixture as one bounded source of incremental finish-gate evidence.
 - Do not fill gaps from memory.
 - Recheck source-ledger rows before promoting this note.
 - Propagate resolved questions to linked notes.
