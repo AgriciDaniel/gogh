@@ -8,7 +8,7 @@ tags: ["gogh/stack", "note/experiment"]
 domain: "stack"
 confidence: "evidence-based"
 related: ["[[No Cross-Skill Benchmark Data]]", "[[Stack Order Probe]]", "[[Required Audits]]", "[[Design Review as Infrastructure]]"]
-source_urls: ["https://raw.githubusercontent.com/samuelbushi/uizze/main/skills/anti-ui-slop/SKILL.md (retrieved 2026-07-22)", "https://uizze.com (retrieved 2026-07-22)"]
+source_urls: ["https://raw.githubusercontent.com/uizze/uizze/main/skills/anti-ui-slop/SKILL.md (retrieved 2026-07-22)", "https://uizze.com (retrieved 2026-07-22)"]
 sources: []
 ---
 UIZZE Finish Gate Interoperability Probe defines a controlled way to test whether a UIZZE finish-gate pass adds measurable value after a Gogh-advised design stack has produced an interface.
